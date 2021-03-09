@@ -1,4 +1,23 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Overview](README.md)
+
+## Margin Trading
+
+* [Overview](margin-trading/overview.md)
+* [Risks](margin-trading/risks.md)
+
+## Tutorials
+
+* [Trade on mango.markets](tutorials/trade-on-mango.markets.md)
+* [Transfer funds to sollet wallet](tutorials/transfer-funds-to-sollet-wallet.md)
+
+## Development Resources
+
+* [Mango Client API](development-resources/mango-client-api.md)
+* [Liquidator](development-resources/liquidator.md)
+
+---
+
+* [FAQ](faq.md)
 

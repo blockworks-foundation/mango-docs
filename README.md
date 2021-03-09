@@ -1,2 +1,28 @@
-# Initial page
+# Overview
+
+The goal of Mango Markets is to create a trader and maker friendly decentralized trading platform. Initial core features will be fully on-chain margin trading on limit order books as well as perpetual futures, which are the main drivers of centralized exchange revenue. Moving those to DeFi is an essential step for money legos to overcome the CeFi platforms.
+
+Building on Ethereum would hinder us from implementing the best possible the user experience, we went with solana instead. We are following other [influential players](https://medium.com/solana-labs/ftx-chooses-solana-for-serum-a-high-speed-non-custodial-decentralized-derivatives-exchange-c346a27c1f2b) in the field with their choice of platform here and are excited to pioneer the solana ecosystem together with everyone that is already building on it.
+
+## Roadmap
+
+#### closed alpha
+
+1. first weeks of march 2021
+2. strict borrow limits
+3. closed source liquidator and contracts
+
+#### public beta 
+
+1. begins mid-march 2021 and runs for multiple months
+2. removal of borrow limits
+3. step-wise open sourcing of the project as independent reviews are finishing
+4. improvements to margin trading user-interface
+5. launch additional trading pairs
+
+#### 
+
+## Who is working on this?
+
+The Blockworks Foundation is sponsoring all development on Mango Markets. 
 
