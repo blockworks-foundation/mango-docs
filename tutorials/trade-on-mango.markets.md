@@ -48,7 +48,7 @@ If a taker order is filled, assets will appear in the deposits of your margin ac
 
 If a maker order is filled, funds must be settled before appearing in your deposits. Visit the 'Balances' tab and click 'Settle'. Only assets included in the selected trading pair will appear here. 
 
-![](../.gitbook/assets/settle.png)
+![](../.gitbook/assets/settle2.png)
 
   
 Visit ‘Open Orders’ to view and cancel your open orders at any time. 
