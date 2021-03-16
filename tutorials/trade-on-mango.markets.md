@@ -4,35 +4,39 @@ Mango Markets offers an approachable, powerful platform. Trade up to 5x leverage
 
 Read below to learn how to trade using Mango Markets step-by-step, from connecting your wallet to making a trade.
 
-## **Connect to Mango Markets and Deposit Funds**
+## **Connecting to Mango Markets and Depositing Funds**
 
 First, connect your sollet.io wallet by selecting ‘Connect wallet’ in the top right of the Trade view.
 
 * For help creating or funding a Sollet.io wallet, please see _here_
 
-![](../.gitbook/assets/connect-wallet.png)
+![](../.gitbook/assets/connect.png)
 
 Next, confirm the connection in sollet.io pop-up window.
 
-![](../.gitbook/assets/password_unlock.png)
+![](../.gitbook/assets/wallet.png)
 
-We are working closely with Sollet.io to utilize auto approval of transactions, however this feature is not yet functional and all transactions including deposits, trades, settlements, and withdrawals must be approved manually. 
+We are working closely with Sollet.io to utilize auto-approval of transactions, however, this feature is not yet functional and all transactions including deposits, trades, settlements, and withdrawals must be approved manually. 
 
 On Mango, although your wallet is connected, funds must be deposited into your Margin Account to be accessed on the platform. Click ‘Deposit’ to add BTC, ETC, or USDT to your Margin Account.
 
-![](../.gitbook/assets/deposit1.png)
+![](../.gitbook/assets/dep1.png)
 
-In the deposit window, first choose your desired asset, then ensure a wallet address is selected in the drop down and enter the amount you wish to move into your Margin account. You’ll need a little SOL in your wallet to cover the transaction fees. All deposits on Mango earn interest; rates can be found in green next to the assets.
+In the deposit window, first choose the currency you want to fund your Margin account with. The wallet address is automatically populated once the currency is selected in the drop-down. Next, enter the amount you wish to move into your Margin account. You’ll need a little SOL in your wallet to cover the transaction fees. 
 
-![](../.gitbook/assets/deposit2.png)
+![](../.gitbook/assets/deposit2-1-.png)
+
+**All deposits on Mango earn interest; rates can be found in green next to the assets in the "Margin Account" module.**
+
+![](../.gitbook/assets/deposi43.png)
 
 ## **How to Make a Trade**
 
 To trade, select your desired asset pair in the top left drop-down menu. 
 
-![](../.gitbook/assets/markets.png)
+![](../.gitbook/assets/trade1.png)
 
-Choose between Buy or Sell and provide trade details: size, price, and order type. To place an order, click the big Buy or Sell asset button at the bottom of the trading box. Note the options of POST and IOC. When IOC \(Immediate or Cancel\) is selected, if an order is placed and not filled within seconds, it's cancelled. When POST is selected, limit orders are added to the order-book and earn maker fees if filled. POST orders will always be the 'maker'.
+Choose between Buy or Sell and provide trade details: size, price, and order type. To place an order, click the big Buy or Sell asset button at the bottom of the trading box. Note the options of POST and IOC. When IOC \(Immediate or Cancel\) is selected, if an order is placed and not filled within seconds, it's canceled. When POST is selected, limit orders are added to the order-book and earn maker fees if filled. POST orders will always be the 'maker'.
 
  Limit orders open an order at a set price. If the price of an asset in the orderbook reaches that price, the order will get filled. Market orders will buy or sell the asset immediately at the next price in the orderbook. 
 
@@ -53,17 +57,17 @@ Visit ‘Open Orders’ to view and cancel your open orders at any time.
 
 ## **How to Trade with Leverage**
 
-To make a leveraged trade, place an order with size greater than your deposit value; funds are automatically borrowed and appear in the ‘Borrows’ section of your Margin Account. Interest is accumulated and deducted continuously. Rates are on an annual basis and can be found in red next to the asset. The maximum leverage allowance is 5x. 
+To make a leveraged trade, place an order with a size greater than your deposit value; funds are automatically borrowed and appear in the ‘Borrows’ section of your Margin Account. Interest is accumulated and deducted continuously. Rates are on an annual basis and can be found in red next to the asset. The maximum leverage allowance is 5x. 
 
 ![](../.gitbook/assets/borrows.png)
 
-To open a leverage position, an Initial Collateral Ratio of 120% must be met. Collateral Ratio is the value of the user's deposits and positions divided by the value of their loans. 
+To open a leveraged position, an Initial Collateral Ratio of 120% must be met. Collateral Ratio is the value of the user's deposits and positions divided by the value of their loans. 
 
 ![](../.gitbook/assets/collateral.png)
 
 Once a position is opened, it must maintain a Maintenance Collateral Ratio above 110%. If an account falls below 110% it will be liquidated and funds lost. To increase collateral ratio, reduce borrows or deposit funds into your margin account.   
   
-Current collateral ratio is displayed beneath your Margin Account. 
+The current collateral ratio is displayed beneath your Margin Account. 
 
 ![](../.gitbook/assets/collat_percentage.png)
 
