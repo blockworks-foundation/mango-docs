@@ -18,5 +18,5 @@ If the current price of BTC is now at $9,900 and the current price of ETH is at 
 
 Total PNL = `(-0.5 BTC * $9,900) + (1 ETH * $900) + $,3500 = -$550`
 
-The total PNL is calculated based on trades placed on Mango Markets after March 15th, 2021.
+\*The total PNL is calculated based on trades placed on Mango Markets after March 15th, 2021. If you placed trades before this date and are seeing an inaccurate PNL, you can move your assets to a new wallet in Sollet.io and connect to Mango with the new Sollet wallet to reset your trade history.
 
