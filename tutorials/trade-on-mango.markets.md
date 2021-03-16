@@ -36,13 +36,13 @@ Choose between Buy or Sell and provide trade details: size, price, and order typ
 
  Limit orders open an order at a set price. If the price of an asset in the orderbook reaches that price, the order will get filled. Market orders will buy or sell the asset immediately at the next price in the orderbook. 
 
-![](../.gitbook/assets/buy_sell.png)
+![](../.gitbook/assets/buy-sell3.png)
 
 If a taker order is filled, assets will appear in the deposits of your margin account. 
 
 ![](../.gitbook/assets/depositsafterbuying.png)
 
-If a maker order is filled, funds must be settled before appearing in your deposts. Visit the 'Balances' tab and click 'Settle'. Only assets included in the selected trading pair will appear here. 
+If a maker order is filled, funds must be settled before appearing in your deposits. Visit the 'Balances' tab and click 'Settle'. Only assets included in the selected trading pair will appear here. 
 
 ![](../.gitbook/assets/settle.png)
 
