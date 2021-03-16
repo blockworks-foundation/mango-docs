@@ -1,0 +1,20 @@
+# PNL Calculation
+
+The Total PNL calculation is a combination of realized and unrealized profit and loss.
+
+Given these trades:
+
+1. BUY 1 ETH at 1000 USDT
+2. SELL 1 BTC at 10,000 USDT
+3. BUY 0.5 BTC at 11,000 USDT
+
+First, calculate net change for each token:
+
+BTC: `-1 + 0.5 = -0.5`  
+ETH: `+1`  
+USDT: `-1000 + 10000 - 5500 = +3500`
+
+If the current price of BTC is now at $9,900 and the current price of ETH is at $900 then:
+
+P&L = `(-0.5 BTC * $9,900) + (1 ETH * $900) + $,3500 = -$550`
+

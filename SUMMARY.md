@@ -6,6 +6,7 @@
 
 * [Overview](margin-trading/overview.md)
 * [Risks](margin-trading/risks.md)
+* [PNL Calculation](margin-trading/pnl-calculation.md)
 
 ## Tutorials
 
