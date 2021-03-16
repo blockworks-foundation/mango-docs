@@ -83,9 +83,9 @@ In the Withdraw window, choose your desired asset and select the corresponding w
 
 ## **How to view Fee Discounts, Contribute SRM** 
 
-Mango traders save substantially on Serum DEX trading fees. Serum's tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum\(MSRM\), worth 1 million SRM, and unrealistic for most people to obtain. Luckily, Mango margin accounts are structured such that SRM deposits are combined with all users to collectively reach a higher tier and benefit together when trading on the platform. SRM deposits are exempt from liquidation and not counted toward margin collateral. Visit 'Fee Discounts'  to view current fee tier and  contribute or withdraw SMR.
+Mango traders save substantially on Serum DEX trading fees. Serum's tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum\(MSRM\), worth 1 million SRM, and unrealistic for most people to obtain. Luckily, Mango margin accounts are structured such that SRM deposits are combined with all users to collectively reach a higher tier and benefit together when trading on the platform. SRM deposits are exempt from liquidation and not counted toward margin collateral. Visit 'Fee Discounts'  to view current fee tier and  contribute or withdraw SRM.
 
-![placeholder](../.gitbook/assets/screen-shot-2021-03-15-at-7.16.28-pm%20%281%29.png)
+![](../.gitbook/assets/srm_fees.png)
 
 ## **Join the community**
 
