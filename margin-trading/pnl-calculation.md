@@ -1,6 +1,6 @@
 # PNL Calculation
 
-The Total PNL calculation is a combination of realized and unrealized profit and loss.
+The total PNL \(Profit & Loss\) calculation is a combination of realized and unrealized gains or losses from your trades.
 
 Given these trades:
 
@@ -16,5 +16,7 @@ USDT: `-1000 + 10000 - 5500 = +3500`
 
 If the current price of BTC is now at $9,900 and the current price of ETH is at $900 then:
 
-P&L = `(-0.5 BTC * $9,900) + (1 ETH * $900) + $,3500 = -$550`
+Total PNL = `(-0.5 BTC * $9,900) + (1 ETH * $900) + $,3500 = -$550`
+
+The total PNL is calculated based on trades placed on Mango Markets after March 15th, 2021.
 
