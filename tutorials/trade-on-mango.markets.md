@@ -1,4 +1,4 @@
-# Trade on mango.markets
+# Trading on Mango Markets
 
 Mango Markets offers an approachable, powerful platform. Trade up to 5x leverage, long or short, with limit or market orders. Mango users save substantially on Serum DEX trading fees**,** more info _here_. 
 
