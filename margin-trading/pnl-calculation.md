@@ -10,8 +10,8 @@ Given these trades:
 
 First, calculate net change for each token:
 
-BTC: `-1 + 0.5 = -0.5`  
-ETH: `+1`  
+BTC:   `-1 + 0.5 = -0.5`  
+ETH:   `+1`  
 USDT: `-1000 + 10000 - 5500 = +3500`
 
 If the current price of BTC is now at $9,900 and the current price of ETH is at $900 then:
