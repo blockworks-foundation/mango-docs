@@ -51,7 +51,7 @@ If a maker order is filled, funds must be settled before appearing in your depos
 ![](../.gitbook/assets/settle2.png)
 
   
-Visit ‘Open Orders’ to view and cancel your open orders at any time. 
+View ‘Open Orders’ to manage your open orders at any time. 
 
 ![](../.gitbook/assets/open-orders.png)
 
