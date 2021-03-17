@@ -60,9 +60,5 @@ Some tokens, like BTC, possess multiple accepted mint types. SPL BTC can be depo
 
 Congratulations, you can now transfer funds to your sollet.io wallet!
 
-  
-  
-
-
 ##     
 
