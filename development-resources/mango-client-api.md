@@ -1,4 +1,4 @@
 # Mango Client API
 
-[https://github.com/blockworks-foundation/mango-client-ts](https://github.com/blockworks-foundation/mango-client-ts)
+The source code for the Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-ts).
 
