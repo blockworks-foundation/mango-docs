@@ -11,7 +11,7 @@
 ## Tutorials
 
 * [Trading on Mango Markets](tutorials/trade-on-mango.markets.md)
-* [Transfer funds to sollet wallet](tutorials/transfer-funds-to-sollet-wallet.md)
+* [Transfer funds to Sollet Wallet](tutorials/transfer-funds-to-sollet-wallet.md)
 
 ## Development Resources
 

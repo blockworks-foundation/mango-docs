@@ -1,4 +1,4 @@
-# Transfer funds to sollet wallet
+# Transfer funds to Sollet Wallet
 
 Mango Markets is built on Solana blockchain. To interact on the ecosystem, you’ll need a Solana compatible wallet. A popular wallet and our favorite is Sollet.io. 
 
@@ -28,7 +28,7 @@ Transaction fees on the network are paid in SOL. To add new tokens addresses to 
 
 The deposit address displayed is the address to which SOL can be sent to your wallet. Only send SOL to this address, all other tokens \(including SPL tokens like SRM\) will have different deposit addresses.
 
-![](../.gitbook/assets/depositaddress.png)
+![](../.gitbook/assets/depositaddress2.png)
 
 SOL can be bought on exchanges like [FTX](https://ftx.com/), [Binance](https://www.binance.com/en), [FTX US](https://ftx.us/), and more. Additionally, ETH held on Metamask can be converted to SOL into your Sollet.io. To do this, in the deposit SOL window, click ‘ETH’ and then ‘Connect to Metamask’.
 
@@ -48,7 +48,7 @@ To receive funds of added token addresses, click on the asset you wish to deposi
 
 The deposit address displayed is the address to which your selected asset can be sent to your wallet. Only the selected token type should be sent to this address, other tokens will have different deposit addresses.
 
-![](../.gitbook/assets/deposit55.png)
+![](../.gitbook/assets/deposit5.png)
 
 Some tokens, like BTC, possess multiple accepted mint types. SPL BTC can be deposited into your wallet using the SPL BTC deposit address while Native BTC is accepted by its own address. Click ‘Native BTC’ in the receive BTC menu to find this deposit address. 
 
