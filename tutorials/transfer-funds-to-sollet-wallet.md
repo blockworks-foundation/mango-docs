@@ -36,7 +36,7 @@ SOL can be bought on exchanges like [FTX](https://ftx.com/), [Binance](https://w
 
 ![](https://lh6.googleusercontent.com/66hu3P5HrLTbY4EMJ-nndNfZ8YidOOzzwQQAeaGa7njcn1uZCQeAWAxQO1JRKpQH_k6GDhPNoL4uTiPv2j7J-dr2pHfmakD9QkvAC4ZgucihLE77NWESHc9wdSCP2kc2LvOHdIwB)
 
-On Solana, tokens that you wish to trade or hold must be explicitly added to your wallet. Once your wallet is funded with SOL, you can add different tokens by clicking the ‘+’ sign in your account menu.
+On Solana, tokens that you wish to trade or hold must be explicitly added to your wallet. Once your wallet is funded with SOL, you can add different tokens by clicking the ‘+’ sign in your account menu. Adding new tokens costs a small amount of SOL.
 
 ![](https://lh3.googleusercontent.com/ic-4-IfY5ABX6C7mc_7bWreJJmZd2bOgdigxGle8jRH7ZiPeB2YpJLh6fSpOo7lZA0ZkJ7fXpRSKXkf5SB6i-m8qJoHp2L__yBQgR1mr5ylqzcSkKlqjbi4jdTDRF5_E7eZBH6C1)
 
