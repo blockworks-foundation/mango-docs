@@ -1,14 +1,18 @@
+---
+description: >-
+  Read this article to learn how to trade using Mango Markets step-by-step, from
+  connecting your wallet to making a trade.
+---
+
 # Trading on Mango Markets
 
-Mango Markets offers an approachable, powerful platform. Trade up to 5x leverage, long or short, with limit or market orders. Mango users save substantially on Serum DEX trading fees**,** more info [_here_](https://app.gitbook.com/@blockworksfoundation/s/mango/tutorials/trade-on-mango.markets#how-to-view-fee-discounts-contribute-srm). 
-
-Read below to learn how to trade using Mango Markets step-by-step, from connecting your wallet to making a trade.
+Mango Markets offers an approachable, powerful platform. Trade up to 5x leverage, long or short, with limit or market orders. Mango users save substantially on Serum DEX trading fees**,** more info below under [Fee Discounts](trade-on-mango.markets.md#how-to-view-fee-discounts-contribute-srm). 
 
 ## **Connecting to Mango Markets and Depositing Funds**
 
 First, connect your sollet.io wallet by selecting ‘Connect wallet’ in the top right of the Trade view.
 
-* For help creating or funding a Sollet.io wallet, please see _here_
+* For help creating or funding a Sollet.io wallet, please see [our dedicated article](transfer-funds-to-sollet-wallet.md#how-to-create-a-sollet-io-wallet).
 
 ![](../.gitbook/assets/connect.png)
 
