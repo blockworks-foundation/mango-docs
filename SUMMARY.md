@@ -16,6 +16,7 @@
 ## Development Resources
 
 * [Mango Client API](development-resources/mango-client-api.md)
+* [Mango Program API](development-resources/mango-program-api.md)
 * [Liquidator](development-resources/liquidator.md)
 
 ---
