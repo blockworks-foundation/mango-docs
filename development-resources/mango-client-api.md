@@ -59,7 +59,7 @@ import { Connection, PublicKey } from `@solana/web.js`
 const cluster = 'mainnet-beta';
 const connection = new Connection(IDS.cluster_urls[cluster], 'singleGossip');
 
-const serumProgramId = new PublicKey(clusterIds.dex_program_id);
+const serumProgramId = new PublicKey(IDS.cluster_urls[cluster].dex_program_id);
 const myMarginAccountPubKey = new PublicKey('5JpTGitZjwzmyaz8K4bFvhjMc4rvYhy157x2pPEtYYs5');
 const client = new MangoClient();
 const myMarginAccount = await client.getMarginAccount(connection, myPubKey, serumProgramId);
