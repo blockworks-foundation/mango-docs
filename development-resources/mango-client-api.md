@@ -4,6 +4,10 @@ The source code for the Mango Client API is hosted on [github](https://github.co
 
 To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet-beta\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-ts/blob/main/src/ids.json)`IDS`.
 
+## Mango Groups
+
+A mango group is a basket of cross-margined tokens. We are launching with a single group, but we are planning to release more in the future.
+
 ```typescript
 import { IDS, MangoGroup  } from '@blockworks-foundation/mango-client';
 import { Connection, PublicKey } from `@solana/web.js`
@@ -17,10 +21,6 @@ const srmVaultPk = new PublicKey(IDS[cluster].mango_groups[group].srm_vault_pk])
 const client = new MangoClient();
 const mangoGroup = await client.getMangoGroup(connection, mangoGroupPk, srmVaultPk);
 ```
-
-## Mango Groups
-
-A mango group is a basket of cross-margined tokens. We are launching with a single group, but we are planning to release more in the future.
 
 ### Oracles
 
@@ -50,9 +50,18 @@ mangoGroup.getDepositRate(tokenIndex: number): number
 
 ## Margin Accounts
 
-Each user can have multiple accounts associated with a single group. They function as a balance sheet and keep track of the deposits, borrows and open positions on the serum dex order book. A margin account is fully cross-margined and can be liquidated once the collateral ratio drops below maintenance margin level.
+Each user can have multiple accounts associated with a single group. They function as a balance sheet and keep track of the deposits, borrows and open positions on the serum dex order book. A margin account is fully cross-margined and can be liquidated once the collateral ratio drops below maintenance margin level. When interacting with the margin account you will often need to provide the serum dex program-id in order to access the open orders on it's order book.
 
+```typescript
+import { IDS, MangoGroup  } from '@blockworks-foundation/mango-client';
+import { Connection, PublicKey } from `@solana/web.js`
 
+const cluster = 'mainnet-beta';
+const connection = new Connection(IDS.cluster_urls[cluster], 'singleGossip');
 
-
+const serumProgramId = new PublicKey(clusterIds.dex_program_id);
+const myMarginAccountPubKey = new PublicKey('5JpTGitZjwzmyaz8K4bFvhjMc4rvYhy157x2pPEtYYs5');
+const client = new MangoClient();
+const myMarginAccount = await client.getMarginAccount(connection, myPubKey, serumProgramId);
+```
 
