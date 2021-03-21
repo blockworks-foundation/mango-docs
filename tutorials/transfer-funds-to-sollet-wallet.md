@@ -56,5 +56,37 @@ Some tokens, like BTC, possess multiple accepted mint types. SPL BTC can be depo
 
 Congratulations, you can now transfer funds to your sollet.io wallet!
 
+## How to swap wrapped USDT for native USDT
+
+Native USDT is now available on Solana and Serum DEX is transitioning all liquidity pairs from wrapped USDT \(wUSDT\) to new, native USDT. This means in order to trade on USDT pairs in Serum, you'll need native USDT. 
+
+Sollet.io makes it easy to convert wUSDT to native USDT. 
+
+First, add USDT token address to your wallet 
+
+![](../.gitbook/assets/screen-shot-2021-03-21-at-1.29.43-pm.png)
+
+Next, click in your wallet menu click Wrapped USDT asset and 'Send'
+
+![](../.gitbook/assets/sendw.png)
+
+Select 'SPL USDT' in the send window; your USDT address will autopopulate in the Recipient Address \(please double check it is accurate\), enter the amount you'd like to convert to native USDT, and click 'Send'. 
+
+![](../.gitbook/assets/send2w.png)
+
+Congratulations! Your wUSDT has been converted to USDT and is visible in your USDT address. 
+
+![](../.gitbook/assets/balancesz.png)
+
+
+
+
+
+
+
+
+
+
+
 ##     
 
