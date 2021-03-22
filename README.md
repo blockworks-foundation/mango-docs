@@ -8,17 +8,17 @@ Building on Ethereum would hinder us from implementing the best possible the use
 
 #### closed alpha
 
-1. first weeks of march 2021
-2. strict borrow limits
-3. closed source liquidator and contracts
+1. First weeks of March 2021
+2. Strict borrow limits
+3. Closed source liquidator and contracts
 
 #### public beta 
 
-1. begins mid-march 2021 and runs for multiple months
-2. removal of borrow limits
-3. step-wise open sourcing of the project as independent reviews are finishing
-4. improvements to margin trading user-interface
-5. launch additional trading pairs
+1. Begins mid-march 2021 and runs for multiple months
+2. Removal of borrow limits
+3. Step-wise open sourcing of the project as independent reviews are finishing
+4. Improvements to margin trading user-interface
+5. Launch additional trading pairs
 
 #### 
 
