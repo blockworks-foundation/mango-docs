@@ -6,13 +6,13 @@ Building on Ethereum would hinder us from implementing the best possible the use
 
 ## Roadmap
 
-#### closed alpha
+#### Closed Alpha
 
 1. First weeks of March 2021
 2. Strict borrow limits
 3. Closed source liquidator and contracts
 
-#### public beta 
+#### Public Beta 
 
 1. Begins mid-march 2021 and runs for multiple months
 2. Removal of borrow limits
