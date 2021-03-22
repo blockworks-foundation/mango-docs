@@ -20,8 +20,6 @@ Building on Ethereum would hinder us from implementing the best possible the use
 4. Improvements to margin trading user-interface
 5. Launch additional trading pairs
 
-#### 
-
 ## Who is working on this?
 
 The Blockworks Foundation is sponsoring all development on Mango Markets. 
