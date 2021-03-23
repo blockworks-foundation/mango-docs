@@ -66,7 +66,7 @@ First, add USDT token address to your wallet
 
 ![](../.gitbook/assets/screen-shot-2021-03-21-at-1.29.43-pm.png)
 
-Next, click in your wallet menu click Wrapped USDT asset and 'Send'
+Next, in your wallet menu click the Wrapped USDT asset and 'Send'
 
 ![](../.gitbook/assets/sendw.png)
 
