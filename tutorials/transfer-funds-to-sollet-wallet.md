@@ -64,19 +64,19 @@ First, please visit [https://wusdt.mango.markets](https://wusdt.mango.markets) t
 
 Sollet.io makes it easy to convert wUSDT to native USDT.  First, add USDT token address to your wallet: 
 
-![](../.gitbook/assets/screen-shot-2021-03-21-at-1.29.43-pm.png)
+![](../.gitbook/assets/usdtadd.png)
 
 Next, in your Main account menu click the Wrapped USDT asset and 'Send'
 
-![](../.gitbook/assets/sendw.png)
+![](../.gitbook/assets/usdtnative2.png)
 
 Select 'SPL USDT' in the send window; your USDT address will autopopulate in the Recipient Address \(please double check it is accurate\), enter the amount you'd like to convert to native USDT, and click 'Send'. 
 
-![](../.gitbook/assets/send2w.png)
+![](../.gitbook/assets/usdtnative3.png)
 
 Congratulations! Your wUSDT has been converted to USDT and is visible in your USDT address. 
 
-![](../.gitbook/assets/balancesz.png)
+![](../.gitbook/assets/usdtnative4.png)
 
 
 
