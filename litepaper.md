@@ -103,12 +103,6 @@ This will be used for governance until full governance mechanisms are launched. 
 
 These tokens can only be unlocked via token holder governance. We propose that tokens are distributed roughly on a logarithmic supply model similar to Bitcoin but with a halving every two years i.e. 50% of the tokens distributed in the first two years, 75% in the first four years, 87.5% in the first 6 years and so on. The DAO is not bound to follow this proposal. 
 
-### Token Sale
-
-The token sale contract will have two vaults, one with 500,000,000 MNGO and the other vault with 0 USDC. Over a 24 hour period, any Solana user may deposit or withdraw USDC as they wish. At the end of the sale period, all the MNGO in the vault will be distributed to users according to their share of the USDC vault i.e. the tokens are priced pro rata. In order to give some clarity on the price the buyer will pay, the last one hour of the sale period will be withdraw only. Therefore, during the initial 24 hours, the price may go up or down as deposits and withdraws fluctuate, but during the last hour, the price may only go down. 
-
-Mango developers, including those from the community, will build the smart contracts and the user interface. All the code used will be open source and remain free and open source for future teams to use as they wish. 
-
 ### **Governance**
 
 The MNGO token is a governance token, first and foremost. Collectively, the token holders have the power to upgrade the protocol as they see fit, only constrained by the checks-and-balances of the DAO. This allows token holders to create incentives to reward participation and drive usage of the protocol.
