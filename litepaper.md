@@ -1,3 +1,9 @@
+---
+description: >-
+  This is a rough draft paper describing the Mango objectives and tentative
+  plans
+---
+
 # Litepaper
 
 ### **The Mango Vision**
@@ -70,7 +76,7 @@ The code has been looked over by volunteers, but there has not been a formal aud
 
 ### **Token Distribution**
 
-After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for MNGO to be distributed liberally to protocol builders and liquidity providers and project supporters of different nature. Hence 50% of the remaining treasury should be distributed every 2 years, i.e. 50% by May 2023, 75% by May 2025.  
+After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for MNGO to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.  
 
 
 **Max Supply: 10,000,000,000**
@@ -80,12 +86,12 @@ After the initial distribution of tokens, only the DAO may distribute more token
 
 **Creators - 5%**
 
-**For the work of creating Mango Markets.**  
+For the work of creating Mango Markets.  
 
 
 **Insurance Fund Sale - 5%**
 
-There will be a sale of MNGO that goes directly into the DAO treasury as an insurance fund, which will be used to protect the functioning of the protocol from potential losses of insolvent margin accounts in fast moving markets. In the long-term, the insurance fund will be funded continuously through protocol fees in quote assets. The initial sale is there to provide sufficient liquidity at launch.  
+There will be a sale of MNGO that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.  
 
 
 **Temporary Governance Fund - 10%**
@@ -95,7 +101,13 @@ This will be used for governance until full governance mechanisms are launched. 
 
 **DAO - 80%**
 
-**These tokens can only be unlocked via token holder governance.**
+These tokens can only be unlocked via token holder governance. We propose that tokens are distributed roughly on a logarithmic supply model similar to Bitcoin but with a halving every two years i.e. 50% of the tokens distributed in the first two years, 75% in the first four years, 87.5% in the first 6 years and so on. The DAO is not bound to follow this proposal. 
+
+### Token Sale
+
+The token sale contract will have two vaults, one with 500,000,000 MNGO and the other vault with 0 USDC. Over a 24 hour period, any Solana user may deposit or withdraw USDC as they wish. At the end of the sale period, all the MNGO in the vault will be distributed to users according to their share of the USDC vault i.e. the tokens are priced pro rata. In order to give some clarity on the price the buyer will pay, the last one hour of the sale period will be withdraw only. Therefore, during the initial 24 hours, the price may go up or down as deposits and withdraws fluctuate, but during the last hour, the price may only go down. 
+
+Mango developers, including those from the community, will build the smart contracts and the user interface. All the code used will be open source and remain free and open source for future teams to use as they wish. 
 
 ### **Governance**
 
@@ -116,34 +128,34 @@ One thing to note is that before the on-chain governance voting platform is read
 
 #### **Mango Margin "closed alpha"**
 
-* **first weeks of march**
-* **enforces strict borrow limits for every account**
-* **liquidator and solana program remain closed source**
-* **3rd party liquidators begin implementing their strategies**
+* first weeks of march
+* enforces strict borrow limits for every account
+* liquidator and solana program remain closed source
+* 3rd party liquidators begin implementing their strategies
 
 #### **Mango Margin "public beta"**
 
-* **begins mid-march 2021 and runs for multiple months**
-* **borrow limits will be replaced with the introduction of partial liquidations**
-* **margin trading interface largely improved based on feedback during alpha phase**
-* **additional trading pairs will be released**
-* **step-wise open source releases as independent reviews are finishing**
+* begins mid-march 2021 and runs for multiple months
+* borrow limits will be replaced with the introduction of partial liquidations
+* margin trading interface largely improved based on feedback during alpha phase
+* additional trading pairs will be released
+* step-wise open source releases as independent reviews are finishing
 
 #### **Mango Perp "closed alpha"**
 
-* **Begins early May 2021 and runs for a few weeks**
-* **Market makers can integrate and test**
+* Begins early June 2021 and runs for a few weeks
+* Market makers can integrate and test
 
 #### **Mango Perp "public beta"**
 
-* **Sale of tokens that go directly into insurance fund**
-* **introduces governance token**
+* Sale of tokens that go directly into insurance fund
+* introduces governance token
 
 #### **Mango DAO Launch**
 
-* **Formal on-chain governance mechanism**
-* **Website and forums for participation in governance**
-* **Further proposals to reward contributors**
+* Formal on-chain governance mechanism
+* Website and forums for participation in governance
+* Further proposals to reward contributors
 
 \*\*\*\*
 
