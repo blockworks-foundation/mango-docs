@@ -22,4 +22,5 @@
 ---
 
 * [FAQ](faq.md)
+* [Litepaper](litepaper.md)
 

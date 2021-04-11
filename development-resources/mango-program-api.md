@@ -228,7 +228,6 @@ pub enum MangoInstruction {
     /// 8. `[writable]` open_orders_acc - OpenOrders for the market this order belongs to
     /// 9. `[]` signer_acc - MangoGroup signer key
     /// 10. `[writable]` dex_event_queue_acc - serum dex event queue for this market
-
     CancelOrder {
         order: serum_dex::instruction::CancelOrderInstructionV2
     },
@@ -264,7 +263,86 @@ pub enum MangoInstruction {
         borrow_limit: u64
     },
 
+    /// Place an order on the Serum Dex and settle funds from the open orders account
+    ///
+    /// Accounts expected by this instruction (19 + 2 * NUM_MARKETS):
+    ///
+    /// 0. `[writable]` mango_group_acc - MangoGroup that this margin account is for
+    /// 1. `[signer]` owner_acc - MarginAccount owner
+    /// 2. `[writable]` margin_account_acc - MarginAccount
+    /// 3. `[]` clock_acc - Clock sysvar account
+    /// 4. `[]` dex_prog_acc - program id of serum dex
+    /// 5. `[writable]` spot_market_acc - serum dex MarketState
+    /// 6. `[writable]` dex_request_queue_acc - serum dex request queue for this market
+    /// 7. `[writable]` dex_event_queue - serum dex event queue for this market
+    /// 8. `[writable]` bids_acc - serum dex bids for this market
+    /// 9. `[writable]` asks_acc - serum dex asks for this market
+    /// 10. `[writable]` base_vault_acc - mango vault for base currency
+    /// 11. `[writable]` quote_vault_acc - mango vault for quote currency
+    /// 12. `[]` signer_acc - mango signer key
+    /// 13. `[writable]` dex_base_acc - serum dex market's vault for base (coin) currency
+    /// 14. `[writable]` dex_quote_acc - serum dex market's vault for quote (pc) currency
+    /// 15. `[]` spl token program
+    /// 16. `[]` the rent sysvar
+    /// 17. `[writable]` srm_vault_acc - MangoGroup's srm_vault used for fee reduction
+    /// 18. `[]` dex_signer_acc - signer for serum dex MarketState
+    /// 19..19+NUM_MARKETS `[writable]` open_orders_accs - open orders for each of the spot market
+    /// 19+NUM_MARKETS..19+2*NUM_MARKETS `[]`
+    ///     oracle_accs - flux aggregator feed accounts
+    PlaceAndSettle {
+        order: serum_dex::instruction::NewOrderInstructionV3
+    },
 
+    /// Allow a liquidator to cancel open orders and settle to recoup funds for partial liquidation
+    ///
+    /// Accounts expected by this instruction (16 + 2 * NUM_MARKETS):
+    ///
+    /// 0. `[writable]` mango_group_acc - MangoGroup that this margin account is for
+    /// 1. `[signer]` liqor_acc - liquidator's solana account
+    /// 2. `[writable]` liqee_margin_account_acc - MarginAccount of liquidatee
+    /// 3. `[writable]` base_vault_acc - mango vault for base currency
+    /// 4. `[writable]` quote_vault_acc - mango vault for quote currency
+    /// 5. `[writable]` spot_market_acc - serum dex MarketState
+    /// 6. `[writable]` bids_acc - serum dex bids for this market
+    /// 7. `[writable]` asks_acc - serum dex asks for this market
+    /// 8. `[]` signer_acc - mango signer key
+    /// 9. `[writable]` dex_event_queue - serum dex event queue for this market
+    /// 10. `[writable]` dex_base_acc - serum dex market's vault for base (coin) currency
+    /// 11. `[writable]` dex_quote_acc - serum dex market's vault for quote (pc) currency
+    /// 12. `[]` dex_signer_acc - signer for serum dex MarketState
+    /// 13. `[]` token_prog_acc - SPL token program
+    /// 14. `[]` dex_prog_acc - Serum dex program id
+    /// 15. `[]` clock_acc - Clock sysvar account
+    /// 16..16+NUM_MARKETS `[writable]` open_orders_accs - open orders for each of the spot market
+    /// 16+NUM_MARKETS..16+2*NUM_MARKETS `[]`
+    ///     oracle_accs - flux aggregator feed accounts
+    ForceCancelOrders {
+        /// Max orders to cancel -- could be useful to lower this if running into compute limits
+        /// Recommended: 5
+        limit: u8
+    },
+
+    /// Take over a MarginAccount that is below init_coll_ratio by depositing funds
+    ///
+    /// Accounts expected by this instruction (10 + 2 * NUM_MARKETS):
+    ///
+    /// 0. `[writable]` mango_group_acc - MangoGroup that this margin account is for
+    /// 1. `[signer]` liqor_acc - liquidator's solana account
+    /// 2. `[writable]` liqor_in_token_acc - liquidator's token account to deposit
+    /// 3. `[writable]` liqor_out_token_acc - liquidator's token account to withdraw into
+    /// 4. `[writable]` liqee_margin_account_acc - MarginAccount of liquidatee
+    /// 5. `[writable]` in_vault_acc - Mango vault of in_token
+    /// 6. `[writable]` out_vault_acc - Mango vault of out_token
+    /// 7. `[]` signer_acc
+    /// 8. `[]` token_prog_acc - Token program id
+    /// 9. `[]` clock_acc - Clock sysvar account
+    /// 10..10+NUM_MARKETS `[]` open_orders_accs - open orders for each of the spot market
+    /// 10+NUM_MARKETS..10+2*NUM_MARKETS `[]`
+    ///     oracle_accs - flux aggregator feed accounts
+    PartialLiquidate {
+        /// Quantity of the token being deposited to repay borrows
+        max_deposit: u64
+    }
 }
 
 ```
