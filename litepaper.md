@@ -28,7 +28,7 @@ Trying to achieve competitive latency and cost by centralizing key components \(
 
 #### **No Presales, Decentralized Governance** 
 
-The Mango Token \(MANGO\) will govern the protocol. The vast majority of MANGO will be locked in the DAO treasury to be distributed according to token holder wishes. That being said, our vision is that governance ought to reward the people who provide protocol services \(e.g. liquidity providers, oracles\) and the people who build new protocol services \(e.g. developers, or other contributors\). The commitment to distribute the largest portion of the DAO’s power and wealth to future contributors will encourage the most skilled and ambitious builders to join us. Finally, in accordance with the crypto ethos of transparency and equal access there will be no presale of tokens.
+The Mango Token will govern the protocol. The vast majority of MANGO will be locked in the DAO treasury to be distributed according to token holder wishes. That being said, our vision is that governance ought to reward the people who provide protocol services \(e.g. liquidity providers, oracles\) and the people who build new protocol services \(e.g. developers, or other contributors\). The commitment to distribute the largest portion of the DAO’s power and wealth to future contributors will encourage the most skilled and ambitious builders to join us. Finally, in accordance with the crypto ethos of transparency and equal access there will be no presale of tokens.
 
 Ultimately, Mango intends to win the long game in financial services. Low latency makes our tools usable. Rock bottom fees makes Mango hard to compete against. Decentralization makes Mango hard to kill through centralized incompetence or malevolence. Open governance that allocates power and wealth liberally to builders, will attract the best people to build and govern the protocol. Finally, the permissionless nature will allow the millions of tiny experiments to take place that yield the life changing innovations. We're motivated and driven to build Mango according to this vision, and we hope you'll join us.
 
@@ -76,7 +76,7 @@ The code has been looked over by volunteers, but there has not been a formal aud
 
 ### **Token Distribution**
 
-After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for MANGO to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.  
+After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for Mango Token to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.  
 
 
 **Max Supply: 10,000,000,000**
@@ -91,7 +91,7 @@ For the work of creating Mango Markets.
 
 **Insurance Fund Sale - 5%**
 
-There will be a sale of MANGO that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.  
+There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.  
 
 
 **Temporary Governance Fund - 10%**
@@ -105,23 +105,23 @@ These tokens can only be unlocked via token holder governance. We propose that t
 
 ### Token Sale 
 
-The token sale contract will have two vaults, one with 500,000,000 MANGO and the other vault with 0 USDC. Over a 24 hour period, any Solana user may deposit or withdraw USDC as they wish. At the end of the sale period, all the MANGO in the vault will be distributed to users according to their share of the USDC vault i.e. the tokens are priced pro rata. In order to give some clarity on the price the buyer will pay, the last one hour of the sale period will be withdraw only. Therefore, during the initial 24 hours, the price may go up or down as deposits and withdraws fluctuate, but during the last hour, the price may only go down. 
+The token sale contract will have two vaults, one with 500,000,000 Mango Token and the other vault with 0 USDC. Over a 24 hour period, any Solana user may deposit or withdraw USDC as they wish. At the end of the sale period, all the MANGO in the vault will be distributed to users according to their share of the USDC vault i.e. the tokens are priced pro rata. In order to give some clarity on the price the buyer will pay, the last one hour of the sale period will be withdraw only. Therefore, during the initial 24 hours, the price may go up or down as deposits and withdraws fluctuate, but during the last hour, the price may only go down. 
 
 Mango developers, including those from the community, will build the smart contracts and the user interface. All the code used will be open source and remain free and open source for future teams to use as they wish.
 
 ### **Governance**
 
-The MANGO token is a governance token, first and foremost. Collectively, the token holders have the power to upgrade the protocol as they see fit, only constrained by the checks-and-balances of the DAO. This allows token holders to create incentives to reward participation and drive usage of the protocol.
+The Mango Token is a governance token, first and foremost. Collectively, the token holders have the power to upgrade the protocol as they see fit, only constrained by the checks-and-balances of the DAO. This allows token holders to create incentives to reward participation and drive usage of the protocol.
 
-We consider the COMP governance model to be a gold-standard in the industry and followed it to build out the MANGO governance model. We mainly reworked the initial token distribution, to facilitate a DAO inception that is truly open and adapted it’s mechanics to fit the solana programming model. 
+We consider the COMP governance model to be a gold-standard in the industry and followed it to build out the Mango Token governance model. We mainly reworked the initial token distribution, to facilitate a DAO inception that is truly open and adapted it’s mechanics to fit the solana programming model. 
 
-Anybody with 0.1% of MANGO staked can propose a governance action; these are simple or complex sets of actions, such as adding support for a new asset, changing an asset’s collateral factor, changing a market’s interest rate model, or changing any other parameter or variable of the protocol that the current administrator can modify.
+Anybody with 0.1% of Mango Token staked can propose a governance action; these are simple or complex sets of actions, such as adding support for a new asset, changing an asset’s collateral factor, changing a market’s interest rate model, or changing any other parameter or variable of the protocol that the current administrator can modify.
 
-Proposals are executable code, not suggestions for a team or foundation to implement. They are not limited to the governance protocol itself, but extend to all protocols created by the MANGO DAO including the Margin and Perp protocols contributed by the creators at launch.
+Proposals are executable code, not suggestions for a team or foundation to implement. They are not limited to the governance protocol itself, but extend to all protocols created by the Mango Token DAO including the Margin and Perp protocols contributed by the creators at launch.
 
-All proposals are subject to a 3 day voting period, and any MANGO staker can vote for or against the proposal. If a majority, and at least 2% of the total MANGO supply are cast for the proposal, it is queued in the Timelock, and can be implemented after 2 days.
+All proposals are subject to a 3 day voting period, and any Mango Token staker can vote for or against the proposal. If a majority, and at least 2% of the total Mango Token supply are cast for the proposal, it is queued in the Timelock, and can be implemented after 2 days.
 
-One thing to note is that before the on-chain governance voting platform is ready for MANGO token holders, core protocol contributors will make critical decisions based on the project vision and informal input from the community on discord. This is intentional, as we think it’s important to keep governance nimble in the early days of the protocol.  
+One thing to note is that before the on-chain governance voting platform is ready for Mango Token holders, core protocol contributors will make critical decisions based on the project vision and informal input from the community on discord. This is intentional, as we think it’s important to keep governance nimble in the early days of the protocol.  
 
 
 ## **Project Status & Roadmap**
