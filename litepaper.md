@@ -105,9 +105,33 @@ These tokens can only be unlocked via token holder governance. We propose that t
 
 ### Token Sale 
 
-The token sale contract will have two vaults, one with 500,000,000 Mango Token and the other vault with 0 USDC. Over a 24 hour period, any Solana user may deposit or withdraw USDC as they wish. At the end of the sale period, all the MANGO in the vault will be distributed to users according to their share of the USDC vault i.e. the tokens are priced pro rata. In order to give some clarity on the price the buyer will pay, the last one hour of the sale period will be withdraw only. Therefore, during the initial 24 hours, the price may go up or down as deposits and withdraws fluctuate, but during the last hour, the price may only go down. 
+#### Mechanism
 
-Mango developers, including those from the community, will build the smart contracts and the user interface. All the code used will be open source and remain free and open source for future teams to use as they wish.
+Unrestricted Period: 24 hours \(first half\)
+
+Withdraw Only Period: 24 hours \(second half\)
+
+Total Sale Length: 48 hours
+
+The Mango Sale will happen over two days. The Sale contract will have two vaults, one with 500,000,000 Mango Token and the other vault with 0 USDC. The 2 days will be split into periods: Unrestricted and Withdraw Only. During the Unrestricted period any Solana user may deposit or withdraw their USDC from the Sale vault. The Unrestricted Period ends in 24 hours and transitions into Withdraw Only, where buyers may only withdraw their USDC. At the end of the Sale, all USDC depositors will get Mango Token in proportion to their share of the USDC vault and the USDC will be moved into the Mango DAO treasury.
+
+#### Explanation
+
+Buyers get a pro-rata price at the end and every participant gets the same price for Mango Tokens. 
+
+The sale price per token can be calculated with:
+
+`(total USDC in vault) / (500,000,000 Mango Token)`
+
+This price will fluctuate during the entire 48 hour period as USDC is deposited and withdrawn. However, during the last 24 hours, buyers may only withdraw USDC and so the Sale price can only decrease during that period. The Withdraw Only Period was added so that if a buyer deposits a large amount of USDC at the last second of the Unrestricted Period and raises the price significantly, other buyers still have an opportunity to get out of the sale.  
+
+We take the view that token sales should be simple, fully transparent and minimize randomness and luck in the distribution. Simple mechanisms are easier to build, explain, understand and are harder to exploit. A transparent mechanism increases participation because buyers are more confident there are no hidden tricks that could harm them. Elements of luck engineered into the mechanism distribute value randomly or to those who are most willing to do the arbitrary, worthless tasks to get the free value. We believe all "excess" value should be captured by token holders in the DAO. Removing the casino aspects of token sales selectively encourages participants who are focused on contributing and governing in the long term.
+
+The mechanisms we've looked at don't live up to this standard. For example a sale on a bonding curve will give free value to those who buy a few milliseconds before others or have the good fortune of their transaction being accepted by validators before others. A capped sale of tokens with a fixed price has similar issues. A sale of tokens to market makers who sell the tokens on the open market is not fully transparent and the agreement between the market maker and the dev team may be quite complex. There are various "fair" launch mechanisms that are transparent and minimize luck, but ultimately end up being very complex \(e.g. Mesa Offering\).
+
+#### Source Code
+
+Mango developers, including those from the community, will build the smart contracts and the user interface. All the code used will be open source and remain free and open source for future projects to use as they wish.
 
 ### **Governance**
 
