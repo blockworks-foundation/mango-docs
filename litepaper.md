@@ -107,11 +107,10 @@ These tokens can only be unlocked via token holder governance. We propose that t
 
 #### Mechanism
 
-Unrestricted Period: 24 hours \(first half\)
+Total Sale Period: 48 hours
 
-Withdraw Only Period: 24 hours \(second half\)
-
-Total Sale Length: 48 hours
+* Unrestricted Period: 24 hours \(first half\)
+* Withdraw Only Period: 24 hours \(second half\)
 
 The Mango Sale will happen over two days. The Sale contract will have two vaults, one with 500,000,000 Mango Token and the other vault with 0 USDC. The 2 days will be split into periods: Unrestricted and Withdraw Only. During the Unrestricted period any Solana user may deposit or withdraw their USDC from the Sale vault. The Unrestricted Period ends in 24 hours and transitions into Withdraw Only, where buyers may only withdraw their USDC. At the end of the Sale, all USDC depositors will get Mango Token in proportion to their share of the USDC vault and the USDC will be moved into the Mango DAO treasury.
 
