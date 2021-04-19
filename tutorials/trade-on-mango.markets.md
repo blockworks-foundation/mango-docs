@@ -95,6 +95,12 @@ Mango traders save substantially on Serum DEX trading fees. Serum's tier structu
 
 ![](../.gitbook/assets/srm_fees.png)
 
+## **Video Tutorial** 
+
+This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on the Mango Markets exchange.
+
+{% embed url="https://www.youtube.com/watch?v=Ad7IVKaJYGQ" %}
+
 ## **Join the community**
 
 The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets/?utm_source=medium&utm_medium=social&utm_campaign=launch_post) to trade and lend.
