@@ -97,7 +97,7 @@ Mango traders save substantially on Serum DEX trading fees. Serum's tier structu
 
 ## **Video Tutorial** 
 
-This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on the Mango Markets exchange.
+This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
 
 {% embed url="https://www.youtube.com/watch?v=Ad7IVKaJYGQ" %}
 
