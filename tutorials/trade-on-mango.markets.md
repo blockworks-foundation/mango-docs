@@ -22,7 +22,7 @@ Next, confirm the connection in sollet.io pop-up window.
 
 We are working closely with Sollet.io to utilize auto-approval of transactions, however, this feature is not yet functional and all transactions including deposits, trades, settlements, and withdrawals must be approved manually. 
 
-On Mango, although your wallet is connected, funds must be deposited into your Margin Account to be accessed on the platform. Click ‘Deposit’ to add BTC, ETC, or USDT to your Margin Account.
+On Mango, although your wallet is connected, funds must be deposited into your Margin Account to be accessed on the platform. Click ‘Deposit’ to add BTC, ETH, or USDT to your Margin Account.
 
 ![](../.gitbook/assets/dep1.png)
 
