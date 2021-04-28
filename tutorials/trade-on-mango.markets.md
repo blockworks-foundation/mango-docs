@@ -95,6 +95,30 @@ Mango traders save substantially on Serum DEX trading fees. Serum's tier structu
 
 ![](../.gitbook/assets/srm_fees.png)
 
+## **How to Withdraw Borrowed Funds**
+
+It is possible to withdraw borrowed funds on Mango Markets.
+
+Ensure assets are [deposited into your margin account](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#connecting-to-mango-markets-and-depositing-funds) for use as collateral. Prior to withdrawing from the platform, assets must be [added to your wallet](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/transfer-funds-to-sollet-wallet#how-to-add-funds-to-a-sollet-io-wallet). 
+
+Click 'Withdraw' in your margin account, select the asset you wish to withdraw and borrow, and toggle 'Borrow Funds' on. 
+
+![](../.gitbook/assets/withdraw.png)
+
+Next, determine the amount you'd like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you'd like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click 'Max with borrow'.
+
+![](../.gitbook/assets/maxborrow.png)
+
+The 'Borrow Amount' displayed below the input is what will be sent to your wallet. This number is less than the input to avoid rounding errors, there are no additional fees and excess funds remain in your margin account. 'Current APR' displays the current interest annual percentage rate on the borrowed asset. 
+
+Click 'Withdraw' and approve transaction from your wallet to complete.
+
+![](../.gitbook/assets/screen-shot-2021-04-28-at-5.19.39-pm.png)
+
+Interest is paid on your borrows continuously from your deposits. Please monitor interest rates as they recalculate based on pool utilization. 
+
+To repay your loan, deposit or trade for the borrowed asset. 
+
 ## **Video Tutorial** 
 
 This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
