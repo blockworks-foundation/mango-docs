@@ -56,3 +56,10 @@ The interest rate is a function of the utilization ratio: total borrowed by all 
 
 ![](.gitbook/assets/work.png)
 
+## How to convert USDT to USDC?
+
+The most cost effective way to convert USDT to USDC is through Serum DEX:   
+[https://dex.projectserum.com/\#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS](https://dex.projectserum.com/#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS)
+
+ 
+
