@@ -58,8 +58,10 @@ The interest rate is a function of the utilization ratio: total borrowed by all 
 
 ## How to convert USDT to USDC?
 
-The most cost effective way to convert USDT to USDC is through Serum DEX:   
-[https://dex.projectserum.com/\#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS](https://dex.projectserum.com/#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS)
+The most efficient way to convert USDT to USDC is through Serum DEX:   
+[https://dex.projectserum.com/\#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS](https://dex.projectserum.com/#/market/77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS)  
+  
+Alternatively, the tokens can be swapped on on Orca\([https://www.orca.so/](https://www.orca.so/)\) or StableSwap\([https://stableswap.pro/](https://stableswap.pro/)\). Please check the current exchange rates.   
 
- 
+![](.gitbook/assets/screen-shot-2021-06-07-at-6.34.09-pm%20%281%29.png)
 
