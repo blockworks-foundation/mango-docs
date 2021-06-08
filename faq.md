@@ -6,6 +6,10 @@ description: >-
 
 # FAQ
 
+### **How can I earn interest?**
+
+To earn interest, simply deposit into your margin account; all assets automatically earn interest. Annual rates are displayed in the margin account panel in green. 
+
 ### **Do SRM deposits earn interest?**
 
 SRM deposits do not earn interest because they are exempt from liquidation and not counted toward margin collateral.
