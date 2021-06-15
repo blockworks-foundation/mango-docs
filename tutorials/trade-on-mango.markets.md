@@ -109,7 +109,7 @@ Click 'Withdraw' in your margin account, select the asset you wish to withdraw a
 
 ![](../.gitbook/assets/withdraw.png)
 
-Next, determine the amount you'd like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you'd like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click 'Max with borrow'.
+Next, determine the amount you'd like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you'd like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click 'Max with borrow'. An estimated leverage post-withdraw is displayed. 
 
 ![](../.gitbook/assets/maxborrow.png)
 
@@ -118,6 +118,24 @@ The 'Borrow Amount' displayed below the input is what will be sent to your walle
 Click 'Withdraw' and approve transaction from your wallet to complete.
 
 ![](../.gitbook/assets/screen-shot-2021-04-28-at-5.19.39-pm.png)
+
+Alternatively, funds can be borrowed in the 'Borrow' Tab 
+
+![](../.gitbook/assets/screen-shot-2021-06-15-at-4.28.01-pm.png)
+
+Click 'Borrow' for the asset you'd like to borrow from the available list.
+
+![](../.gitbook/assets/screen-shot-2021-06-15-at-4.30.37-pm.png)
+
+ Enter the amount you wish to borrow; notice your estimated leverage post-withdraw. The 'Max' button will borrow the maximum while maintaining a MCR above 120% . Click 'Next', to view the confirmation panel. 
+
+![](../.gitbook/assets/screen-shot-2021-06-15-at-4.42.03-pm%20%281%29.png)
+
+
+
+
+
+
 
 Interest is paid on your borrows continuously from your deposits. Please monitor interest rates as they recalculate based on pool utilization. 
 
