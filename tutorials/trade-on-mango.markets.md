@@ -145,16 +145,6 @@ Determine the amount you'd like to deposit from your wallet and click Next. Revi
 
 ![](../.gitbook/assets/screen-shot-2021-06-15-at-6.04.26-pm.png)
 
-
-
-
-
- 
-
-
-
-
-
 ## **Video Tutorial** 
 
 This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
