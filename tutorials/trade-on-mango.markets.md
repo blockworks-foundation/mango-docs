@@ -36,7 +36,7 @@ In the deposit window, first choose the currency you want to fund your Margin ac
 
 ## **How to Make a Trade**
 
-To trade, select your desired asset pair in the top left drop-down menu. 
+To trade, select your desired asset pair from the menu bar. 
 
 ![](../.gitbook/assets/trade1.png)
 
