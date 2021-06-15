@@ -10,11 +10,17 @@ description: >-
 
 To earn interest, simply deposit into your margin account; all assets automatically earn interest. Annual rates are displayed in the margin account panel in green. 
 
+### **What are the different versions of Mango?** 
+
+V2\( mango.markets \) is the newest version of Mango and supports SOL, SRM, BTC, ETH, and USDC trading, lending, and borrowing.
+
+V1\( usdt.mango.markets \) supports BTC, ETH, and USDT trading, borrowing, and lending. SRM deposits do not count as collateral or earn interest. 
+
 ### **Do SRM deposits earn interest?**
 
-SRM deposits do not earn interest because they are exempt from liquidation and not counted toward margin collateral.
+SRM deposits on V2 earn interest, while deposits in V1\(USDT\) do not because they are exempt from liquidation and not counted toward margin collateral.
 
-Serum’s tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum\(MSRM\), worth 1 million SRM. Mango margin accounts are structured such that SRM deposits are combined with all users to collectively reach a higher tier and benefit together when trading on the platform. SRM deposits are exempt from liquidation and not counted toward margin collateral.
+Serum’s tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum\(MSRM\), worth 1 million SRM. Mango margin accounts are structured such that SRM deposits are combined with all users to collectively reach a higher tier and benefit together when trading on the platform. 
 
 ### **What prevents someone from borrowing funds, withdrawing, and running away with it?**
 
