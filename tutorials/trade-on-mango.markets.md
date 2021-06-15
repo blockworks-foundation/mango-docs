@@ -131,17 +131,29 @@ Click 'Borrow' for the asset you'd like to borrow from the available list.
 
 ![](../.gitbook/assets/screen-shot-2021-06-15-at-4.42.03-pm%20%281%29.png)
 
-In the confirmation panel, review your amount and current interest rate. The 'Account Health Check' section will provide more insight into your position and help gauge liquidation risk. Click 'Confirm' and approve transaction for funds to be sent to your wallet.
+In the confirmation panel, review your amount and current interest rate. The 'Account Health Check' section will provide more insight into your position and help gauge liquidation risk. Click 'Confirm' and approve transaction for funds to be sent directly to your wallet.
 
 ![](../.gitbook/assets/screen-shot-2021-06-15-at-4.56.41-pm.png)
 
 Interest is paid on your borrows continuously from your deposits. Please monitor interest rates as they recalculate based on pool utilization. 
 
+To repay your loan, deposit or trade for the borrowed asset. Alternatively, select 'Settle' in 'Your Borrows'. 
+
+![](../.gitbook/assets/screen-shot-2021-06-15-at-5.53.28-pm.png)
+
+Determine the amount you'd like to deposit from your wallet and click Next. Review the details of your deposit and click 'Confirm'. The deposits will be settled and removed from your borrows. 
+
+![](../.gitbook/assets/screen-shot-2021-06-15-at-6.04.26-pm.png)
 
 
 
 
-To repay your loan, deposit or trade for the borrowed asset. 
+
+ 
+
+
+
+
 
 ## **Video Tutorial** 
 
