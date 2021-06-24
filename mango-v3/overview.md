@@ -14,10 +14,7 @@ The health of an account is used to determine if one can open a new position or 
 
 
 $$
-health = \sum\limits_{i} a_i \cdot p_i \cdot w^a_i - l_i \cdot p_i \cdot w^l_i
-$$
-
-$$
+health = \sum\limits_{i} a_i \cdot p_i \cdot w^a_i - l_i \cdot p_i \cdot w^l_i \newline
 where \newline a_i-quantity\space asset \space i \newline p_i - price \space of \space i
 \newline w^a_i - asset \space weight
 \newline w^l_i - liability \space weight
