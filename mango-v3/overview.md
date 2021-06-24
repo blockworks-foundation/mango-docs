@@ -11,8 +11,6 @@ description: >-
 
 The health of an account is used to determine if one can open a new position or if one can be liquidated. There are two types of health, initial health used for opening new positions and maintenance health used for liquidations. They are both calculated as a weighted sum of the assets minus the liabilities but the maint. health uses slightly larger weights for assets and slightly smaller weights for the liabilities. Zero is used as the bright line for both i.e. if your init health falls below zero, you cannot open new positions and if your maint. health falls below zero you will be liquidated. They are calculated as follows:
 
-
-
 $$
 health = \sum\limits_{i} a_i \cdot p_i \cdot w^a_i - l_i \cdot p_i \cdot w^l_i \newline
 where \newline a_i-quantity\space asset \space i \newline p_i - price \space of \space i
@@ -43,4 +41,22 @@ Suppose the BTC-PERP mark price moves to $9400, then:
 `maint_health = 10 * 9400 * 0.95 - 90000 = -700` 
 
 Since the maint\_health is below zero, this account can be liquidated until init health is above zero.
+
+## Settle Pnl
+
+In order to get USDC realized profits from unrealized profits on a perp contract, the trader must settle his profits by finding account\(s\) that have equivalent losses on the same contract and call the `SettlePnl` instruction on chain.
+
+## Funding
+
+Funding is computed continuously as a daily difference in the index price and current book price \(current mid\). The `UpdateFunding` instruction is called by the Keeper roughly every 5 seconds and so funding is paid out roughly every 5 seconds. The calculation is as follows:
+
+```text
+book_price = (bid + ask) / 2
+diff = clamp(book_price / index_price - 1, -0.05, 0.05)
+time_factor = (now - last_updated) / TIME_IN_DAY
+funding = diff * time_factor * contract_size * index_price
+
+```
+
+Note: we plan to transition to an hourly funding rate similar to FTX before launching on mainnet. 
 
