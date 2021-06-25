@@ -18,9 +18,6 @@
 * [Mango Client API](development-resources/mango-client-api.md)
 * [Mango Program API](development-resources/mango-program-api.md)
 * [Liquidator](development-resources/liquidator.md)
-* [V3 \(pre-release\)](development-resources/v3/README.md)
-  * [Market Making Bot \(python\)](development-resources/v3/market-making-bot-python.md)
-  * [Mango Client API \(javascript\)](development-resources/v3/mango-client-api-javascript.md)
 
 ---
 
@@ -30,4 +27,6 @@
 ## Mango V3
 
 * [Overview](mango-v3/overview.md)
+* [Market Making Bot \(python\)](mango-v3/market-making-bot-python.md)
+* [Mango Client API \(javascript\)](mango-v3/mango-client-api-javascript.md)
 
