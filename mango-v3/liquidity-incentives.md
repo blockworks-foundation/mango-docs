@@ -35,6 +35,10 @@ let points = reverse_dist * reverse_dist * time_on_book * quantity * scaler
 
 ```
 
+## Conversion
+
+Liquidity points earned in the `MangoAccount` can be converted to MNGO at some rate. This piece has not yet been completed.
+
 ## Motivation
 
 This formula comes out of the intersection of our goals and technical limitations. Here are the goals:
