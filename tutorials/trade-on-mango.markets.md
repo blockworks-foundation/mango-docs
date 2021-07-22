@@ -147,7 +147,7 @@ Determine the amount you'd like to deposit from your wallet and click Next. Revi
 
 ## How to use the Risk Calculator 
 
-The risk calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can estimate liquidation prices by providing assumptions on prices of other assets or movement of the entire market.
+The Risk Calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can predict liquidations by providing assumptions on asset prices and other account details.
 
 Select 'Risk Calculator' below your account calculations.
 
