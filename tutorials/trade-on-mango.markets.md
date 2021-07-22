@@ -145,6 +145,24 @@ Determine the amount you'd like to deposit from your wallet and click Next. Revi
 
 ![](../.gitbook/assets/screen-shot-2021-06-15-at-6.04.26-pm.png)
 
+## How to use the Risk Calculator 
+
+The risk calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can estimate liquidation prices by providing assumptions on prices of other assets or movement of the entire market.
+
+Select 'Risk Calculator' below your account calculations.
+
+![](../.gitbook/assets/screen-shot-2021-07-21-at-6.05.24-pm.png)
+
+Your Account Risk assessment, Collateral Ratio, and Price Change Buffer are displayed on the right in Scenario Details. 
+
+The Scenario Balances section enables manipulation of deposits, borrows, and asset prices and displays the effect on you Collateral Ratio and liquidation risk. 
+
+![](../.gitbook/assets/screen-shot-2021-07-21-at-5.40.53-pm.png)
+
+Individual asset price, deposits, and borrows can be changed in their corresponding columns. Price movements across all markets can be applied by the 'Edit All Prices' slider. Resulting Scenario Details will share information on new account health including Collateral Ratio and liquidation status based off new assumptions. 
+
+![](../.gitbook/assets/screen-shot-2021-07-21-at-7.16.13-pm.png)
+
 ## **Video Tutorial** 
 
 This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
