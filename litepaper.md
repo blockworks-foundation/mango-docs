@@ -81,7 +81,7 @@ After the initial distribution of tokens, only the DAO may distribute more token
 
 **Max Supply: 10,000,000,000**
 
-**Initial Circulating Supply: 2,000,000,000**  
+**Initial Circulating Supply: 1,000,000,000**  
 
 
 **Creators - 5%**
@@ -94,12 +94,7 @@ For the work of creating Mango Markets.
 There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.  
 
 
-**Temporary Governance Fund - 10%**
-
-This will be used for governance until full governance mechanisms are launched. The temporary governance fund cannot vote and any unused funds will be returned to the DAO treasury, when governance is implemented. The fund is intentionally chosen to be larger than the creators share as we expect exceptional builders to join Mango soon.  
-
-
-**DAO - 80%**
+**DAO - 90%**
 
 These tokens can only be unlocked via token holder governance. We propose that tokens are distributed roughly on a logarithmic supply model similar to Bitcoin but with a halving every two years i.e. 50% of the tokens distributed in the first two years, 75% in the first four years, 87.5% in the first 6 years and so on. The DAO is not bound to follow this proposal. 
 
@@ -144,9 +139,6 @@ Proposals are executable code, not suggestions for a team or foundation to imple
 
 All proposals are subject to a 3 day voting period, and any Mango Token staker can vote for or against the proposal. If a majority, and at least 2% of the total Mango Token supply are cast for the proposal, it is queued in the Timelock, and can be implemented after 2 days.
 
-One thing to note is that before the on-chain governance voting platform is ready for Mango Token holders, core protocol contributors will make critical decisions based on the project vision and informal input from the community on discord. This is intentional, as we think it’s important to keep governance nimble in the early days of the protocol.  
-
-
 ## **Project Status & Roadmap**
 
 #### **Mango Margin "closed alpha"**
@@ -164,21 +156,31 @@ One thing to note is that before the on-chain governance voting platform is read
 * additional trading pairs will be released
 * step-wise open source releases as independent reviews are finishing
 
+#### **Mango DAO Launch**
+
+* On-chain voting mechanism based on spl governance
+* MNGO Token sale to create USDC governance fund
+
 #### **Mango Perp "closed alpha"**
 
-* Begins early June 2021 and runs for a few weeks
+* Begins mid August 2021 and runs for a few weeks
 * Market makers can integrate and test
 
 #### **Mango Perp "public beta"**
 
-* Sale of tokens that go directly into insurance fund
-* introduces governance token
-
-#### **Mango DAO Launch**
-
-* Formal on-chain governance mechanism
-* Website and forums for participation in governance
-* Further proposals to reward contributors
+* Fully cross-margined perpetual swaps and margin trading
+* Largely increases the number of spot markets that can be traded
+* Perpetual swaps will feature lower trading fees then spot markets
 
 \*\*\*\*
+
+## Edits
+
+
+
+**July 30th, 2021**
+
+It turned out that on-chain governance was earlier possible on Solana then expected, so we decided to make the move before launching Mango Perp. This made the Temporary Governance Fund unnecessary. As a result of that the float at token sale will only be 10% and not 20%.
+
+As we progressed in the development more details of the capabilities of Mango Perp's features have become concrete and added to the roadmap.
 
