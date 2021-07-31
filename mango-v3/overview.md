@@ -7,6 +7,16 @@ description: >-
 
 # Overview
 
+## What?
+
+Mango v3 is designed to make life easier for market participants. Towards that end, Mango v3 will have these features:
+
+* Up to 16 different tokens to borrow, lend or margin trade with on Serum DEX
+* Up to 16 different perp contracts with leverage up to 10x initially
+* Plans to expand to 50+ markets and tokens after some anticipated Solana upgrades
+* All token deposits and perp positions are used as collateral by default
+* All the features of Solana, Serum and Mango v2
+
 ## Health
 
 The health of an account is used to determine if one can open a new position or if one can be liquidated. There are two types of health, initial health used for opening new positions and maintenance health used for liquidations. They are both calculated as a weighted sum of the assets minus the liabilities but the maint. health uses slightly larger weights for assets and slightly smaller weights for the liabilities. Zero is used as the bright line for both i.e. if your init health falls below zero, you cannot open new positions and if your maint. health falls below zero you will be liquidated. They are calculated as follows:
@@ -41,6 +51,32 @@ Suppose the BTC-PERP mark price moves to $9400, then:
 `maint_health = 10 * 9400 * 0.95 - 90000 = -700` 
 
 Since the maint\_health is below zero, this account can be liquidated until init health is above zero.
+
+## Liquidations
+
+Every `MangoAccount` must have a `maint_health` above zero. If it slips below zero, liquidators can start liquidating the account until the `init_health` is above zero. The liquidator may forcibly cancel all open orders and start paying off liabilities in the account and withdrawing the assets \(defined as positive perp balances or token deposits\) in the account. The liquidator earns the `liquidation_fee` which 
+
+If, at the end of a Liquidate instruction the account has no more assets , but still has liabilities, then the account is placed under bankruptcy. During bankruptcy, the liquidator continues offsetting liabilities, but receives USDC from the insurance fund. Finally, if there is no more USDC in the insurance fund, there will be a socialize loss event \(described below\). There are seven liquidation related instructions that can be called on Mango V3:
+
+* ForceCancelSpotOrders
+* ForceCancelPerpOrders
+* LiquidateTokenAndToken
+* LiquidateTokenAndPerp
+* LiquidatePerpMarket
+* ResolveTokenBankruptcy
+* ResolvePerpBankruptcy
+
+## Insurance Fund
+
+The Mango program will have some portion of the Mango DAO treasury as the insurance fund. When there are bankrupt accounts, the insurance fund will pay off losses incurred by token lenders or perps contract participants. 
+
+## Socialized Losses
+
+If an account still has liabilities but no more assets for liquidators to take, the account is bankrupt and insurance fund starts paying. Socialized loss only kicks in after the insurance fund owned by Mango v3 is depleted. We hope this is a rare event. 
+
+For losses among token borrowers \(i.e. margin traders\), socialized loss works the same way it works in V2. That is, the amount of the token borrow is disappears and that amount is subtracted proportionally from all depositors.
+
+For losses among perp market participants, the losses are spread equally among all other participants in that perp market.
 
 ## Settle Pnl
 
