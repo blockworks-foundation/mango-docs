@@ -28,10 +28,7 @@
 
 * [Overview](mango-v3/overview.md)
 * [Liquidity Mining](mango-v3/liquidity-incentives.md)
+* [Token Specs](mango-v3/token-specs.md)
 * [Market Making Bot \(python\)](mango-v3/market-making-bot-python.md)
 * [Mango Client API \(javascript\)](mango-v3/mango-client-api-javascript.md)
-
-## Key Concepts
-
-* [Untitled](key-concepts/untitled-1.md)
 
