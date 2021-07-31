@@ -27,7 +27,6 @@
 ## Mango V3
 
 * [Overview](mango-v3/overview.md)
-* [Health](mango-v3/health.md)
 * [Liquidity Mining](mango-v3/liquidity-incentives.md)
 * [Market Making Bot \(python\)](mango-v3/market-making-bot-python.md)
 * [Mango Client API \(javascript\)](mango-v3/mango-client-api-javascript.md)
