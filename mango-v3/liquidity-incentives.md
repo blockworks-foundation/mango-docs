@@ -42,8 +42,6 @@ let points = reverse_dist * reverse_dist * time_on_book * quantity
 
 let points_in_period = mngo_left_in_period * rate
 
-let mngo_earned = 0;
-
 // Check if this puts us over period threshold; If so rate adjust
 if points >= points_in_period {
     user.mngo_accrued += mngo_left_in_period;
@@ -58,7 +56,7 @@ if points >= points_in_period {
 }
 
 // Convert points to MNGO and award to user; limit to mngo_per_period
-mngo_earned = min(points * rate, mngo_per_period)
+let mngo_earned = min(points * rate, mngo_per_period)
 mngo_left_in_period -= mngo_earned
 user.mngo_accrued += mngo_earned
 ```
