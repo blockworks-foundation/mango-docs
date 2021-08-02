@@ -22,5 +22,7 @@ Accounts must maintain a minimum 110% collateral ratio. If an account falls belo
 
 The lending pools work similar to the lending pools on Aave. With the big difference that users will earn interest on both their deposits as well as their positions \(so you may be earning net interest on your margin position!\). The interest rate is a function of the utilization ratio: total borrowed by all users divided by total deposits of all users. The interest rate will increase slowly approaching a utilization ratio of 70% but will increase rapidly above that to encourage the market to deposit more funds.
 
-![](../.gitbook/assets/chart-2-.png)
+![](../.gitbook/assets/chart_1.png)
+
+
 
