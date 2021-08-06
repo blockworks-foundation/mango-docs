@@ -1,6 +1,6 @@
-# How to Receive Dev Net Tokens
+# How to Receive devnet Tokens
 
-## How to receive USDC on Devnet? 
+## How to receive USDC on devnet? 
 
 It can be helpful to test on Devnet when integrating into the platform for trading, market making, or running liquidations without risking valuable tokens. 
 
