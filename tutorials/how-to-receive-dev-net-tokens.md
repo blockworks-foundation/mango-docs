@@ -38,7 +38,7 @@ Enter Faucet address: **Dosx1CMV6i6cP8GvnsjUoJ8fawvz2Z94M3LDVtHa4R22**
 
 ![](../.gitbook/assets/screen-shot-2021-08-06-at-9.39.54-am.png)
 
-Click 'Airdrop Tokens', approve the transaction in your wallet and your wallet will be funded with devnet USDC
+Click 'Airdrop Tokens', approve the transaction in your wallet and your wallet will be funded with devnet USDC. If you're having trouble approving the transaction, make sure your sollet wallet is not open an any other browsers and pop ups are enabled. 
 
 
 
