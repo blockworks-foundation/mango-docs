@@ -13,6 +13,7 @@
 * [Trading on Mango Markets](tutorials/trade-on-mango.markets.md)
 * [Transfer funds to Sollet Wallet](tutorials/transfer-funds-to-sollet-wallet.md)
 * [How to Receive devnet Tokens](tutorials/how-to-receive-dev-net-tokens.md)
+* [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
 
 ## Development Resources
 
