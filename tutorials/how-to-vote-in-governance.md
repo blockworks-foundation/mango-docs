@@ -40,5 +40,5 @@ If the proposal is in voting session,  there are 'Yeah' and 'Nay' buttons in the
 
 To vote, click '**Yeah**' or '**Nay**'. The page asks to confirm your vote. Click 'Confirm' \(or 'Cancel' if you don't want to proceed\).The UI shows a notification saying 'Proposal voted on'. 
 
-You're done. Your tokens are in the governance system for now. You can withdraw them, but if you withdraw them before the vote is complete it will also withdraw your vote. After the vote completes you can withdraw your tokens without affecting your vote.
+You're done. Your tokens are in the governance system for now. You can withdraw them, but if you withdraw them before the vote is complete it will also withdraw your vote. After the vote completes you can withdraw your tokens without affecting your vote. 
 
