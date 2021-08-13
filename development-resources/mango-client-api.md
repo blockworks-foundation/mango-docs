@@ -24,7 +24,7 @@ const mangoGroup = await client.getMangoGroup(connection, mangoGroupPk, srmVault
 
 ### Oracles
 
-Each group manages internally a set of oracles to have up to date price feeds for it's tokens. For the `BTC_ETH_USDT` group two oracles are used: one for the pair`BTC/USDT` and one for the pair`ETH/USDT`. The oracles are provided by the [solana-flux-aggregator](https://github.com/blockworks-foundation/solana-flux-aggregator) and updated based on the median price reported across multiple centralized exchanged. 
+Each group manages internally a set of oracles to have up to date price feeds for it's tokens. For the `BTC_ETH_USDT` group two oracles are used: one for the pair`BTC/USDT` and one for the pair`ETH/USDT`. The oracles are provided by the [solana-flux-aggregator](https://github.com/blockworks-foundation/solana-flux-aggregator) and updated based on the median price reported across multiple centralized exchanges. 
 
 ```typescript
 // fetch current oracle prices
