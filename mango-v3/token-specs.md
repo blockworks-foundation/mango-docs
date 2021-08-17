@@ -17,10 +17,10 @@ maint_liab_weight = 1 + 1 / maint_leverage
 
 | Token | Initial Leverage | Maintenance Leverage | Liquidation Fee \(%\) |
 | :--- | :--- | :--- | :--- |
-| BTC | 5 | 10 | 5 |
-| ETH | 5 | 10 | 5 |
-| SOL | 5 | 10 | 5 |
-| SRM | 5 | 10 | 5 |
-| MNGO | ? | ? | ? |
-| RAY | ? | ? | ? |
+| BTC | 5 | 10 | 5.00 |
+| ETH | 5 | 10 | 5.00 |
+| SOL | 5 | 10 | 5.00 |
+| SRM | 5 | 10 | 5.00 |
+| MNGO | 1.25 | 2.5 | 20.0 |
+| RAY | 3 | 6 | 8.33 |
 
