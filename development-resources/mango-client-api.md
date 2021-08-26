@@ -17,7 +17,7 @@ const connection = new Connection(IDS.cluster_urls[cluster], 'singleGossip');
 
 const group = 'BTC_ETH_USDT';
 const mangoGroupPk = new PublicKey(IDS[cluster].mango_groups[group].mango_group_pk);
-const srmVaultPk = new PublicKey(IDS[cluster].mango_groups[group].srm_vault_pk])
+const srmVaultPk = new PublicKey(IDS[cluster].mango_groups[group].srm_vault_pk)
 const client = new MangoClient();
 const mangoGroup = await client.getMangoGroup(connection, mangoGroupPk, srmVaultPk);
 ```
