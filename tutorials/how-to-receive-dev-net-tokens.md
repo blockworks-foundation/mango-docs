@@ -32,7 +32,7 @@ In  'Token Destination Address' paste the Associated Token Metadata address for 
 
 ![](../.gitbook/assets/screen-shot-2021-08-06-at-9.29.37-am.png)
 
-Enter Faucet address: **Dosx1CMV6i6cP8GvnsjUoJ8fawvz2Z94M3LDVtHa4R22** 
+Enter Faucet address: **B87AhxX6BkBsj3hnyHzcerX2WxPoACC7ZyDr8E7H9geN** 
 
  Enter the amount of USDC you wish to receive in 'Amount'. There is 9 decimals on the mint, so an amount of 1000000000 will return 1.0 USDC in your wallet
 
