@@ -22,5 +22,5 @@ maint_liab_weight = 1 + 1 / maint_leverage
 | SOL | 5 | 10 | 5.00 |
 | SRM | 5 | 10 | 5.00 |
 | MNGO | 1.25 | 2.5 | 20.0 |
-| RAY | 3 | 6 | 8.33 |
+| USDT | 10 | 20 | 2.5 |
 
