@@ -8,6 +8,8 @@ description: >-
 
 ## Liquidation
 
+**Note:** this guide applies only to liquidation in Mango V2, not Mango V3.
+
 Liquidation is how Mango Markets protects against socialised losses from overextended accounts.
 
 ![](../.gitbook/assets/4whyhx-1-.jpg)
@@ -40,7 +42,7 @@ A ‘liquidator’ is just a program that initiates the liquidation process. It 
 
 A liquidator checks for liquidatable accounts, prepares those liquidatable accounts for liquidation, then provides funds to the liquidated account liabilities and in return receives funds from the liquidated account’s collateral.
 
-Code for a [reference liquidator is available](https://gitlab.com/OpinionatedGeek/mango-explorer).
+Code for a [reference liquidator is available](https://github.com/blockworks-foundation/mango-explorer/blob/v2/Quickstart.md).
 
 ### Liquidation Process
 
@@ -67,7 +69,7 @@ In reality, a liquidator probably does the following:
 
 ### Running The Liquidator
 
-The [reference liquidator](https://gitlab.com/OpinionatedGeek/mango-explorer) is written in Python, and the command to run the liquidator is simply:
+The [reference liquidator](https://github.com/blockworks-foundation/mango-explorer/blob/v2/Quickstart.md) is written in Python, and the command to run the liquidator is simply:
 
 `liquidator`
 
@@ -196,7 +198,7 @@ If this is to be used via docker, the CSV file:
 1. Must exist before the container is started,
 2. Must be specified on the docker command line as a ‘volume’,
 3. Must be writable by the user ID of the user in the docker container,
-4. Must be specifed as a filename in the context of the docker process, not the host.
+4. Must be specified as a filename in the context of the docker process, not the host.
 
 For example, to use a file called /var/mango-explorer/report.csv:
 
