@@ -63,7 +63,7 @@ user.mngo_accrued += mngo_earned
 
 ## Explanation
 
-This mechanism was inspired by the Bitcoin block rewards and difficulty mining adjustments that happen every 2016 blocks. In Bitcoin the target for 2016 blocks is 2 weeks. If it took longer than 2 weeks, then difficulty is adjusted down proportional to the time. If it took less than 2 weeks, difficulty is adjusted up. Similarly, we have a target time of 1 hour with a reward of 5,000 MNGO \(still TBD\). When 5000 MNGO is distributed in a period, the time it took is compared against the target time of 1 hour. The rate is adjusted down if it took less then 1 hour and it's adjusted up if it took more than 1 hour.
+This mechanism was inspired by the Bitcoin block rewards and difficulty mining adjustments that happen every 2016 blocks. In Bitcoin the target for 2016 blocks is 2 weeks. If it took longer than 2 weeks, then difficulty is adjusted down proportional to the time. If it took less than 2 weeks, difficulty is adjusted up. Similarly, we have a target time of 1 hour with a reward of 1,000 MNGO. When 1000 MNGO is distributed in a period, the time it took is compared against the target time of 1 hour. The rate is adjusted down if it took less than 1 hour and it's adjusted up if it took more than 1 hour.
 
 ## Motivation
 
