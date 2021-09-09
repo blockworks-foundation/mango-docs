@@ -66,6 +66,12 @@ The interest rate is a function of the utilization ratio: total borrowed by all 
 
 ![](.gitbook/assets/work.png)
 
+### Does it cost anything to open a Mango account? 
+
+Yes, to cover costs of creating necessary accounts on Solana blockchain and storage.   
+The costs is 0.032 SOL to create MangoAccount and also 0.025 SOL for each new spot market they trade on.  
+
+
 ## How to convert USDT to USDC?
 
 The most efficient way to convert USDT to USDC is through Serum DEX:   
