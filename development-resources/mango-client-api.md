@@ -1,37 +1,49 @@
-# Mango Client API
+# Mango Client v3 API
 
-The source code for the Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-ts).
+The source code for the v3 Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-v3).
 
-To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet-beta\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-ts/blob/main/src/ids.json)`IDS`.
+To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/ids.json)`IDS`.
 
 ## Mango Groups
 
-A mango group is a basket of cross-margined tokens. We are launching with a single group, but we are planning to release more in the future.
+A mango group is a basket of cross-margined tokens. Each version of Mango Markets uses a different Mango Group containing different tokens. The current v3 group is \`mainnet.1`\.
 
 ```typescript
-import { IDS, MangoGroup  } from '@blockworks-foundation/mango-client';
+// get v3 Mango Group
+import { IDS, MangoClient, Config, I80F48  } from '@blockworks-foundation/mango-client-v3';
 import { Connection, PublicKey } from `@solana/web.js`
 
-const cluster = 'mainnet-beta';
-const connection = new Connection(IDS.cluster_urls[cluster], 'singleGossip');
+const cluster = 'mainnet';
+const group = 'mainnet.1';
 
-const group = 'BTC_ETH_USDT';
-const mangoGroupPk = new PublicKey(IDS[cluster].mango_groups[group].mango_group_pk);
-const srmVaultPk = new PublicKey(IDS[cluster].mango_groups[group].srm_vault_pk])
-const client = new MangoClient();
-const mangoGroup = await client.getMangoGroup(connection, mangoGroupPk, srmVaultPk);
+const config = new Config(IDS);
+const groupConfig = config.getGroup(cluster, group);
+if (!groupConfig) {
+    throw new Error("unable to get mango group config");
+  }
+const mangoGroupKey = groupConfig.publicKey;
+
+const clusterData = IDS.groups.find((g) => {
+    return g.name == group && g.cluster == cluster;
+  });
+const mangoProgramIdPk = new PublicKey(clusterData.mangoProgramId);
+
+const clusterUrl = IDS.cluster_urls[cluster];
+const connection = new Connection(clusterUrl, 'singleGossip');
+const client = new MangoClient(connection, mangoProgramIdPk);
+const mangoGroup = await client.getMangoGroup(mangoGroupKey);
 ```
 
 ### Oracles
 
-Each group manages internally a set of oracles to have up to date price feeds for it's tokens. For the `BTC_ETH_USDT` group two oracles are used: one for the pair`BTC/USDT` and one for the pair`ETH/USDT`. The oracles are provided by the [solana-flux-aggregator](https://github.com/blockworks-foundation/solana-flux-aggregator) and updated based on the median price reported across multiple centralized exchanges. 
+Each group uses a set of oracles that provide up to date price feeds for it's tokens. For the `mainnet.1` group Pyth and Switchboard oracles are used.
 
 ```typescript
-// fetch current oracle prices
-mangoGroup.getPrices(connection: Connection): Promise<number[]> 
+// fetch current oracle price of a single token
+mangoGroup.getPrice(tokenIndex: number, mangoCache: MangoCache): I80F48
+// then use I80F48 .add/.sub/.mul/.div functions to perform calculations 
+// or convert to human-friendly number with .toNumber() or .toFixed(2)
 ```
-
-In case you want to use these oracles for your own project, please reach out on discord. We are actively working with the solana foundation to get more oracle providers involved to improve their decentralization and can provide support for running your own oracle.
 
 ### Lending
 
@@ -39,29 +51,67 @@ Each group also manages it's own lending pool for each of the traded tokens. Use
 
 ```typescript
 // look up token index by mint public key
-getTokenIndex(token: PublicKey): number 
+mangoGroup.getTokenIndex(token: PublicKey): number 
 
-// fetch annual interest as a fraction of the value usually [0,1]
-mangoGroup.getBorrowRate(tokenIndex: number): number 
-mangoGroup.getDepositRate(tokenIndex: number): number
+// fetch total deposits/borrows, deposit and borrow interest rates, as well as percent utilization of each token in the group
+const rootBanks = await mangoGroup.loadRootBanks(connection);
+    const tokensInfo = groupConfig.tokens.map((token) => {
+      const rootBank = rootBanks.find((bank) => {
+        if (!bank) {
+          return false;
+        }
+        return bank.publicKey.toBase58() == token.rootKey.toBase58();
+      });
+
+      if (!rootBank) {
+        throw new Error("rootBanks is undefined");
+      }
+      return {
+        name: token.symbol,
+        totalDeposits: totalDeposits.toFixed(
+           tokenPrecision[token.symbol] || 2
+         ),
+         totalBorrows: totalBorrows.toFixed(
+           tokenPrecision[token.symbol] || 2
+         ),
+        depositRate: rootBank
+          .getDepositRate(mangoGroup)
+          .mul(I80F48.fromNumber(100)),
+        borrowRate: rootBank
+          .getBorrowRate(mangoGroup)
+          .mul(I80F48.fromNumber(100)),
+         utilization: totalDeposits.gt(I80F48.fromNumber(0))
+           ? totalBorrows.div(totalDeposits)
+           : I80F48.fromNumber(0),
+      };
+    });
 ```
 
 
 
-## Margin Accounts
+## Mango Accounts
 
-Each user can have multiple accounts associated with a single group. They function as a balance sheet and keep track of the deposits, borrows and open positions on the serum dex order book. A margin account is fully cross-margined and can be liquidated once the collateral ratio drops below maintenance margin level. When interacting with the margin account you will often need to provide the serum dex program-id in order to access the open orders on it's order book.
+Each user can have multiple accounts associated with a single group. They function as a balance sheet and keep track of the deposits, borrows and open positions on the serum dex order book. A Mango Markets margin account is fully cross-margined and can be liquidated once the collateral ratio drops below maintenance margin level. When interacting with the margin account you will often need to provide the serum dex program-id in order to access the open orders on it's order book.
 
 ```typescript
-import { IDS, MangoGroup  } from '@blockworks-foundation/mango-client';
+import { IDS, MangoClient  } from '@blockworks-foundation/mango-client-v3';
 import { Connection, PublicKey } from `@solana/web.js`
 
-const cluster = 'mainnet-beta';
-const connection = new Connection(IDS.cluster_urls[cluster], 'singleGossip');
+const cluster = 'mainnet';
+const group = 'mainnet.1';
+const myMangoAccountAddress = 'YOUR MANGO ACCOUNT ADDRESS GOES HERE';
 
-const serumProgramId = new PublicKey(IDS.cluster_urls[cluster].dex_program_id);
-const myMarginAccountPubKey = new PublicKey('5JpTGitZjwzmyaz8K4bFvhjMc4rvYhy157x2pPEtYYs5');
-const client = new MangoClient();
-const myMarginAccount = await client.getMarginAccount(connection, myMarginAccountPubKey, serumProgramId);
+const clusterData = IDS_v3.groups.find((g) => {
+    return g.name == group && g.cluster == cluster;
+  });
+const mangoProgramIdPk = new PublicKey(clusterData.mangoProgramId);
+const serumProgramIdPk = new PublicKey(clusterData.serumProgramId);
+
+const clusterUrl = IDS_v3.cluster_urls[cluster];
+const connection = new Connection(clusterUrl, 'singleGossip');
+
+const myMangoAccountPubKey = new PublicKey(myMangoAccountAddress);
+const client = new MangoClient(connection, mangoProgramIdPk);
+const myMangoAccount = await client.getMangoAccount(myMangoAccountPubKey, serumProgramIdPk);
 ```
 
