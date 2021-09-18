@@ -1,4 +1,4 @@
-# PNL Calculation
+# PNL Calculation 🧮
 
 The total PNL \(Profit & Loss\) calculation is a combination of realized and unrealized gains or losses from your trades.
 

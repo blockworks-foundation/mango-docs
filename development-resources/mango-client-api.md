@@ -1,4 +1,4 @@
-# Mango Client v3 API
+# Mango Client API
 
 The source code for the v3 Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-v3).
 
@@ -6,7 +6,7 @@ To access the API you will first need to setup a [Connection](https://solana-lab
 
 ## Mango Groups
 
-A mango group is a basket of cross-margined tokens. Each version of Mango Markets uses a different Mango Group containing different tokens. The current v3 group is \`mainnet.1`\.
+A mango group is a basket of cross-margined tokens. Each version of Mango Markets uses a different Mango Group containing different tokens. The current v3 group is \`mainnet.1\`.
 
 ```typescript
 // get v3 Mango Group
@@ -86,8 +86,6 @@ const rootBanks = await mangoGroup.loadRootBanks(connection);
       };
     });
 ```
-
-
 
 ## Mango Accounts
 

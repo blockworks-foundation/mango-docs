@@ -1,4 +1,4 @@
-# Risks
+# Risks ⚠️
 
 The mango protocol charges 0 fees on interests, as a result the protocol does not have an insurance fund. When a margin account has negative equity, the losses are socialized among the lenders. There is obviously the risk that a user loses his margin account to a liquidator when his account goes below the required maintenance collateral ratio \(MCR\) of 110%. But there is an even bigger risk to the ecosystem when a margin account falls below 100% collateral ratio. At this point, the value of the account's liabilities are larger than the value of assets. In this situation, the liquidator is provided a 1% incentive to liquidate and lenders collectively take the negative equity of the account. In rare circumstances, this could even trigger a liquidation cascade where the socialized losses trigger more accounts to fall below 100% collateral ratio.
 

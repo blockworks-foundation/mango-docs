@@ -1,6 +1,10 @@
-# Overview
+# Overview 👀
 
-Mango Markets offers up to 5x, cross-margined leverage for both makers and takers on Serum with a seamless, centralized-exchange feel.
+**Mango offers an approachable and powerful platform for trading, lending and portfolio management.** 
+
+Mango not only offers spot margined and leveraged perpetual futures markets but also allows collateralized loans against existing assets all under one unified experience. 
+
+Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 10x leverage. Long and short everything, with limit or market orders, more advanced order types coming soon. 
 
 Current on-chain lending protocols \(e.g. Aave, Compound\) provide up to 2x leverage for margin traders, but this comes with severe downsides. For one, Ethereum gas prices are prohibitive for the majority of traders. Secondly, the margin trading can only be done with market orders or swaps — not limit orders. This makes them completely useless for market makers.
 
@@ -10,9 +14,7 @@ Centralized trading platforms are able to provide leverage similar to Mango Mark
 
 The collateral ratio is the value of the user's deposits and positions divided by the value of their loans. For the initial set of markets, Mango will require an initial collateral ratio of 120%, and a maintenance collateral ratio of 110%. If the user's collateral ratio drops below 110%, the account will be liquidated and the user will lose the entire account. The value of the account will be calculated using a moving average of centralized exchange price feeds, provided by a decentralized oracle.
 
-$$
-collateral ratio = \frac{convert(deposits, USD) + convert(positions, USD)}{convert(loans, USD)}
-$$
+![](../.gitbook/assets/collat.png)
 
 #### Liquidation Process
 

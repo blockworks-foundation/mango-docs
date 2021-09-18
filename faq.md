@@ -79,5 +79,5 @@ The most efficient way to convert USDT to USDC is through Serum DEX:
   
 Alternatively, the tokens can be swapped on on Orca\([https://www.orca.so/](https://www.orca.so/)\) or StableSwap\([https://stableswap.pro/](https://stableswap.pro/)\). Please check the current exchange rates.   
 
-![](.gitbook/assets/screen-shot-2021-06-07-at-6.34.09-pm%20%281%29.png)
+![](.gitbook/assets/screen-shot-2021-06-07-at-6.34.09-pm%20%281%29%20%281%29.png)
 

@@ -6,13 +6,13 @@ Building on Ethereum would hinder us from implementing the best possible user ex
 
 ## Roadmap
 
-#### Closed Alpha
+### Closed Alpha
 
 1. First weeks of March 2021
 2. Strict borrow limits
 3. Closed source liquidator and contracts
 
-#### Public Beta
+### Public Beta
 
 1. Begins mid-march 2021 and runs for multiple months
 2. Removal of borrow limits
@@ -23,3 +23,4 @@ Building on Ethereum would hinder us from implementing the best possible user ex
 ## Who is working on this?
 
 The Blockworks Foundation is sponsoring all development on Mango Markets.
+

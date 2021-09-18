@@ -1,8 +1,32 @@
-# Transfer funds to Sollet Wallet
+---
+description: >-
+  Permissionless trading requires self-custodied solution. Wallets are like your
+  personal bank accounts that only you control.
+---
 
-Mango Markets is built on Solana blockchain. To interact on the ecosystem, you’ll need a Solana compatible wallet. A popular wallet and our favorite is Sollet.io. 
+# Creating & Funding a Wallet 👛
 
-Continue reading to learn how create and transfer funds to a Sollet.io wallet.
+Mango Markets is built on the Solana blockchain. To interact with the ecosystem, you’ll need a Solana-compatible wallet. Mango offers compatibility with 2 different wallets. A popular wallet and our favorite for first-time user experience,  [Phantom](https://phantom.app/); and also [Sollet.io](https://www.sollet.io/), a more dev/power user-focused wallet.
+
+Continue reading to learn how to create and transfer funds to a wallet.
+
+## **How to create a Phantom wallet**
+
+To begin, visit  [https://phantom.app/download](https://phantom.app/download)
+
+Add Phantom to your browser to get started. Once installed, you should be prompted with two options, create a new wallet, or restore an old one:
+
+![](../.gitbook/assets/phan.png)
+
+If you are a brand new Solana user, select "**Create New Wallet**". If you are an existing Solana user and have another wallet, simply import it and continue. 
+
+Users coming from sollet can follow the steps [here](https://phantom.app/help/migrating-from-sollet-to-phantom) to migrate existing wallets to Phantom.
+
+![](../.gitbook/assets/phan2.png)
+
+You must store "**Recovery Phrase**" in a safe location, it is the only way to recover your wallet. Phantom does not have access to your funds. Whoever has access to this phrase has access to your funds, so keep it safe and secure!
+
+
 
 ## **How to create a Sollet.io wallet**
 
