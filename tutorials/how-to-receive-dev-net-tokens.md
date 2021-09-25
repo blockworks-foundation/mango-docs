@@ -14,9 +14,9 @@ Request an airdrop to receive devnet $SOL
 
 ![](../.gitbook/assets/screen-shot-2021-08-05-at-1.43.55-pm.png)
 
-Next, add a token with manual input of mint address: EMjjdsqERN4wJUR9jMBax2pzqQPeGLNn5NeucbHpDUZK
+Next, add a token with manual input of mint address: 8FRFC6MoGGkMFQwngccyu69VnYbzykGeez7ignHVAFSN
 
-![](../.gitbook/assets/screen-shot-2021-08-05-at-2.48.08-pm.png)
+![](../.gitbook/assets/addtokenmintaddress.png)
 
 This is a devnet USDC mint created by Mango team. 
 
@@ -36,7 +36,7 @@ Enter Faucet address: **B87AhxX6BkBsj3hnyHzcerX2WxPoACC7ZyDr8E7H9geN**
 
  Enter the amount of USDC you wish to receive in 'Amount'. There is 9 decimals on the mint, so an amount of 1000000000 will return 1.0 USDC in your wallet
 
-![](../.gitbook/assets/screen-shot-2021-08-06-at-9.39.54-am.png)
+![](../.gitbook/assets/tokenfaucets.png)
 
 Click 'Airdrop Tokens', approve the transaction in your wallet and your wallet will be funded with devnet USDC. If you're having trouble approving the transaction, make sure your sollet wallet is not open an any other browsers and pop ups are enabled. 
 
