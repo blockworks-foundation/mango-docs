@@ -25,6 +25,8 @@ maint_liab_weight = 1 + 1 / maint_leverage
 | SRM | 5 | 10 | 5.00 |
 | MNGO | 1.25 | 2.5 | 20.0 |
 | USDT | 10 | 20 | 2.5 |
+| RAY | 5 | 10 | 5.00 |
+| COPE | 2 | 4 | 12.5 |
 
 ### Asset Interest Rates
 
@@ -38,6 +40,8 @@ The lending pools work similar to the lending pools on Aave. With the big differ
 | SRM | 10% | 250% | 70% |
 | MNGO | 6% | 150% | 70% |
 | USDT | 5% | 125% | 70% |
+| RAY | 10% | 250% | 70% |
+| COPE | 6% | 150% | 70% |
 
 ![Utilization rate can vary by asset.](../.gitbook/assets/untitled.png)
 

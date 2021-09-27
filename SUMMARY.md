@@ -37,5 +37,3 @@
 * [Market Making Bot \(python\)](mango-v3/market-making-bot-python.md)
 * [Mango Client API \(javascript\)](mango-v3/mango-client-api-javascript.md)
 
-## Archived
-
