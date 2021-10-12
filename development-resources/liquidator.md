@@ -18,8 +18,8 @@ Mango Markets margin accounts must hold more assets than liabilities. If margin 
 
 To prevent this, Mango Markets requires users to hold significantly more assets than liabilities in their accounts. There are two thresholds:
 
-* The ‘_Initial Collateral Ratio_’ \(currently 1.2\), and
-* The ‘_Maintenance Collateral Ratio_’ \(currently 1.1\)
+* The ‘_Initial Collateral Ratio_’ (currently 1.2), and
+* The ‘_Maintenance Collateral Ratio_’ (currently 1.1)
 
 Accounts must exceed the Initial Collateral Ratio before they are allowed to trade. If an account has less than than the Initial Collateral Ratio, then it cannot try to borrow more. Existing positions remain open, it’s just not possible to open new positions.
 
@@ -57,11 +57,11 @@ In reality, a liquidator probably does the following:
 1. Pick accounts that are liquidatable, or close to liquidatable.
 2. Watch those accounts closely as prices change.
 3. When it finds liquidatable accounts:
-   1. Pick the one with the most collateral. \(If there are multiple liquidatable accounts, and other liquidators are active, it makes sense to start with the accounts that will bring the most profit to the liquidator.\)
+   1. Pick the one with the most collateral. (If there are multiple liquidatable accounts, and other liquidators are active, it makes sense to start with the accounts that will bring the most profit to the liquidator.)
    2. Pick the market with the most value in that account’s openorders accounts.
    3. Build the ‘Force Cancel’ instruction for that account’s outstanding orders in that market.
    4. Build the ‘Partial Liquidate’ instruction for that account.
-   5. Send the built instruction\(s\).
+   5. Send the built instruction(s).
    6. Convert the received tokens so the liquidator wallet is ready to liquidate again.
    7. Repeat from step 2 until the account is above the Initial Collateral Ratio once more, or has fallen below the ‘worthwhile’ threshold for the liquidator.
    8. Repeat from step 1 until there are no more worthwhile liquidations to perform.
@@ -113,12 +113,21 @@ A common step then is to ‘re-balance’ the tokens in your wallet, buying or s
 
 Picking appropriate targets for balancing is a tricky topic and beyond this discussion. However, the liquidator does allow for a few simple strategies.
 
-You can target a fixed or percentage balance for each token in the group, allowing you to rebalance to a specific ratio of tokens \(like thirds\) or a specific fixed balance of some tokens, accumulating changes to a single token.
+You can target a fixed or percentage balance for each token in the group, allowing you to rebalance to a specific ratio of tokens (like thirds) or a specific fixed balance of some tokens, accumulating changes to a single token.
 
-* A percentage target is specified by using the token name and the target with a ‘%’ character after it, like:  `--target "BTC:33%"` \(Note that it’s best to put quote marks around targets since the ‘%’ is a wildcard/substitution character in some shells.\)  That says that rebalances should target the value of BTC in the wallet to be 33% of the total wallet value. This can cause unexpected decreases in other balances if the value of BTC rises, requiring additional funds from other tokens to maintain the 33% target. 
-* A fixed target is specified by using the token name and the target, like:  `--target "BTC:0.1"`  That says that rebalances should aim to keep 0.1BTC in the wallet, no more, no less. If a liquidation takes BTC, the next rebalance will try to buy BTC to make up the shortfall. If a liquidation returns BTC, the next rebalance will try to sell the excess BTC.
+* A percentage target is specified by using the token name and the target with a ‘%’ character after it, like:\
+  \
+  `--target "BTC:33%"` (Note that it’s best to put quote marks around targets since the ‘%’ is a wildcard/substitution character in some shells.)\
+  \
+  That says that rebalances should target the value of BTC in the wallet to be 33% of the total wallet value. This can cause unexpected decreases in other balances if the value of BTC rises, requiring additional funds from other tokens to maintain the 33% target.\
 
-It’s probably not a good idea to rebalance on every liquidation though. It may be worth forgoing rebalancing after a 10 cent trade \(which could lock funds\), instead continuing trying to liquidate other accounts.
+* A fixed target is specified by using the token name and the target, like:\
+  \
+  `--target "BTC:0.1"`\
+  \
+  That says that rebalances should aim to keep 0.1BTC in the wallet, no more, no less. If a liquidation takes BTC, the next rebalance will try to buy BTC to make up the shortfall. If a liquidation returns BTC, the next rebalance will try to sell the excess BTC.
+
+It’s probably not a good idea to rebalance on every liquidation though. It may be worth forgoing rebalancing after a 10 cent trade (which could lock funds), instead continuing trying to liquidate other accounts.
 
 How much flexibility should there be before requiring a rebalance? Again, that aspect is beyond this discussion but you can choose how much tolerance you’re willing to accept by specifying the action threshold:
 
@@ -144,7 +153,7 @@ Then an action threshold of 0.05 would mean no attempt to re-balance, while an a
 
 The liquidator supports sending notifications of successful, failed, or all liquidation attempts, using Telegram, Discord, Mailjet, or writing to a CSV file. Each notification target its own format for specifying it on the command line.
 
-You can be notified of different events \(all liquidation attempts, or just successful or failed ones\), and you can specify multiple notification targets for each event. To add a notification target for an event, you use a command-line parameter. There are 4 different ones for the liquidator:
+You can be notified of different events (all liquidation attempts, or just successful or failed ones), and you can specify multiple notification targets for each event. To add a notification target for an event, you use a command-line parameter. There are 4 different ones for the liquidator:
 
 * `--notify-liquidations`
 * `--notify-successful-liquidations`
@@ -157,7 +166,7 @@ To specify multiple notifications for the same event, you just repeat the comman
 
 #### Discord Notification Target
 
-[Discord](https://discord.com/) notifications are sent using Discord’s ‘webhook’ URL. Once you get the webhook URL for the Discord channel, the format of the Discord notification target is:
+[Discord](https://discord.com) notifications are sent using Discord’s ‘webhook’ URL. Once you get the webhook URL for the Discord channel, the format of the Discord notification target is:
 
 1. The word ‘discord’
 2. A colon ‘:’
@@ -169,7 +178,7 @@ For example:
 
 #### Telegram Notification Target
 
-[Telegram](https://telegram.org/) notifications are a bit more complicated, since both a ‘bot ID’ and ‘chat ID’ are needed. The format for the telegram notification target is:
+[Telegram](https://telegram.org) notifications are a bit more complicated, since both a ‘bot ID’ and ‘chat ID’ are needed. The format for the telegram notification target is:
 
 1. The word 'telegram'
 2. A colon ':'
@@ -189,7 +198,7 @@ The format for CSV file target is:
 
 1. The word ‘csvfile’
 2. A colon ‘:’
-3. The name of the CSV file \(can be a relative or absolute path\)
+3. The name of the CSV file (can be a relative or absolute path)
 
 There are complications however.
 
@@ -208,7 +217,7 @@ For example, to use a file called /var/mango-explorer/report.csv:
 
 #### Mailjet Notification Target
 
-[Mailjet](https://www.mailjet.com/) allows you to send emails, but requires many more parameters and so is a lot more complicated to configure. You also need an API key and secret from Mailjet, and need to have Mailjet configured for the sender and receiver addresses.
+[Mailjet](https://www.mailjet.com) allows you to send emails, but requires many more parameters and so is a lot more complicated to configure. You also need an API key and secret from Mailjet, and need to have Mailjet configured for the sender and receiver addresses.
 
 The format for Mailjet target is:
 
@@ -227,4 +236,3 @@ The format for Mailjet target is:
 13. The ‘to’ address for the email being sent
 
 It's important to properly escape the individual components. Colons are used as separators, and shells use spaces as separators, so the individual components should never have those characters. Components should instead be URL-encoded so, for example, spaces appear as ‘%20’ and colons appear as ‘%3A’.
-

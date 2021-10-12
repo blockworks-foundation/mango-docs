@@ -20,15 +20,15 @@ The Solana blockchain provides block times of roughly one second. Although one s
 
 #### **Transaction Costs**
 
-Low transaction costs are arguably the raison d'etre of finance. We believe a financial innovation must lower transaction costs to be a full improvement. Therefore, the cost per transaction on all Mango financial tools will be comparable to or lower than the costs in CeFi. We believe this must be true. Lower costs indicate efficiency and more efficient protocols and tools tend to win in the long run. It is not possible to escape fees—service providers \(e.g. liquidators, insurance fund, developers\) on Mango protocols must be compensated. However, Mango will err on the side of lower fees.
+Low transaction costs are arguably the raison d'etre of finance. We believe a financial innovation must lower transaction costs to be a full improvement. Therefore, the cost per transaction on all Mango financial tools will be comparable to or lower than the costs in CeFi. We believe this must be true. Lower costs indicate efficiency and more efficient protocols and tools tend to win in the long run. It is not possible to escape fees—service providers (e.g. liquidators, insurance fund, developers) on Mango protocols must be compensated. However, Mango will err on the side of lower fees.
 
 #### **Decentralization**
 
-Trying to achieve competitive latency and cost by centralizing key components \(e.g. the orderbook\) will fail in the long run. Centralizing any component is a security risk and severely harms composability. Ultimately, the centralizer decides how other apps may interact with the centralized component and the centralizer neither has the incentive nor the bandwidth to allow all interested parties to participate in the improvements. As a result, centralizing key components gives up the immense upsides of permissionless innovation. Mango Markets will retain the upside.
+Trying to achieve competitive latency and cost by centralizing key components (e.g. the orderbook) will fail in the long run. Centralizing any component is a security risk and severely harms composability. Ultimately, the centralizer decides how other apps may interact with the centralized component and the centralizer neither has the incentive nor the bandwidth to allow all interested parties to participate in the improvements. As a result, centralizing key components gives up the immense upsides of permissionless innovation. Mango Markets will retain the upside.
 
-#### **No Presales, Decentralized Governance** 
+#### **No Presales, Decentralized Governance **
 
-The Mango Token will govern the protocol. The vast majority of MANGO will be locked in the DAO treasury to be distributed according to token holder wishes. That being said, our vision is that governance ought to reward the people who provide protocol services \(e.g. liquidity providers, oracles\) and the people who build new protocol services \(e.g. developers, or other contributors\). The commitment to distribute the largest portion of the DAO’s power and wealth to future contributors will encourage the most skilled and ambitious builders to join us. Finally, in accordance with the crypto ethos of transparency and equal access there will be no presale of tokens.
+The Mango Token will govern the protocol. The vast majority of MANGO will be locked in the DAO treasury to be distributed according to token holder wishes. That being said, our vision is that governance ought to reward the people who provide protocol services (e.g. liquidity providers, oracles) and the people who build new protocol services (e.g. developers, or other contributors). The commitment to distribute the largest portion of the DAO’s power and wealth to future contributors will encourage the most skilled and ambitious builders to join us. Finally, in accordance with the crypto ethos of transparency and equal access there will be no presale of tokens.
 
 Ultimately, Mango intends to win the long game in financial services. Low latency makes our tools usable. Rock bottom fees makes Mango hard to compete against. Decentralization makes Mango hard to kill through centralized incompetence or malevolence. Open governance that allocates power and wealth liberally to builders, will attract the best people to build and govern the protocol. Finally, the permissionless nature will allow the millions of tiny experiments to take place that yield the life changing innovations. We're motivated and driven to build Mango according to this vision, and we hope you'll join us.
 
@@ -44,7 +44,7 @@ Ultimately, Mango intends to win the long game in financial services. Low latenc
 
 #### **Design**
 
-The initial margin protocol adds a borrowing and lending layer on top of the Serum Dex v3. The user owns a margin account which is then associated with a serum dex open orders account for each market in the group. The user may deposit any of the tokens included in the group and its value in the quote currency \(typically USDT\) is calculated using an oracle. This value is then used to determine how much a user may borrow. Since positions gained from margin trading are also treated as deposits, the user may take up to 5x leverage. Mango Markets does not charge any fees.
+The initial margin protocol adds a borrowing and lending layer on top of the Serum Dex v3. The user owns a margin account which is then associated with a serum dex open orders account for each market in the group. The user may deposit any of the tokens included in the group and its value in the quote currency (typically USDT) is calculated using an oracle. This value is then used to determine how much a user may borrow. Since positions gained from margin trading are also treated as deposits, the user may take up to 5x leverage. Mango Markets does not charge any fees.
 
 #### **Risks**
 
@@ -64,7 +64,7 @@ There is a chance the user is not able to withdraw deposits because it's borrowe
 
 The code has been looked over by volunteers, but there has not been a formal audit. While there are bounties offered for responsible disclosure of potential vulnerabilities, there is no guarantee that hackers will choose the bounty over a profitable exploit.
 
-### **Perpetual Futures \(WIP\)**
+### **Perpetual Futures (WIP)**
 
 #### **Highlights**
 
@@ -76,22 +76,22 @@ The code has been looked over by volunteers, but there has not been a formal aud
 
 ### **Token Distribution**
 
-After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for Mango Token to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.  
+After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for Mango Token to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.\
 
 
 **Max Supply: 10,000,000,000**
 
-**Initial Circulating Supply: 1,000,000,000**  
-
+**Initial Circulating Supply: 1,000,000,000**\
+****
 
 **Creators - 5%**
 
-For the work of creating Mango Markets.  
+For the work of creating Mango Markets.\
 
 
 **Insurance Fund Sale - 5%**
 
-There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.  
+There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.\
 
 
 **DAO - 90%**
@@ -104,8 +104,8 @@ These tokens can only be unlocked via token holder governance. We propose that t
 
 Total Sale Period: 48 hours
 
-* Unrestricted Period: 24 hours \(first half\)
-* Withdraw Only Period: 24 hours \(second half\)
+* Unrestricted Period: 24 hours (first half)
+* Withdraw Only Period: 24 hours (second half)
 
 The Mango Sale will happen over two days. The Sale contract will have two vaults, one with 500,000,000 Mango Token and the other vault with 0 USDC. The 2 days will be split into periods: Unrestricted and Withdraw Only. During the Unrestricted period any Solana user may deposit or withdraw their USDC from the Sale vault. The Unrestricted Period ends in 24 hours and transitions into Withdraw Only, where buyers may only withdraw their USDC. At the end of the Sale, all USDC depositors will get Mango Token in proportion to their share of the USDC vault and the USDC will be moved into the Mango DAO treasury.
 
@@ -121,7 +121,7 @@ This price will fluctuate during the entire 48 hour period as USDC is deposited 
 
 We take the view that token sales should be simple, fully transparent and minimize randomness and luck in the distribution. Simple mechanisms are easier to build, explain, understand and are harder to exploit. A transparent mechanism increases participation because buyers are more confident there are no hidden tricks that could harm them. Elements of luck engineered into the mechanism distribute value randomly or to those who are most willing to do the arbitrary, worthless tasks to get the free value. We believe all "excess" value should be captured by token holders in the DAO. Removing the casino aspects of token sales selectively encourages participants who are focused on contributing and governing in the long term.
 
-Other mechanisms we've looked at don't live up to this standard. For example a sale on a bonding curve will give free value to those who buy a few milliseconds before others or have the good fortune of their transaction being accepted by validators before others. A capped sale of tokens with a fixed price has similar issues. A sale of tokens to market makers who sell the tokens on the open market is not fully transparent and the agreement between the market maker and the dev team may be quite complex. There are various "fair" launch mechanisms that are transparent and minimize luck, but ultimately end up being very complex \(e.g. Mesa Offering\) and difficult to build.
+Other mechanisms we've looked at don't live up to this standard. For example a sale on a bonding curve will give free value to those who buy a few milliseconds before others or have the good fortune of their transaction being accepted by validators before others. A capped sale of tokens with a fixed price has similar issues. A sale of tokens to market makers who sell the tokens on the open market is not fully transparent and the agreement between the market maker and the dev team may be quite complex. There are various "fair" launch mechanisms that are transparent and minimize luck, but ultimately end up being very complex (e.g. Mesa Offering) and difficult to build.
 
 #### Source Code
 
@@ -172,7 +172,7 @@ All proposals are subject to a 3 day voting period, and any Mango Token staker c
 * Largely increases the number of spot markets that can be traded
 * Perpetual swaps will feature lower trading fees then spot markets
 
-\*\*\*\*
+****
 
 ## Edits
 
@@ -183,4 +183,3 @@ All proposals are subject to a 3 day voting period, and any Mango Token staker c
 It turned out that on-chain governance was earlier possible on Solana then expected, so we decided to make the move before launching Mango Perp. This made the Temporary Governance Fund unnecessary. As a result of that the float at token sale will only be 10% and not 20%.
 
 As we progressed in the development more details of the capabilities of Mango Perp's features have become concrete and added to the roadmap.
-

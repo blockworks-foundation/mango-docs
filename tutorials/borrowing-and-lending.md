@@ -1,5 +1,5 @@
 ---
-description: 'Powerful borrowing and lending capabilities, powered by Mango.'
+description: Powerful borrowing and lending capabilities, powered by Mango.
 ---
 
 # Borrowing & Lending 💸
@@ -8,13 +8,13 @@ description: 'Powerful borrowing and lending capabilities, powered by Mango.'
 
 🥭offers an approachable and powerful platform. Under the hood, the mango risk engine permits users to take out fully collateralized loans against any deposited assets, and deposits into margin accounts accrue interest every second.
 
-**Check out the** [**Account page.** ](https://trade.mango.markets/account)\*\*\*\*
+**Check out the **[**Account page. **](https://trade.mango.markets/account)****
 
 ![](../.gitbook/assets/bororor.png)
 
-## **Borrowing on** 🥭
+## **Borrowing on **🥭
 
-First, ensure assets are [deposited into your margin account](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#connecting-to-mango-markets-and-depositing-funds) for use as collateral. Then, simply click 'Withdraw' under the accounts tab or "Borrow" under the _Borrow_ tab. 
+First, ensure assets are [deposited into your margin account](https://app.gitbook.com/@blockworksfoundation/s/mango/\~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#connecting-to-mango-markets-and-depositing-funds) for use as collateral. Then, simply click 'Withdraw' under the accounts tab or "Borrow" under the _Borrow_ tab. 
 
 ![Under your account tab, scroll to balances.](../.gitbook/assets/wijegh1.png)
 
@@ -24,7 +24,7 @@ The UI will prompt you to select the asset you wish to withdraw and borrow, and 
 
 ![](../.gitbook/assets/borororor.png)
 
-Next, determine the amount you'd like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you'd like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click 'Max with borrow'. An estimated leverage post-withdraw is displayed. 
+Next, determine the amount you'd like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/\~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you'd like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click 'Max with borrow'. An estimated leverage post-withdraw is displayed. 
 
 ![](../.gitbook/assets/borororor2.png)
 
@@ -38,7 +38,7 @@ Interest is paid on your borrows continuously from your deposits. Please monitor
 
 ## How to use the Risk Calculator 
 
-The Risk Calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can predict liquidations by providing assumptions on asset prices and other account details.
+The Risk Calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/\~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can predict liquidations by providing assumptions on asset prices and other account details.
 
 Select 'Risk Calculator' below your account calculations.
 
@@ -54,19 +54,18 @@ Individual asset price, deposits, and borrows can be changed in their correspond
 
 ![](../.gitbook/assets/screen-shot-2021-07-21-at-7.16.13-pm.png)
 
-## **Video Tutorial** 
+## **Video Tutorial **
 
 This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
 
 {% embed url="https://www.youtube.com/watch?v=Ad7IVKaJYGQ" %}
 
-## **Join the community** 👾
+## **Join the community **👾
 
-The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets/?utm_source=medium&utm_medium=social&utm_campaign=launch_post) to trade and lend.
+The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
 
 Follow Mango Markets on Twitter and join the Discord for the latest updates.
 
 twitter:[ https://twitter.com/mangomarkets](https://twitter.com/mangomarkets)
 
 discord: [https://discord.gg/YpzUSTwd](https://discord.gg/P7TzZS9g)
-
