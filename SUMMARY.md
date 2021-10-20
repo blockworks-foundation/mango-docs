@@ -32,6 +32,7 @@
 ## Mango V3
 
 * [Overview](mango-v3/overview.md)
+* [PERP FAQ](mango-v3/perp-faq.md)
 * [Liquidity Mining](mango-v3/liquidity-incentives.md)
 * [Asset Specs](mango-v3/token-specs.md)
 * [Perp Contract Specs](mango-v3/perp-contract-specs.md)
