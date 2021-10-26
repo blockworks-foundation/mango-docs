@@ -17,16 +17,16 @@ maint_asset_Weight = 1 - 1 / maint_leverage
 maint_liab_weight = 1 + 1 / maint_leverage
 ```
 
-| Token | Initial Leverage | Maintenance Leverage | Liquidation Fee (%) |
-| ----- | ---------------- | -------------------- | ------------------- |
-| BTC   | 5                | 10                   | 5.00                |
-| ETH   | 5                | 10                   | 5.00                |
-| SOL   | 5                | 10                   | 5.00                |
-| SRM   | 5                | 10                   | 5.00                |
-| MNGO  | 1.25             | 2.5                  | 20.0                |
-| USDT  | 10               | 20                   | 2.5                 |
-| RAY   | 5                | 10                   | 5.00                |
-| COPE  | 2                | 4                    | 12.5                |
+| Token | Initial Leverage | Maintenance Weight | Maintenance Leverage | Liquidation Fee (%) |
+| ----- | ---------------- | ------------------ | -------------------- | ------------------- |
+| BTC   | 5                | .9                 | 10                   | 5.00                |
+| ETH   | 5                | .9                 | 10                   | 5.00                |
+| SOL   | 5                | .9                 | 10                   | 5.00                |
+| SRM   | 5                | .9                 | 10                   | 5.00                |
+| MNGO  | 1.25             | .6                 | 2.5                  | 20.0                |
+| USDT  | 10               | .95                | 20                   | 2.5                 |
+| RAY   | 5                | .9                 | 10                   | 5.00                |
+| COPE  | 2                | .75                | 4                    | 12.5                |
 
 ### Asset Interest Rates
 
