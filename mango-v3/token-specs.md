@@ -17,16 +17,34 @@ maint_asset_Weight = 1 - 1 / maint_leverage
 maint_liab_weight = 1 + 1 / maint_leverage
 ```
 
-| Token | Initial Leverage | Maintenance Weight | Maintenance Leverage | Liquidation Fee (%) |
-| ----- | ---------------- | ------------------ | -------------------- | ------------------- |
-| BTC   | 5                | .9                 | 10                   | 5.00                |
-| ETH   | 5                | .9                 | 10                   | 5.00                |
-| SOL   | 5                | .9                 | 10                   | 5.00                |
-| SRM   | 5                | .9                 | 10                   | 5.00                |
-| MNGO  | 1.25             | .6                 | 2.5                  | 20.0                |
-| USDT  | 10               | .95                | 20                   | 2.5                 |
-| RAY   | 5                | .9                 | 10                   | 5.00                |
-| COPE  | 2                | .75                | 4                    | 12.5                |
+| Token | Initial Leverage | Maintenance Leverage | Liquidation Fee (%) |
+| ----- | ---------------- | -------------------- | ------------------- |
+| MNGO  | 1.25             | 2.5                  | 20.0                |
+| BTC   | 5                | 10                   | 5.00                |
+| ETH   | 5                | 10                   | 5.00                |
+| SOL   | 5                | 10                   | 5.00                |
+| USDT  | 10               | 20                   | 2.50                |
+| SRM   | 5                | 10                   | 5.00                |
+| RAY   | 5                | 10                   | 5.00                |
+| COPE  | 2                | 4                    | 12.50               |
+| FTT   | 5                | 10                   | 5.00                |
+
+### Asset Weights
+
+The init asset weight (aka haircut) is the discount applied to the value of the collateral  when initializing a new position. For example, for BTC, $100 in BTC is treated as 80 USDC when initializing a new position. The maint asset weight is the discount applied when calculating the value of the collateral for purposes of liquidation. The maint asset weight is higher to give you more of a buffer before liquidation.&#x20;
+
+| Token | Init Asset Weight | Maint Asset Weight |
+| ----- | ----------------- | ------------------ |
+| MNGO  | 0.2               | 0.6                |
+| BTC   | 0.8               | 0.9                |
+| ETH   | 0.8               | 0.9                |
+| SOL   | 0.8               | 0.9                |
+| USDT  | 0.9               | 0.95               |
+| SRM   | 0.8               | 0.9                |
+| RAY   | 0.8               | 0.9                |
+| COPE  | 0.5               | 0.75               |
+| FTT   | 0.8               | 0.9                |
+| USDC  | 1                 | 1                  |
 
 ### Asset Interest Rates
 
