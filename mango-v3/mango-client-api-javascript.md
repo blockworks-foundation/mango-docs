@@ -1,5 +1,7 @@
 # Mango Client API \(javascript\)
 
+[API Reference](https://blockworks-foundation.github.io/mango-client-v3/)
+
 ### Installation
 
 ```text
