@@ -23,6 +23,7 @@ maint_liab_weight = 1 + 1 / maint_leverage
 | BTC   | 5                | 10                   | 5.00                |
 | ETH   | 5                | 10                   | 5.00                |
 | SOL   | 5                | 10                   | 5.00                |
+| mSOL  | 5                | 10                   | 5.00                |
 | USDT  | 10               | 20                   | 2.50                |
 | SRM   | 5                | 10                   | 5.00                |
 | RAY   | 5                | 10                   | 5.00                |
@@ -39,6 +40,7 @@ The init asset weight (aka haircut) is the discount applied to the value of the 
 | BTC   | 0.8               | 0.9                |
 | ETH   | 0.8               | 0.9                |
 | SOL   | 0.8               | 0.9                |
+| mSOL  | 0.8               | 0.9                |
 | USDT  | 0.9               | 0.95               |
 | SRM   | 0.8               | 0.9                |
 | RAY   | 0.8               | 0.9                |
@@ -56,6 +58,7 @@ The lending pools work similar to the lending pools on Aave. With the big differ
 | BTC   | 3.5%         | 87.5%    | 70%                 |
 | ETH   | 2.5%         | 62.5%    | 70%                 |
 | SOL   | 2.5%         | 62.5%    | 70%                 |
+| mSOL  | 2.5%         | 62.5%    | 70%                 |
 | SRM   | 10%          | 250%     | 70%                 |
 | MNGO  | 6%           | 150%     | 70%                 |
 | USDT  | 5%           | 125%     | 70%                 |
