@@ -4,7 +4,7 @@
 
 The source code for the v3 Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-v3).
 
-To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/ids.json)`IDS`.
+To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/Connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/ids.json)`IDS`.
 
 ## Mango Groups
 
