@@ -10,7 +10,7 @@ description: >-
 
 To earn interest, simply deposit into your margin account; all assets automatically earn interest. Annual rates are displayed in the margin account panel in green.&#x20;
 
-### **What are the different versions of Mango? **
+### **What are the different versions of Mango?**&#x20;
 
 V2( mango.markets ) is the newest version of Mango and supports SOL, SRM, BTC, ETH, and USDC trading, lending, and borrowing.
 
@@ -48,7 +48,7 @@ equity = val(deposits) +val(open orders) - val(borrows)
 
 The interest rate is a function of the utilization ratio: total borrowed by all users divided by total deposits of all users. The interest rate will increase slowly approaching a utilization ratio of 70% but will increase rapidly above that to encourage the market to deposit more funds.
 
-![](.gitbook/assets/work.png)
+![](../.gitbook/assets/work.png)
 
 ### Does it cost anything to open a Mango account?&#x20;
 

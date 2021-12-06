@@ -6,7 +6,7 @@ Perpetuals allow initial leverage of up to 10x, and maintenance leverage of 20x.
 
 ### What fees will I pay?
 
-Mango currently chargers ‘takers’ on the platform a 5bps fee. There is no fee for providing a limit order into the book that is later executed as a ‘maker’.** **Mango does not take a fee for borrowing or lending.
+Mango currently chargers ‘takers’ on the platform a 5bps fee. There is no fee for providing a limit order into the book that is later executed as a ‘maker’. **** Mango does not take a fee for borrowing or lending.
 
 ### What is funding, and how does it work?
 

@@ -1,10 +1,10 @@
 # Overview 👀
 
-**Mango offers an approachable and powerful platform for trading, lending and portfolio management. **
+**Mango offers an approachable and powerful platform for trading, lending and portfolio management.**&#x20;
 
-Mango not only offers spot margined and leveraged perpetual futures markets but also allows collateralized loans against existing assets all under one unified experience. 
+Mango not only offers spot margined and leveraged perpetual futures markets but also allows collateralized loans against existing assets all under one unified experience.&#x20;
 
-Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 10x leverage. Long and short everything, with limit or market orders, more advanced order types coming soon. 
+Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 10x leverage. Long and short everything, with limit or market orders, more advanced order types coming soon.&#x20;
 
 Current on-chain lending protocols (e.g. Aave, Compound) provide up to 2x leverage for margin traders, but this comes with severe downsides. For one, Ethereum gas prices are prohibitive for the majority of traders. Secondly, the margin trading can only be done with market orders or swaps — not limit orders. This makes them completely useless for market makers.
 

@@ -2,12 +2,6 @@
 
 * [Overview](README.md)
 
-## Margin Trading
-
-* [Overview 👀](margin-trading/overview.md)
-* [Risks ⚠️](margin-trading/risks.md)
-* [PNL Calculation 🧮](margin-trading/pnl-calculation.md)
-
 ## Tutorials
 
 * [Initial set up with 🥭](tutorials/getting-started.md)
@@ -17,17 +11,7 @@
 * [How to Receive devnet Tokens](tutorials/how-to-receive-dev-net-tokens.md)
 * [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
 * [Trade Order Types](tutorials/trade-order-types.md)
-
-## Development Resources
-
-* [Mango Client API](development-resources/mango-client-api.md)
-* [Mango Program API](development-resources/mango-program-api.md)
-* [Liquidator](development-resources/liquidator.md)
-
-***
-
-* [FAQ](faq.md)
-* [Litepaper](litepaper.md)
+* [FAQ](tutorials/faq.md)
 
 ## Mango V3
 
@@ -38,4 +22,20 @@
 * [Perp Contract Specs](mango-v3/perp-contract-specs.md)
 * [Market Making Bot (python)](mango-v3/market-making-bot-python.md)
 * [Mango Client API (javascript)](mango-v3/mango-client-api-javascript.md)
-* [Dev FAQ](mango-v3/dev-faq.md)
+
+## Development Resources
+
+* [Mango Client API](development-resources/mango-client-api.md)
+* [Liquidator](development-resources/liquidator.md)
+* [Dev FAQ](development-resources/dev-faq.md)
+
+## Mango V2
+
+* [Overview 👀](mango-v2/overview.md)
+* [Risks ⚠️](mango-v2/risks.md)
+* [PNL Calculation 🧮](mango-v2/pnl-calculation.md)
+* [Mango Program API](mango-v2/mango-program-api.md)
+
+***
+
+* [Litepaper](litepaper.md)

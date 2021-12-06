@@ -8,11 +8,11 @@ description: Powerful borrowing and lending capabilities, powered by Mango.
 
 🥭offers an approachable and powerful platform. Under the hood, the mango risk engine permits users to take out fully collateralized loans against any deposited assets, and deposits into margin accounts accrue interest every second.
 
-**Check out the **[**Account page. **](https://trade.mango.markets/account)****
+**Check out the** [**Account page.** ](https://trade.mango.markets/account)****
 
 ![](../.gitbook/assets/bororor.png)
 
-## **Borrowing on **🥭
+## **Borrowing on** 🥭
 
 First, ensure assets are [deposited into your margin account](https://docs.mango.markets/tutorials/getting-started#creating-a-margin-account-and-depositing-funds) for use as collateral. Then, simply click 'Withdraw' under the accounts tab or "Borrow" under the _Borrow_ tab.&#x20;
 
@@ -54,13 +54,13 @@ Individual asset price, deposits, and borrows can be changed in their correspond
 
 ![](../.gitbook/assets/screen-shot-2021-07-21-at-7.16.13-pm.png)
 
-## **Video Tutorial **
+## **Video Tutorial**&#x20;
 
 This comprehensive video tutorial created by CryptoData covers everything from creating and funding your sollet wallet to trading and lending on Mango Markets exchange.
 
 {% embed url="https://www.youtube.com/watch?v=Ad7IVKaJYGQ" %}
 
-## **Join the community **👾
+## **Join the community** 👾
 
 The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
 
