@@ -34,7 +34,7 @@ These values by asset are:\
 
 | Token                                        | Maint. Asset Weight | Maint. Liab. Weight | Init. Asset Weight | Init. Leverage | Init. Liab. Weight | Maint. Leverage |
 | -------------------------------------------- | ------------------- | ------------------- | ------------------ | -------------- | ------------------ | --------------- |
-| <mark style="color:yellow;">**SPOT**</mark>  |                     |                     |                    |                |                    |                 |
+| <mark style="color:orange;">**SPOT**</mark>  |                     |                     |                    |                |                    |                 |
 | USDC                                         | 1                   |                     |                    |                |                    |                 |
 | USDT                                         | 0.95                | 1.05                | 0.9                | 10             | 20                 |                 |
 | BTC                                          | 0.9                 | 1.1                 | 0.8                | 5              | 10                 |                 |
@@ -46,7 +46,7 @@ These values by asset are:\
 | FTT                                          | 0.9                 | 1.1                 | 0.8                | 5              | 10                 |                 |
 | COPE                                         | 0.75                | 1.25                | 0.5                | 2              | 4                  |                 |
 | MNGO                                         | 0.6                 | 1.4                 | 0.2                | 1.25           | 2.5                |                 |
-| <mark style="color:yellow;">**PERP**</mark>  |                     |                     |                    |                |                    |                 |
+| <mark style="color:orange;">**PERP**</mark>  |                     |                     |                    |                |                    |                 |
 | BTC                                          | 0.975               | 1.025               | 0.95               | 20             | 40                 |                 |
 | SOL                                          | 0.95                | 1.05                | 0.9                | 10             | 20                 |                 |
 | FTT                                          | 0.95                | 1.05                | 0.9                | 10             | 20                 |                 |
