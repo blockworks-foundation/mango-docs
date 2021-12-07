@@ -13,6 +13,15 @@
 * [Trade Order Types](tutorials/trade-order-types.md)
 * [FAQ](tutorials/faq.md)
 
+## FAQ's
+
+* [Lending FAQ](faqs/lending-faq.md)
+* [Health FAQ](faqs/health-faq.md)
+
+***
+
+* [Page 1](page-1.md)
+
 ## Mango V3
 
 * [Overview](mango-v3/overview.md)
