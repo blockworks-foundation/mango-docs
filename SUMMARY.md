@@ -10,18 +10,22 @@
 * [Creating & Funding a Wallet 👛](tutorials/creating-a-wallet.md)
 * [How to Receive devnet Tokens](tutorials/how-to-receive-dev-net-tokens.md)
 * [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
-* [Trade Order Types](tutorials/trade-order-types.md)
 * [FAQ](tutorials/faq.md)
 
 ## FAQ's
 
-* [Lending FAQ](faqs/lending-faq.md)
-* [Health FAQ](faqs/health-faq.md)
+* [Lending](faqs/lending.md)
+* [Health](faqs/health.md)
+* [Spot](faqs/spot.md)
+* [PERP](faqs/perp-faq.md)
+* [Borrows](faqs/borrows.md)
+* [Trade Order Types](faqs/trade-order-types.md)
+* [MNGO](faqs/mngo.md)
+* [Dev](faqs/dev.md)
 
 ## Mango V3
 
 * [Overview](mango-v3/overview.md)
-* [PERP FAQ](mango-v3/perp-faq.md)
 * [Liquidity Mining](mango-v3/liquidity-incentives.md)
 * [Asset Specs](mango-v3/token-specs.md)
 * [Perp Contract Specs](mango-v3/perp-contract-specs.md)
@@ -32,7 +36,6 @@
 
 * [Mango Client API](development-resources/mango-client-api.md)
 * [Liquidator](development-resources/liquidator.md)
-* [Dev FAQ](development-resources/dev-faq.md)
 
 ## Mango V2
 
