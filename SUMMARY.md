@@ -10,7 +10,6 @@
 * [Creating & Funding a Wallet 👛](tutorials/creating-a-wallet.md)
 * [How to Receive devnet Tokens](tutorials/how-to-receive-dev-net-tokens.md)
 * [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
-* [FAQ](tutorials/faq.md)
 
 ## FAQ's
 
@@ -22,6 +21,7 @@
 * [Trade Order Types](faqs/trade-order-types.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
+* [General FAQ](faqs/faq.md)
 
 ## Mango V3
 
