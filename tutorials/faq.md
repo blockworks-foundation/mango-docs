@@ -4,7 +4,7 @@ description: >-
   https://discord.gg/pV5mybZYY8
 ---
 
-# FAQ
+# General FAQ
 
 ### **How can I earn interest?**
 
