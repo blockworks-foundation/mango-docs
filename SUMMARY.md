@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Overview](README.md)
-
 ## Tutorials
 
-* [Initial set up with 🥭](tutorials/getting-started.md)
+* [Initial set up with 🥭](README.md)
 * [Trading 📈](tutorials/trading-on-mango.md)
 * [Borrowing & Lending 💸](tutorials/borrowing-and-lending.md)
 * [Creating & Funding a Wallet 👛](tutorials/creating-a-wallet.md)
