@@ -23,7 +23,11 @@
 ## Mango
 
 * [Health Overview](mango/health-overview.md)
-* [Overview](mango/overview.md)
+* [Liquidations](mango/liquidations.md)
+* [Insurance Fund](mango/insurance-fund.md)
+* [Socialized Losses](mango/socialized-losses.md)
+* [Settle Pnl](mango/settle-pnl.md)
+* [Funding](mango/funding.md)
 * [Liquidity Mining](mango/liquidity-incentives.md)
 * [Asset Specs](mango/token-specs.md)
 * [Perp Contract Specs](mango/perp-contract-specs.md)
