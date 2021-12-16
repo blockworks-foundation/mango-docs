@@ -6,8 +6,4 @@ Mango provides a single venue to lend, borrow, and leverage trade cryptoassets t
 * Cross-Margin  / Cross-Collateralized
 * &#x20;Decentralized
 
-Mango is built on Solana blockchain and utilizes Serum DEX for spot margin trading while perpetual futures are traded on Mango's own orderbook.&#x20;
-
-Mango provides an extremely powerful risk engine\
-\
-Mango is governed by its MNGO token. Risk Engine
+Mango is built on Solana blockchain and utilizes Serum DEX for spot margin trading while perpetual futures are traded on Mango's own orderbook. Mango is governed by its MNGO token.&#x20;
