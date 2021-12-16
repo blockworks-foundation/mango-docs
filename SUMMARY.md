@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
+* [Helpful Tips](helpful-tips.md)
 
 ## Tutorials
 
@@ -9,18 +10,6 @@
 * [Borrowing & Lending 💸](tutorials/borrowing-and-lending.md)
 * [Creating & Funding a Wallet 👛](tutorials/creating-a-wallet.md)
 * [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
-
-## FAQ's
-
-* [Lending](faqs/lending.md)
-* [Health](faqs/health.md)
-* [Spot](faqs/spot.md)
-* [PERP](faqs/perp-faq.md)
-* [Borrows](faqs/borrows.md)
-* [Trade Order Types](faqs/trade-order-types.md)
-* [MNGO](faqs/mngo.md)
-* [Dev](faqs/dev.md)
-* [General FAQ](tutorials/faq.md)
 
 ## Mango
 
@@ -35,6 +24,18 @@
 * [Perp Contract Specs](mango/perp-contract-specs.md)
 * [Market Making Bot (python)](mango/market-making-bot-python.md)
 * [Mango Client API (javascript)](mango/mango-client-api-javascript.md)
+
+## FAQ's
+
+* [Lending](faqs/lending.md)
+* [Health](faqs/health.md)
+* [Spot](faqs/spot.md)
+* [PERP](faqs/perp-faq.md)
+* [Borrows](faqs/borrows.md)
+* [Trade Order Types](faqs/trade-order-types.md)
+* [MNGO](faqs/mngo.md)
+* [Dev](faqs/dev.md)
+* [General FAQ](tutorials/faq.md)
 
 ## Development Resources
 
