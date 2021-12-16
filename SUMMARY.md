@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Begginer Tips](helpful-tips.md)
+* [Beginner Tips](beginner-tips.md)
 
 ## Tutorials
 
