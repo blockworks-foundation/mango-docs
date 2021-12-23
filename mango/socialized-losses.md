@@ -1,4 +1,4 @@
-# Socialized Losses
+# 👪 Socialized Losses
 
 ## Socialized Losses
 

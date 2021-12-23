@@ -2,7 +2,7 @@
 description: Permissionless trading, powered by Mango.
 ---
 
-# Trading 📈
+# 📈 Trading
 
 ## **Welcome to** 🥭 Market**s**
 

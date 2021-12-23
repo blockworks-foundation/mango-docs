@@ -2,11 +2,11 @@
 description: Powerful borrowing and lending capabilities, powered by Mango.
 ---
 
-# Borrowing & Lending 💸
+# 💵 Borrowing & Lending
 
 ## Don't sell, just utilize&#x20;
 
-🥭offers an approachable and powerful platform. Under the hood, the mango risk engine permits users to take out fully collateralized loans against any deposited assets, and deposits into margin accounts accrue interest every second.
+🥭 offers an approachable and powerful platform. Under the hood, the mango risk engine permits users to take out fully collateralized loans against any deposited assets, and deposits into you MangoAccount accrue interest every second.
 
 **Check out the** [**Account page.** ](https://trade.mango.markets/account)****
 

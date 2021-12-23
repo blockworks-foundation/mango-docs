@@ -1,16 +1,16 @@
-# Mango Client API \(javascript\)
+# ⚙ Mango Client API (javascript)
 
 [API Reference](https://blockworks-foundation.github.io/mango-client-v3/)
 
 ### Installation
 
-```text
+```
 yarn add @blockworks-foundation/mango-client
 ```
 
 ### Usage Example
 
-This example assumes that you have a wallet that is already setup with devnet tokens. The private key should be stored in `~/.config/solana/devnet.json`. Visit [https://v3.mango.markets/](https://v3.mango.markets/) and connect with the wallet to fund your margin account so that you can place orders. You can find the full source code in [example.ts](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/example.ts).
+This example assumes that you have a wallet that is already setup with devnet tokens. The private key should be stored in `~/.config/solana/devnet.json`. Visit [https://v3.mango.markets/](https://v3.mango.markets) and connect with the wallet to fund your margin account so that you can place orders. You can find the full source code in [example.ts](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/example.ts).
 
 ```javascript
 // Fetch orderbooks
@@ -75,4 +75,3 @@ for (const fill of await perpMarket.loadFills(connection)) {
   );
 }
 ```
-

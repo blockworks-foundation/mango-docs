@@ -4,7 +4,7 @@ description: >-
   Python code shown here is available in the Mango Explorer V3 branch.)
 ---
 
-# Market Making Bot \(python\)
+# 🤖 Market Making Bot (python)
 
 ## 🏛️  Marketmaking
 
@@ -18,7 +18,7 @@ Instead, let’s look at the mechanics of marketmaking on 🥭 Mango.
 
 Let’s start with a really simple example. Here’s an [actual marketmaker](https://github.com/blockworks-foundation/mango-explorer/blob/v3/scripts/worlds-simplest-market-maker) that will cancel any existing orders, look up the current price on a market, place a BUY order below that price and a SELL order above that price, then pause, then go back to the beginning:
 
-```text
+```
 #!/usr/bin/env bash
 MARKET=${1:-BTC-PERP}
 FIXED_POSITION_SIZE=${2:-0.01}
@@ -44,9 +44,9 @@ done
 
 You can run this and watch it place orders!
 
-For example this will run it on the _ETH-PERP_ market, placing a BUY at the current Serum price minus $10 and a SELL at the current Serum price plus $10, both with a position size of 1 ETH. It will then pause for 30 seconds before cancelling those orders \(if they haven’t been filled\) and placing fresh orders:
+For example this will run it on the _ETH-PERP_ market, placing a BUY at the current Serum price minus $10 and a SELL at the current Serum price plus $10, both with a position size of 1 ETH. It will then pause for 30 seconds before cancelling those orders (if they haven’t been filled) and placing fresh orders:
 
-```text
+```
 mango-explorer worlds-simplest-market-maker ETH-PERP 1 10 30
 ```
 
@@ -54,8 +54,8 @@ That’s not bad for 21 lines of `bash` scripting! OK, the price-fetching is a b
 
 * `cancel-my-orders`
 * `fetch-price`
-* `place-order` \(BUY\)
-* `place-order` \(SELL\)
+* `place-order` (BUY)
+* `place-order` (SELL)
 * `sleep`
 
 ## 📈 A Better Simple Marketmaker
@@ -66,7 +66,7 @@ First of all let’s write it in Python instead of `bash`, and let’s put it in
 
 The [full class is available](https://github.com/blockworks-foundation/mango-explorer/blob/v3/mango/simplemarketmaking/simplemarketmaker.py), but the guts of it are in this looped section:
 
-```text
+```
 try:
     # Update current state
     price = self.oracle.fetch_price(self.context)
@@ -117,13 +117,13 @@ It’s following these steps:
 * If the desired SELL orders and existing orders don’t match, cancel and replace them
 * Pause
 
-You can see this is similar to the steps in the World’s Simplest Marketmaker \(above\), but it’s a bit more complete. Instead of using a fixed position size, it varies it based on inventory. Instead of blindly cancelling orders, it checks to see if the current orders are what it wants them to be.
+You can see this is similar to the steps in the World’s Simplest Marketmaker (above), but it’s a bit more complete. Instead of using a fixed position size, it varies it based on inventory. Instead of blindly cancelling orders, it checks to see if the current orders are what it wants them to be.
 
 ## 🍳 A Tangent On Market Operations
 
 It’s worth highlighting the use of a `MarketOperations` object in the `SimpleMarketMaker`. Lines like:
 
-```text
+```
 self.market_operations.place_order(buy_order)
 ```
 
@@ -135,11 +135,11 @@ What it hides, though, is that the marketmaker can work with 3 different market 
 * Mango Spot
 * Mango Perp
 
-The `market_operations` object is loaded based on the desired market, so it doesn’t matter \(much\) to the marketmaker if the market is Spot or Serum, it still follows the same steps and the `market_operations` takes action on the right market using the right instructions.
+The `market_operations` object is loaded based on the desired market, so it doesn’t matter (much) to the marketmaker if the market is Spot or Serum, it still follows the same steps and the `market_operations` takes action on the right market using the right instructions.
 
-Behind the scenes, a similar variance happens with `MarketInstructions`. The actual instructions sent to Solana vary significantly depending on market type, but by having a unified `MarketInstructions` interface those differences can be largely hidden from marketmaking code. \(It’s not perfect but this commonality does help in most situations.\)
+Behind the scenes, a similar variance happens with `MarketInstructions`. The actual instructions sent to Solana vary significantly depending on market type, but by having a unified `MarketInstructions` interface those differences can be largely hidden from marketmaking code. (It’s not perfect but this commonality does help in most situations.)
 
-This can serve as a kind of a Rosetta Stone for Mango. If you know and understand the instructions sent to Serum to place orders, cancel them, or crank the market, you can look at `SerumMarketInstructions` to see how those instructions are implemented in 🥭 Mango Explorer. Then you can compare that file with `SpotMarketInstructions` to see what bits are different for Spot markets \(that require Mango Accounts\) and what bits are similar. And then you can explore `PerpMarketInstructions` to see how those same actions are performed on perp markets.
+This can serve as a kind of a Rosetta Stone for Mango. If you know and understand the instructions sent to Serum to place orders, cancel them, or crank the market, you can look at `SerumMarketInstructions` to see how those instructions are implemented in 🥭 Mango Explorer. Then you can compare that file with `SpotMarketInstructions` to see what bits are different for Spot markets (that require Mango Accounts) and what bits are similar. And then you can explore `PerpMarketInstructions` to see how those same actions are performed on perp markets.
 
 ## 🚀 A More Complete Marketmaker
 
@@ -148,15 +148,15 @@ We’ve seen a common structure in the previous marketmakers, so let’s see if 
 The main design ideas behind the design are:
 
 * every interval, a ‘pulse’ is sent to run the marketmaker code
-* the marketmaker is provided with relevant ‘live’ data \(like balances\) but can fetch whatever other information it requires
+* the marketmaker is provided with relevant ‘live’ data (like balances) but can fetch whatever other information it requires
 * the main pluggable component is a ‘desired orders builder’. It looks at the state of balances, market, or other data sources, and it provides a list of BUY and SELL orders it would like to see on the orderbook.
-* another component \(also pluggable\) compares the desired orders with any existing orders, and decides which orders need to be placed or cancelled.
+* another component (also pluggable) compares the desired orders with any existing orders, and decides which orders need to be placed or cancelled.
 
-Live data is provided as a `ModelState` parameter to the `pulse()` method, and it’s kept live by a websocket connection that watches for changes in the underlying accounts. That doesn’t matter \(much\) to the marketmaker code, it can just assume the `ModelState` parameter provides up-to-date information on balances, group, prices etc.
+Live data is provided as a `ModelState` parameter to the `pulse()` method, and it’s kept live by a websocket connection that watches for changes in the underlying accounts. That doesn’t matter (much) to the marketmaker code, it can just assume the `ModelState` parameter provides up-to-date information on balances, group, prices etc.
 
-The `pulse()` method is called, say, every 30 seconds \(again, it’s configurable\). The current version of it looks like this:
+The `pulse()` method is called, say, every 30 seconds (again, it’s configurable). The current version of it looks like this:
 
-```text
+```
 def pulse(self, context: mango.Context, model_state: ModelState):
     try:
         payer = mango.CombinableInstructions.from_wallet(self.wallet)
@@ -201,18 +201,18 @@ What’s different here is:
 
 * Desired orders are built using a `DesiredOrdersBuilder` object, and most people will probably want to provide their own version with their own strategy.
 * Existing orders are tracked, rather than having to be fetched.
-* Desired and existing orders are compared using an `OrderReconciler`. The default version takes a `tolerance` value and if an existing order has the same side \(BUY or SELL\) and both price and quantity are within the `tolerance` of a desired order, the existing order remains on the orderbook and the desired order is ignored.
-* The code builds a list of instructions, and they’re executed in one step. This is faster, more efficient, and can allow cancels and places to happen in the same transaction. \(Instruction szie can mean this doesn’t happen though, but the `execute()` method takes this into account and uses as many transactions as necessary.\)
+* Desired and existing orders are compared using an `OrderReconciler`. The default version takes a `tolerance` value and if an existing order has the same side (BUY or SELL) and both price and quantity are within the `tolerance` of a desired order, the existing order remains on the orderbook and the desired order is ignored.
+* The code builds a list of instructions, and they’re executed in one step. This is faster, more efficient, and can allow cancels and places to happen in the same transaction. (Instruction szie can mean this doesn’t happen though, but the `execute()` method takes this into account and uses as many transactions as necessary.)
 
 You can see the different parameters the marketmaker takes by running:
 
-```text
+```
 mango-explorer marketmaker --help
 ```
 
-You can run a basic instance of the marketmaker against the BTC-PERP market using [Pyth](https://pyth.network/) with:
+You can run a basic instance of the marketmaker against the BTC-PERP market using [Pyth](https://pyth.network) with:
 
-```text
+```
 mango-explorer marketmaker --market BTC/USDC --oracle-provider pyth-mainnet-beta --position-size-ratio 0.01
 ```
 
@@ -223,4 +223,3 @@ We started by saying what prices to use, how much inventory to offer, and how to
 They’re up to you.
 
 For now the code is in the [Mango Explorer V3 branch](https://github.com/blockworks-foundation/mango-explorer/tree/v3). Happy marketmaking!
-

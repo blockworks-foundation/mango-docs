@@ -1,4 +1,4 @@
-# How to Vote in Governance
+# ⚖ How to Vote in Governance
 
 MNGO is a governance token whose ownership grants voting rights on proposals to dictate Mango protocol's future.&#x20;
 

@@ -2,7 +2,7 @@
 description: This is a work in progress. More information will be added as they come.
 ---
 
-# Perp Contract Specs
+# 🔮 Perp Contract Specs
 
 Contracts are all denominated in the underlying.&#x20;
 

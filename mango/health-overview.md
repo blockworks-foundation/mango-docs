@@ -1,4 +1,4 @@
-# Health Overview
+# ❤ Health Overview
 
 The health of an account is used to determine if one can open a new position or if one can be liquidated. There are two types of health, initial health used for opening new positions and maintenance health used for liquidations. They are both calculated as a weighted sum of the assets minus the liabilities but the maint. health uses slightly larger weights for assets and slightly smaller weights for the liabilities. Zero is used as the bright line for both i.e. if your init health falls below zero, you cannot open new positions and if your maint. health falls below zero you will be liquidated. They are calculated as follows:
 

@@ -4,7 +4,7 @@ description: >-
   trading platform.
 ---
 
-# Initial set up with 🥭
+# 🥭 Initial Setup
 
 ## **Connecting your Wallet**
 
@@ -12,15 +12,15 @@ First, choose your wallet and then click connect.
 
 * For help creating or funding your wallet, please see [our dedicated article](tutorials/creating-a-wallet.md#how-to-create-a-sollet-io-wallet).
 
-![](<.gitbook/assets/connect (1).png>)
+![](<.gitbook/assets/Connect (1).png>)
 
-Next, decide whether auto-approval is on or off and approve the connection
+After connecting, under settings you can decide whether auto-approval is on or off and approve the connection
 
-![](.gitbook/assets/approve.png)
+![](.gitbook/assets/autoapprove.png)
 
 _**\*\***Selecting on will give a smoother trading experience (more like a CEX.) keeping it off you will need to approve every transaction within the platform._
 
-## **Creating a** 🥭 MangoAccount **& depositing funds**
+## **Creating a** MangoAccount **& depositing funds**
 
 It's time to create and fund your first 🥭MangoAccount. Simply click on the deposit  button within the account modal to initiate the MangoAccount creation modal.
 

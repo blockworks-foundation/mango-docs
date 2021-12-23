@@ -1,6 +1,6 @@
-# Begginer Tips
+# 🙋 Beginner Tips
 
-Mango is a powerful platform, some things to know to get the most out of it. \
+Mango is an extremely powerful tool, some things to know to get the most out of the platform. \
 \
 Collateral is shared between borrow/lending and leverage trading. If you deposit into your MangoAccount, those assets will automatically earn interest and serve as available collateral to leverage trade or withdraw a borrow.&#x20;
 

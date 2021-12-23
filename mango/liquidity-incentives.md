@@ -1,4 +1,4 @@
-# Liquidity Mining
+# ⛏ Liquidity Mining
 
 ## Overview
 

@@ -1,29 +1,29 @@
 # Table of contents
 
-* [Overview](README.md)
-* [Beginner Tips](beginner-tips.md)
+* [🔍 Overview](README.md)
+* [🙋 Beginner Tips](beginner-tips.md)
 
 ## Tutorials
 
-* [Initial set up with 🥭](<README (1).md>)
-* [Trading 📈](tutorials/trading-on-mango.md)
-* [Borrowing & Lending 💸](tutorials/borrowing-and-lending.md)
-* [Creating & Funding a Wallet 👛](tutorials/creating-a-wallet.md)
-* [How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
+* [🥭 Initial Setup](<README (1).md>)
+* [📈 Trading](tutorials/trading-on-mango.md)
+* [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
+* [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
+* [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
 
 ## Mango
 
-* [Health Overview](mango/health-overview.md)
-* [Liquidations](mango/liquidations.md)
-* [Insurance Fund](mango/insurance-fund.md)
-* [Socialized Losses](mango/socialized-losses.md)
-* [Settle Pnl](mango/settle-pnl.md)
-* [Funding](mango/funding.md)
-* [Liquidity Mining](mango/liquidity-incentives.md)
-* [Asset Specs](mango/token-specs.md)
-* [Perp Contract Specs](mango/perp-contract-specs.md)
-* [Market Making Bot (python)](mango/market-making-bot-python.md)
-* [Mango Client API (javascript)](mango/mango-client-api-javascript.md)
+* [❤ Health Overview](mango/health-overview.md)
+* [💀 Liquidations](mango/liquidations.md)
+* [💰 Insurance Fund](mango/insurance-fund.md)
+* [👪 Socialized Losses](mango/socialized-losses.md)
+* [🤝 Settle Pnl](mango/settle-pnl.md)
+* [💸 Funding](mango/funding.md)
+* [⛏ Liquidity Mining](mango/liquidity-incentives.md)
+* [☑ Asset Specs](mango/token-specs.md)
+* [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
+* [🤖 Market Making Bot (python)](mango/market-making-bot-python.md)
+* [⚙ Mango Client API (javascript)](mango/mango-client-api-javascript.md)
 
 ## FAQ's
 
@@ -44,9 +44,9 @@
 
 ## Mango V2
 
-* [Overview 👀](mango-v2/overview.md)
-* [Risks ⚠️](mango-v2/risks.md)
-* [PNL Calculation 🧮](mango-v2/pnl-calculation.md)
+* [Overview](mango-v2/overview.md)
+* [Risks](mango-v2/risks.md)
+* [PNL Calculation](mango-v2/pnl-calculation.md)
 * [Mango Program API](mango-v2/mango-program-api.md)
 
 ***

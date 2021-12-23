@@ -4,11 +4,11 @@ description: >-
   added
 ---
 
-# Asset Specs
+# ☑ Asset Specs
 
 ### Spot Market Leverage
 
-Note: The asset\_weight applies a haircut to the value of the collateral in health calculations.  The lower the asset weight, the less the asset counts towards collateral. Initial Leverage and Maintenance Leverage can be converted to the corresponding asset\_weights with these calculations:
+Note: The asset\_weight applies a haircut to the value of the collateral in health calculations. The lower the asset weight, the less the asset counts towards collateral. Initial Leverage and Maintenance Leverage can be converted to the corresponding asset\_weights with these calculations:
 
 ```
 init_asset_weight = 1 - 1 / init_leverage
@@ -32,7 +32,7 @@ maint_liab_weight = 1 + 1 / maint_leverage
 
 ### Asset Weights
 
-The init asset weight (aka haircut) is the discount applied to the value of the collateral  when initializing a new position. For example, for BTC, $100 in BTC is treated as 80 USDC when initializing a new position. The maint asset weight is the discount applied when calculating the value of the collateral for purposes of liquidation. The maint asset weight is higher to give you more of a buffer before liquidation.&#x20;
+The init asset weight (aka haircut) is the discount applied to the value of the collateral when initializing a new position. For example, for BTC, $100 in BTC is treated as 80 USDC when initializing a new position. The maint asset weight is the discount applied when calculating the value of the collateral for purposes of liquidation. The maint asset weight is higher to give you more of a buffer before liquidation.
 
 | Token | Init Asset Weight | Maint Asset Weight |
 | ----- | ----------------- | ------------------ |
