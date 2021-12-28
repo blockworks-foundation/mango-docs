@@ -21,7 +21,7 @@ Click the 'Deposit Governance Tokens' button.
 
 A dialog will appear saying 'Deposit your tokens?' Click Deposit.
 
-This will bring up a wallet approval step, for the entirety of your MNGO tokens in your account. This is a scary step.\
+This will bring up a wallet approval step, for the entirety of your MNGO tokens in your account. This is a scary step, but it's safe--you can withdraw at any time.\
 \
 Your Deposited Tokens will appear in the Governance Tokens Panel. Your tokens are now on the governance contract and removed from your connected wallet. \
 

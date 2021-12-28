@@ -17,4 +17,6 @@ Tick size is denominated in quote currency (USDC).
 | RAY        | 8              | 16              | 3.125               | 0.1           | 0.001     |
 | FTT        | 10             | 20              | 2.5                 | 0.1           | 0.001     |
 | ADA        | 10             | 20              | 2.5                 | 1             | 0.0001    |
+| BNB        | 10             | 20              | 2.5                 | 0.001         | 0.1       |
+| AVAX       | 10             | 20              | 2.5                 | 0.01          | 0.01      |
 
