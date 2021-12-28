@@ -26,6 +26,13 @@ Mango also gives you the ability to customize your experience, decide what marke
 
 ![](../.gitbook/assets/markets2.png)
 
+## Asset Details&#x20;
+
+Assets have different maximum and maintenance leverage specifications. For  the specifics by asset please see: \
+\
+[Spot Assets](../mango/token-specs.md) \
+[Perpetual Futures](../mango/perp-contract-specs.md) &#x20;
+
 ## More Customization&#x20;
 
 Mango offers you the ability to customize you trading experience. Create multiple accounts, choose theme styling, adjust window size & placement, switch order-book type, and utilize the trading view to its full extent.
@@ -81,8 +88,6 @@ Mango also offers perpetual futures built on the Mango protocol with its own ord
 Mango traders save substantially on Serum DEX trading fees by pooling SRM together in Mango. Serum's tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum(MSRM)and unrealistic for most people to obtain.&#x20;
 
 Luckily, Mango utilized a generously deposited MSRM so all users collectively reach the highest tier and benefit together when trading on the platform.&#x20;
-
-
 
 ## **Join the community** 👾
 
