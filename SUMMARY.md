@@ -33,6 +33,7 @@
 * [PERP](faqs/perp-faq.md)
 * [Borrows](faqs/borrows.md)
 * [Trade Order Types](faqs/trade-order-types.md)
+* [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
 * [General FAQ](tutorials/faq.md)
