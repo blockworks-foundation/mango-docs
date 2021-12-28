@@ -93,6 +93,18 @@ Mango traders save substantially on Serum DEX trading fees by pooling SRM togeth
 
 Luckily, Mango utilized a generously deposited MSRM so all users collectively reach the highest tier and benefit together when trading on the platform.&#x20;
 
+## **Swap**
+
+Mango provides the ability to swap for any Solana asset though Jupiter Aggregator integration at  [https://trade.mango.markets/swap](https://trade.mango.markets/swap)\
+\
+This swap checks prices and routes across all Solana dApps so you know you're getting you get the best price. These swaps occur within your connected wallet and are not associated with your MangoAccount. \
+\
+Select the asset you'd like to swap away in the 'You Pay' box and the desired asset received in 'You Receive'. Enter the size of the swap in either assets native currency.&#x20;
+
+![](<../.gitbook/assets/Screen Shot 2021-12-28 at 2.33.30 PM.png>)
+
+The most efficient route will be highlighted. Click 'Swap' and confirm the transaction in wallet. The assets will appear in your connected wallet balances.&#x20;
+
 ## **Join the community** 👾
 
 The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
