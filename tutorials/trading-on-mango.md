@@ -8,7 +8,7 @@ description: Permissionless trading, powered by Mango.
 
 Use the Mango interface to interact with the protocol to margin trade on the Serum DEX markets as well as trade leveraged perpetual futures, all within one unified interface.&#x20;
 
-Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 10x leverage. Long and short everything, with limit or market orders, more advanced order types coming soon.&#x20;
+Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 20x leverage. Long and short everything, with limit or market orders, many [advanced orders](../faqs/trade-order-types.md).&#x20;
 
 **Check out the** [**trade page.** ](https://trade.mango.markets)****
 
@@ -78,13 +78,11 @@ Mango also offers perpetual futures built on the Mango protocol with its own ord
 
 ## 🥭 **pays the Lowest Fees**&#x20;
 
-Mango traders save substantially on Serum DEX trading fees by pooling SRM together in Mango. Serum's tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum(MSRM), worth 1 million SRM, and unrealistic for most people to obtain.&#x20;
+Mango traders save substantially on Serum DEX trading fees by pooling SRM together in Mango. Serum's tier structure determines fee rates based on the amount of SRM held in an account; the more SRM in an account, the less you pay in fees and the more you earn as a maker. The highest tier is 1 MegaSerum(MSRM)and unrealistic for most people to obtain.&#x20;
 
-Luckily, Mango margin accounts are structured such that SRM deposits are combined with all users to collectively reach a higher tier and benefit together when trading on the platform. \
-\
-SRM deposits are counted as collateral and toward the community fee tier.&#x20;
+Luckily, Mango utilized a generously deposited MSRM so all users collectively reach the highest tier and benefit together when trading on the platform.&#x20;
 
-![](../.gitbook/assets/srm.png)
+
 
 ## **Join the community** 👾
 
