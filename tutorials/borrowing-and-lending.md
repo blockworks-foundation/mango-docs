@@ -4,6 +4,12 @@ description: Powerful borrowing and lending capabilities, powered by Mango.
 
 # 💵 Borrowing & Lending
 
+Deposit into MangoAccount to automatically earn interest; interest is paid continuously to balances
+
+Borrow against your collateral with a withdraw&#x20;
+
+Track interest earned/paid in Account History
+
 ## Don't sell, just utilize&#x20;
 
 🥭 offers an approachable and powerful platform. Under the hood, the mango risk engine permits users to take out fully collateralized loans against any deposited assets, and deposits into you MangoAccount accrue interest every second.

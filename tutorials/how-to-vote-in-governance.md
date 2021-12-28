@@ -1,5 +1,13 @@
 # ⚖ How to Vote in Governance
 
+Deposit MNGO to on DAO governance site&#x20;
+
+View and vote on proposals&#x20;
+
+Withdraw at anytime&#x20;
+
+### Governance
+
 MNGO is a governance token whose ownership grants voting rights on proposals to dictate Mango protocol's future.&#x20;
 
 Mango's code maintenance and future releases are reliant on successful proposals to update the smart contracts owned and controlled by the DAO. 3.9 billion un-circulating MNGO tokens are locked in a smart contract, only accessible via DAO governance votes.&#x20;
