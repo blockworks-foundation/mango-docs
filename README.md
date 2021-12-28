@@ -1,6 +1,6 @@
 # 🔍 Overview
 
-Mango provides a single venue to lend, borrow, and leverage trade cryptoassets through a powerful risk engine
+Mango provides a single venue to lend, borrow, swap, and leverage trade cryptoassets through a powerful risk engine
 
 * Earn interest on deposits&#x20;
 * Cross-Margin  / Cross-Collateralized
