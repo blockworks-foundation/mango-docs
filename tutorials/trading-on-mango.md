@@ -4,11 +4,9 @@ description: Permissionless trading, powered by Mango.
 
 # 📈 Trading
 
-Perpetual futures up to 20x leverage on Mango's orderbook and 10x spot margin trading through Serum DEX
-
-Cross Margin and Cross Collateralized&#x20;
-
-Highest Serum fee tier achieved by all traders from a generously deposited MSRM&#x20;
+* Perpetual futures up to 20x leverage on Mango's orderbook and 10x spot margin trading through Serum DEX
+* Cross Margin and Cross Collateralized&#x20;
+* Highest Serum fee tier achieved by all traders from a generously deposited MSRM&#x20;
 
 ## **Welcome to** 🥭 Market**s**
 

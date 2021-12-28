@@ -4,11 +4,9 @@ description: Powerful borrowing and lending capabilities, powered by Mango.
 
 # 💵 Borrowing & Lending
 
-Deposit into MangoAccount to automatically earn interest; interest is paid continuously to balances
-
-Borrow against your collateral with a withdraw&#x20;
-
-Track interest earned/paid in Account History
+* Deposit into MangoAccount to automatically earn interest; interest is paid continuously to balances
+* Borrow against your collateral with a withdraw&#x20;
+* Track interest earned/paid in Account History
 
 ## Don't sell, just utilize&#x20;
 

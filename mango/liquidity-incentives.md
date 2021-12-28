@@ -1,5 +1,9 @@
 # ⛏ Liquidity Mining
 
+* Liquidity Mining rewards MNGO to limit orders on the perpetual futures orderbook within a specified depth of mark price.&#x20;
+* Orders closer to mark price are rewarded more favorably&#x20;
+* Liquidity Mining is open to everyone
+
 ## Overview
 
 Mango Perps are the first perpetual futures contracts that are traded on a fully on chain order book. Providing liquidity on an order book is more of a skilled activity than providing on an AMM contract. In order to bootstrap the liquidity on Mango Perps, the Mango Protocol will disburse MNGO automatically to market makers according to an on-chain algorithm. This document describes the mechanism. But broadly:

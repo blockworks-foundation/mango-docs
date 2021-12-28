@@ -1,5 +1,7 @@
 # 👪 Socialized Losses
 
+* If the insurance fund runs out, socialized losses will occur in pools with negative equity accounts
+
 ## Socialized Losses
 
 If an account still has liabilities but no more assets for liquidators to take, the account is bankrupt and insurance fund starts paying. Socialized loss only kicks in after the insurance fund owned by Mango v3 is depleted. We hope this is a rare event.&#x20;

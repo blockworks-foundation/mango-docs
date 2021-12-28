@@ -1,6 +1,8 @@
 # 💀 Liquidations
 
-
+* Liquidations occur when account Maintenance Health is below 0
+* Partial Liquidations are possible&#x20;
+* Liquidations are permissionless and open to anyone for a liquidation fee reward
 
 ## Liquidations
 
