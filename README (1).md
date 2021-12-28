@@ -6,6 +6,10 @@ description: >-
 
 # 🥭 Initial Setup
 
+* Create MangoAccount
+* Deposits are cross collateralized and positions cross-margined&#x20;
+* Health is used to determine liquidations and new position eligibility
+
 ## **Connecting your Wallet**
 
 First, choose your wallet and then click connect.
