@@ -36,23 +36,9 @@ Interest is paid on your borrows continuously from your deposits. Please monitor
 
 **To repay your loan, deposit or trade for the borrowed asset.**
 
-## How to use the Risk Calculator&#x20;
+##
 
-The Risk Calculator tool helps estimate liquidation scenarios on leveraged positioned. Liquidation events occur when your [Collateral Ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/\~/drafts/-Mf9lVu8a9wqsacHHCGf/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) drops below 110%. Since positions are cross-margined, there is not always a straight forward liquidation price to provide. With this tool, you can predict liquidations by providing assumptions on asset prices and other account details.
 
-Select 'Risk Calculator' below your account calculations.
-
-![](../.gitbook/assets/screen-shot-2021-07-21-at-6.05.24-pm.png)
-
-Your Account Risk assessment, Collateral Ratio, and Price Change Buffer are displayed on the right in Scenario Details.&#x20;
-
-The Scenario Balances section enables manipulation of deposits, borrows, and asset prices and displays the effect on you Collateral Ratio and liquidation risk.&#x20;
-
-![](../.gitbook/assets/screen-shot-2021-07-21-at-5.40.53-pm.png)
-
-Individual asset price, deposits, and borrows can be changed in their corresponding columns. Price movements across all markets can be applied by the 'Edit All Prices' slider. Resulting Scenario Details will share information on new account health including Collateral Ratio and liquidation status based off new assumptions.&#x20;
-
-![](../.gitbook/assets/screen-shot-2021-07-21-at-7.16.13-pm.png)
 
 ## **Video Tutorial**&#x20;
 
