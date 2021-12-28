@@ -16,7 +16,7 @@ Instead, let’s look at the mechanics of marketmaking on 🥭 Mango.
 
 ## 📉 World’s Simplest Marketmaker
 
-Let’s start with a really simple example. Here’s an [actual marketmaker](https://github.com/blockworks-foundation/mango-explorer/blob/v3/scripts/worlds-simplest-market-maker) that will cancel any existing orders, look up the current price on a market, place a BUY order below that price and a SELL order above that price, then pause, then go back to the beginning:
+Let’s start with a really simple example. Here’s an [actual marketmaker](https://github.com/blockworks-foundation/mango-explorer/blob/main/scripts/worlds-simplest-market-maker) that will cancel any existing orders, look up the current price on a market, place a BUY order below that price and a SELL order above that price, then pause, then go back to the beginning:
 
 ```
 #!/usr/bin/env bash
@@ -64,7 +64,7 @@ There are many obvious problems with that approach so let’s see if we can do b
 
 First of all let’s write it in Python instead of `bash`, and let’s put it in an object - `SimpleMarketMaker` - so that the methods can be overriddden allowing different functionality to be swapped in. Let’s try to be a bit smarter about inventory. And let’s add a check on orders to see if existing orders are OK - even though SOL is cheap there’s no point wasting money cancelling and adding identical orders.
 
-The [full class is available](https://github.com/blockworks-foundation/mango-explorer/blob/v3/mango/simplemarketmaking/simplemarketmaker.py), but the guts of it are in this looped section:
+The [full class is available](https://github.com/blockworks-foundation/mango-explorer/blob/main/mango/simplemarketmaking/simplemarketmaker.py), but the guts of it are in this looped section:
 
 ```
 try:
@@ -222,4 +222,4 @@ We started by saying what prices to use, how much inventory to offer, and how to
 
 They’re up to you.
 
-For now the code is in the [Mango Explorer V3 branch](https://github.com/blockworks-foundation/mango-explorer/tree/v3). Happy marketmaking!
+For now the code is in the [Mango Explorer main branch](https://github.com/blockworks-foundation/mango-explorer). Happy marketmaking!
