@@ -43,7 +43,7 @@
 * [Mango Client API](development-resources/mango-client-api.md)
 * [Liquidator](development-resources/liquidator.md)
 
-## Mango V2
+## Mango V2 (DEPRECATED) <a href="#mango-v2" id="mango-v2"></a>
 
 * [Overview](mango-v2/overview.md)
 * [Risks](mango-v2/risks.md)
