@@ -19,4 +19,5 @@ Tick size is denominated in quote currency (USDC).
 | ADA        | 10             | 20              | 2.5                 | 1             | 0.0001    |
 | BNB        | 10             | 20              | 2.5                 | 0.001         | 0.1       |
 | AVAX       | 10             | 20              | 2.5                 | 0.01          | 0.01      |
+| LUNA       | 10             | 20              | 2.5                 | 0.01          | 0.01      |
 

@@ -29,6 +29,9 @@ maint_liab_weight = 1 + 1 / maint_leverage
 | RAY   | 5                | 10                   | 5.00                |
 | COPE  | 2                | 4                    | 12.50               |
 | FTT   | 5                | 10                   | 5.00                |
+| AVAX  | 5                | 10                   | 5.00                |
+| BNB   | 5                | 10                   | 5.00                |
+| LUNA  | 5                | 10                   | 5.00                |
 
 ### Asset Weights
 
@@ -46,6 +49,9 @@ The init asset weight (aka haircut) is the discount applied to the value of the 
 | RAY   | 0.8               | 0.9                |
 | COPE  | 0.5               | 0.75               |
 | FTT   | 0.8               | 0.9                |
+| AVAX  | 0.8               | 0.9                |
+| BNB   | 0.8               | 0.9                |
+| LUNA  | 0.8               | 0.9                |
 | USDC  | 1                 | 1                  |
 
 ### Asset Interest Rates
@@ -64,5 +70,9 @@ The lending pools work similar to the lending pools on Aave. With the big differ
 | USDT  | 5%           | 125%     | 70%                 |
 | RAY   | 10%          | 250%     | 70%                 |
 | COPE  | 6%           | 150%     | 70%                 |
+| FTT   | 3%           | 75%      | 70%                 |
+| BNB   | 3%           | 75%      | 70%                 |
+| AVAX  | 3%           | 75%      | 70%                 |
+| LUNA  | 3%           | 75%      | 70%                 |
 
 ![Utilization rate can vary by asset.](../.gitbook/assets/untitled.png)

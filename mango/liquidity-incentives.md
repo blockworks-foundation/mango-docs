@@ -103,4 +103,7 @@ Max Depth is the amount of liquidity on \*each\* side of the book that is reward
 |      RAY      |  12,500 RAY  |      250      |
 |      FTT      |   2,100 FTT  |      250      |
 |      ADA      |  125,000 ADA |      500      |
+|      BNB      |  440,140 BNB |      500      |
+|      AVAX     | 294,117 AVAX |      500      |
+|      LUNA     | 294,117 LUNA |      500      |
 
