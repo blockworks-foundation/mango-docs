@@ -1,4 +1,4 @@
-# Health FAQ
+# Health
 
 In v3, the health of an account is used to determine if an account can open a new position or be liquidated. \
 \
@@ -44,6 +44,9 @@ These values by asset are:\
 | SRM                                          | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
 | RAY                                          | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
 | FTT                                          | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
+| AVAX                                         | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
+| BNB                                          | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
+| LUNA                                         | 0.9                 | 1.1                 | 0.8                | 1.2                | 5              | 10              |
 | COPE                                         | 0.75                | 1.25                | 0.5                | 1.5                | 2              | 4               |
 | MNGO                                         | 0.6                 | 1.4                 | 0.2                | 1.8                | 1.25           | 2.5             |
 | <mark style="color:orange;">**PERP**</mark>  |                     |                     |                    |                    |                |                 |
@@ -52,6 +55,9 @@ These values by asset are:\
 | FTT                                          | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
 | ETH                                          | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
 | ADA                                          | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
+| AVAX                                         | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
+| BNB                                          | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
+| LUNA                                         | 0.95                | 1.05                | 0.9                | 1.1                | 10             | 20              |
 | SRM                                          | 0.9375              | 1.0625              | 0.875              | 1.125              | 8              | 16              |
 | RAY                                          | 0.9375              | 1.0625              | 0.875              | 1.125              | 8              | 16              |
 | MNGO                                         | 0.875               | 1.125               | 0.75               | 1.25               | 4              | 8               |
