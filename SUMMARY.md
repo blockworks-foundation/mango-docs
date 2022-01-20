@@ -2,6 +2,7 @@
 
 * [🔍 Overview](README.md)
 * [🙋 Beginner Tips](beginner-tips.md)
+* [👷 Developer Resources](developer-resources.md)
 
 ## Tutorials
 
@@ -22,6 +23,7 @@
 * [⛏ Liquidity Mining](mango/liquidity-incentives.md)
 * [☑ Asset Specs](mango/token-specs.md)
 * [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
+* [🦋 Bug Bounty](mango/bug-bounty.md)
 * [🤖 Market Making Bot (python)](mango/market-making-bot-python.md)
 * [⚙ Mango Client API (javascript)](mango/mango-client-api-javascript.md)
 
