@@ -4,7 +4,7 @@ Mango is completely open source, we see this transparency as vital for the proje
 
 
 
-There are a bunch of ways to connect your trading system to mango's on-chain program. The easiest way for traders, used to centralized exchanges, is to use the [REST & Websocket API](https://github.com/microwavedcola1/mango-v3-service) that was purposefully designed to be easy to integrate. In case you want to have the highest level of control, you will most likely want to read and write directly to the blockchain using one of the existing open source wrappers for [typescript](https://github.com/blockworks-foundation/mango-client-v3), [python](https://github.com/blockworks-foundation/mango-explorer) or [.net](https://github.com/bmresearch/Solnet.Mango/).
+There are a bunch of ways to connect your trading system to mango's on-chain program. The easiest way for traders, used to centralized exchanges, is to use the [REST & Websocket API](https://github.com/microwavedcola1/mango-v3-service) that was purposefully designed to be easy to integrate. In case you want to have the highest level of control, you will most likely want to communicate directly with the blockchain using one of the existing open source wrappers for [typescript](https://github.com/blockworks-foundation/mango-client-v3), [python](https://github.com/blockworks-foundation/mango-explorer) or [.net](https://github.com/bmresearch/Solnet.Mango/).
 
 
 
