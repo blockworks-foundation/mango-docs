@@ -6,7 +6,7 @@ This bug bounty is specifically for Mango's on-chain program code; UI only bugs 
 
 | **Severity** | **Description**                                                                                                 | **Bug Bounty**                                               |
 | ------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Critical     | Bugs that freeze user funds or drain the contract's holdings or involve theft of funds without user signatures. | 10% of the value of the hack up to $500,000.                 |
+| Critical     | Bugs that freeze user funds or drain the contract's holdings or involve theft of funds without user signatures. | 10% of the value of the hack up to $1,000,000.               |
 | High         | Bugs that could _temporarily_ freeze user funds or incorrectly assign value to user funds.                      | $10,000 to $50,000 per bug, assessed on a case by case basis |
 | Medium/Low   | Bugs that don't threaten user funds                                                                             | $1,000 to $5,000 per bug, assessed on a case by case basis   |
 
