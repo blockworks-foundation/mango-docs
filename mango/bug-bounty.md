@@ -20,7 +20,7 @@ Please email [hello@blockworks.foundation](mailto:hello@blockworks.foundation) w
 
 #### Bug Bounty Payment <a href="#zj-bug-bounty-payment" id="zj-bug-bounty-payment"></a>
 
-Bug bounties will be paid in USDC. Alternative payment methods can be used on a case-by-case basis.
+Bug bounties will be paid in USDC or locked MNGO, after a DAO vote. The Mango DAO has never refused a bug bounty so far.
 
 #### Invalid Bug Bounties <a href="#i-invalid-bug-bounties" id="i-invalid-bug-bounties"></a>
 
