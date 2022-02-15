@@ -2,6 +2,8 @@
 
 **All Mango code is open source** ![🔓](https://discord.com/assets/8b7eb8b25468313916d2e5ec3727cd2d.svg) **** 
 
+Technical Intro To Mango Markets: [https://mango-markets.notion.site/Technical-Intro-to-Mango-Markets-15a650e4799e41c8bfc043fbf079e6f9](https://mango-markets.notion.site/Technical-Intro-to-Mango-Markets-15a650e4799e41c8bfc043fbf079e6f9)
+
 v3 smart contract: [https://github.com/blockworks-foundation/mango-v3](https://github.com/blockworks-foundation/mango-v3)&#x20;
 
 v3 UI: [https://github.com/blockworks-foundation/mango-ui-v3](https://github.com/blockworks-foundation/mango-ui-v3) v3 client&#x20;
