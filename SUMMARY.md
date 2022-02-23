@@ -11,6 +11,7 @@
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
 * [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
+* [® Vanity referral links, affiliate program and reduced trading fees](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
 
 ## Mango
 
