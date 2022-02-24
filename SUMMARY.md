@@ -24,6 +24,7 @@
 * [⛏ Liquidity Mining](mango/liquidity-incentives.md)
 * [☑ Asset Specs](mango/token-specs.md)
 * [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
+* [🫂 Account Delegation](mango/account-delegation.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [🤖 Market Making Bot (python)](mango/market-making-bot-python.md)
 * [⚙ Mango Client API (javascript)](mango/mango-client-api-javascript.md)
