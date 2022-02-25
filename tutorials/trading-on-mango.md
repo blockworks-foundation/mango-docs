@@ -49,7 +49,7 @@ To place an order, first decide whether you want to Buy or Sell an asset.&#x20;
 
 Note when doing limit orders, the options of POST and IOC.&#x20;
 
-* When IOC (Immediate or Cancel) is selected - if an order is placed and not filled within seconds, it's canceled.&#x20;
+* When IOC (Immediate or Cancel) is selected - if an order is placed and not filled immediately, it's canceled.&#x20;
 * When POST is selected, limit orders are added to the order book and earn maker fees if filled.&#x20;
 * POST orders will always be the 'maker'.
 

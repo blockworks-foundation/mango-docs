@@ -30,7 +30,7 @@ Mango code has been informally reviewed by Serum and Solana devs as well as the 
 
 ### **What does IOC mean?**
 
-&#x20;Immediate or cancel (IOC). If an order is placed and not filled within 10 seconds, it's cancelled.
+&#x20;Immediate or cancel (IOC). If an order is placed and not filled immediately, it's cancelled.
 
 ### **What does POST mean?**
 
