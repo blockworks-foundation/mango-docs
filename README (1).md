@@ -14,13 +14,13 @@ description: >-
 
 First, choose your wallet and then click connect.
 
-* For help creating or funding your wallet, please see [our dedicated article](creating-a-wallet.md#how-to-create-a-sollet-io-wallet).
+* For help creating or funding your wallet, please see [our dedicated article](tutorials/creating-a-wallet.md#how-to-create-a-sollet-io-wallet).
 
-![](<../.gitbook/assets/Connect (1) (1).png>)
+![](<.gitbook/assets/Connect (1).png>)
 
 After connecting, under settings you can decide whether auto-approval is on or off and approve the connection
 
-![](../.gitbook/assets/autoapprove.png)
+![](.gitbook/assets/autoapprove.png)
 
 _**\*\***Selecting on will give a smoother trading experience (more like a CEX.) keeping it off you will need to approve every transaction within the platform._
 
@@ -28,13 +28,13 @@ _**\*\***Selecting on will give a smoother trading experience (more like a CEX.)
 
 It's time to create and fund your first 🥭MangoAccount. Simply click on the deposit  button within the account modal to initiate the MangoAccount creation modal.
 
-![](<../.gitbook/assets/fund (1).png>)
+![](<.gitbook/assets/fund (1).png>)
 
 In the account creation modal, first, decide to name your account or not. Next, choose the asset you want to fund your MangoAccount with and enter the amount you want to deposit.&#x20;
 
 You’ll need **0.035 SOL** in your wallet to open a MangoAccount.&#x20;
 
-![](../.gitbook/assets/fund2.png)
+![](.gitbook/assets/fund2.png)
 
 ## Understanding Collateral on 🥭
 
@@ -42,7 +42,7 @@ Within mango, all your assets are considered "collateral", which means you can u
 
 On mango collateral health is connected to your _Health Ratio,_ which is based on your collateral ratio. This essentially allows you to utilize any asset to trade or borrow against any other asset all being handled by Mango and its risk engine.
 
-![](../.gitbook/assets/health1.png)
+![](.gitbook/assets/health1.png)
 
 For example, if you have $100 of USDC within your account you can exchange that for up to 5x of another asset, depending on the market's collateral ratio (MNGO, SOL, SRM, USDT, BTC, and ETH) while still holding your original USDC position. You can also withdraw funds as needed and pay back your liabilities to keep your health ratio in the green.
 
@@ -52,7 +52,7 @@ Once a position is opened, it must maintain a Health Ratio above 0%. If an accou
 \
 The current Health Ratio is displayed in two places, on the trade page and under your accounts page.&#x20;
 
-![](../.gitbook/assets/healthbab.png)
+![](.gitbook/assets/healthbab.png)
 
 ## Portfolio & Position Management
 
@@ -71,7 +71,7 @@ More features being added.
 
 **Manage your portfolio and all positions right on the** [**account page.** ](https://trade.mango.markets/account)****
 
-![](../.gitbook/assets/account.png)
+![](.gitbook/assets/account.png)
 
 ## **Join the community** 👾
 

@@ -6,11 +6,12 @@
 
 ## Tutorials
 
-* [🥭 Initial Setup](tutorials/getting-started.md)
+* [🥭 Initial Setup](<README (1).md>)
 * [📈 Trading](tutorials/trading-on-mango.md)
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
 * [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
+* [🔒 Token Locking](tutorials/token-locking.md)
 * [® Vanity referral links, affiliate program and reduced trading fees](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
 
 ## Mango
@@ -40,7 +41,7 @@
 * [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
-* [General FAQ](faqs/faq.md)
+* [General FAQ](tutorials/faq.md)
 
 ## Development Resources
 

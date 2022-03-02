@@ -75,4 +75,4 @@ The lending pools work similar to the lending pools on Aave. With the big differ
 | AVAX  | 3%           | 75%      | 70%                 |
 | LUNA  | 3%           | 75%      | 70%                 |
 
-![Utilization rate can vary by asset.](../.gitbook/assets/Untitled.png)
+![Utilization rate can vary by asset.](../.gitbook/assets/untitled.png)

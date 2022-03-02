@@ -36,11 +36,11 @@ Sollet.io stores private keys in your web browser. You must access the wallet fr
 
 The first step in creating a new wallet is recording your seed phrase in a safe place. This phrase is the only way to recover and restore your wallet’s funds in case you forget your password, the computer breaks, or sometimes even when you clear browser cookies. This phrase is very important, so please keep it somewhere safe!
 
-![](../.gitbook/assets/SeedPhrase2.png)
+![](../.gitbook/assets/seedphrase2.png)
 
 After you record your phrase in a safe place and click ‘Continue’, you’ll be prompted to add a password to your wallet. Although this step is optional, it’s highly suggested for security purposes. Enter your desired password and click ‘Create Wallet’.&#x20;
 
-![](../.gitbook/assets/CreateWallet2.png)
+![](../.gitbook/assets/createwallet2.png)
 
 Congratulations, you’ve successfully created a Sollet.io wallet!&#x20;
 
@@ -52,7 +52,7 @@ Transaction fees on the network are paid in SOL. To add new tokens addresses to 
 
 The deposit address displayed is the address to which SOL can be sent to your wallet. Only send SOL to this address, all other tokens (including SPL tokens like SRM) will have different deposit addresses.
 
-![](../.gitbook/assets/Depositaddress2.png)
+![](../.gitbook/assets/depositaddress2.png)
 
 SOL can be bought on exchanges like [FTX](https://ftx.com), [Binance](https://www.binance.com/en), [FTX US](https://ftx.us), and more. Additionally, ETH held on Metamask can be converted to SOL into your Sollet.io. To do this, in the deposit SOL window, click ‘ETH’ and then ‘Connect to Metamask’.
 
@@ -64,7 +64,7 @@ On Solana, tokens that you wish to trade or hold must be explicitly added to you
 
 Browse popular tokens or search through manual input with the token mint address.
 
-![](../.gitbook/assets/Tokenlist.png)
+![](../.gitbook/assets/tokenlist.png)
 
 After you’ve found your desired token, click ‘Add’ and the token will appear in the main account of your wallet.&#x20;
 
@@ -92,15 +92,15 @@ Sollet.io makes it easy to convert wUSDT to native USDT.  First, add USDT token 
 
 Next, in your Main account menu click the Wrapped USDT asset and 'Send'
 
-![](../.gitbook/assets/USDTnative2.png)
+![](../.gitbook/assets/usdtnative2.png)
 
 Select 'SPL USDT' in the send window; your USDT address will autopopulate in the Recipient Address (please double check it is accurate), enter the amount you'd like to convert to native USDT, and click 'Send'.&#x20;
 
-![](../.gitbook/assets/USDTnative3.png)
+![](../.gitbook/assets/usdtnative3.png)
 
 Congratulations! Your wUSDT has been converted to USDT and is visible in your USDT address.&#x20;
 
-![](../.gitbook/assets/USDTnative4.png)
+![](../.gitbook/assets/usdtnative4.png)
 
 
 

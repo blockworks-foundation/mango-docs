@@ -18,13 +18,13 @@ Trade spot margined markets with up to 5x leverage and perpetual futures markets
 
 ![](../.gitbook/assets/tradeee.png)
 
-_Mango users save substantially on Serum DEX trading fees_; [Serum](https://projectserum.com) powers mangos spot margined markets. SRM deposits are pooled together to give every Mango user the ability to save substantially on taker fees. There is more info below under [Fee Discounts](getting-started.md#how-to-view-fee-discounts-contribute-srm).&#x20;
+_Mango users save substantially on Serum DEX trading fees_; [Serum](https://projectserum.com) powers mangos spot margined markets. SRM deposits are pooled together to give every Mango user the ability to save substantially on taker fees. There is more info below under [Fee Discounts](<../README (1).md#how-to-view-fee-discounts-contribute-srm>).&#x20;
 
 ## **Navigating the Markets**
 
 To get to the markets, click "Trade" in the main navigation, You should see all the _Markets Menu_ right above the exchange tooling (trading view, order-books, etc).
 
-![](../.gitbook/assets/markets.png)
+![](<../.gitbook/assets/markets (1).png>)
 
 Mango also gives you the ability to customize your experience, decide what markets you want to see or not see. &#x20;
 

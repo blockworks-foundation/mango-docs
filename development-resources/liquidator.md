@@ -12,7 +12,7 @@ description: >-
 
 Liquidation is how Mango Markets protects against socialised losses from overextended accounts.
 
-![](<../.gitbook/assets/4whyhx (1).jpg>)
+![](../.gitbook/assets/4whyhx-1-.jpg)
 
 Mango Markets margin accounts must hold more assets than liabilities. If margin accounts were allowed to hold more liabilities than assets, those excess liabilities would need to be paid for by all Mango Markets users – losses would be spread out - ‘socialised’ - across all users.
 
