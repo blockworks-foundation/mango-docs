@@ -10,7 +10,7 @@ v3 UI: [https://github.com/blockworks-foundation/mango-ui-v3](https://github.com
 
 JavaScript: [https://github.com/blockworks-foundation/mango-client-v3](https://github.com/blockworks-foundation/mango-client-v3)&#x20;
 
-REST and WEBSOCKET API’s: [https://github.com/microwavedcola1/mango-v3-service](https://github.com/microwavedcola1/mango-v3-service)    \
+REST and WEBSOCKET API’s: [https://github.com/blockworks-foundation/mango-v3-service](https://github.com/microwavedcola1/mango-v3-service)    \
 \
 Mango Bowl: [https://github.com/tardis-dev/mango-bowl](https://github.com/tardis-dev/mango-bowl)
 

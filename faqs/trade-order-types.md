@@ -10,7 +10,7 @@ There are several different order types available to Mango traders; this section
 
 ![](<../.gitbook/assets/Screen Shot 2021-10-11 at 4.49.12 PM.png>)
 
-This will place a buy bid on the order book for 200 SOL at $120. If the SOL price never drops to 140 or below the order will not get executed.&#x20;
+This will place a buy bid on the order book for 200 SOL at $140. If the SOL price never drops to 140 or below the order will not get executed.&#x20;
 
 **Reduce Only**: This ensures an order will only be executed to reduce or close a position and will never increase or open a new position. Check the Reduce Only box above the buy/sell button to apply. \
 \
