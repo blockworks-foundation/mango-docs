@@ -11,6 +11,7 @@
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
 * [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
+* [🖩 How to Use the Risk Calculator](tutorials/risk-calculator.md)
 
 ## Mango
 
