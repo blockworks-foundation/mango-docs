@@ -26,6 +26,12 @@ paket add Solnet.Mango --version 5.0.1 // Paket CLI
 #r "nuget: Solnet.Mango, 5.0.1" // Script & Interactive
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+```
+pip install mango-explorer
+```
+{% endtab %}
 {% endtabs %}
 
 ### Subscribe to an Order Book
@@ -77,6 +83,26 @@ public byte TimeInForce; //The time in force.
 public PerpOrderType OrderType; //The order type.
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+This code will connect to the _devnet_ cluster and will print out the latest orderbook every time the orderbook changes, and will exit after 60 seconds.
+
+```python
+import datetime
+import mango
+import time
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    market = mango.market(context, "BTC-PERP")
+    subscription = market.on_orderbook_change(context, lambda ob: print("\n", datetime.datetime.now(), "\n", ob))
+
+    time.sleep(60)
+
+    subscription.dispose()
+
+print("Example complete.")
+```
+{% endtab %}
 {% endtabs %}
 
 ### Get an Order Book snapshot
@@ -84,7 +110,7 @@ public PerpOrderType OrderType; //The order type.
 You can also retrieve a snapshot of the order book.
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="C#" %}
 ```csharp
 //Mango Client
 IRpcClient rpcClient = Solnet.Rpc.ClientFactory.GetClient(Cluster.MainNet);
@@ -100,6 +126,18 @@ AccountResultWrapper<OrderBookSide> asksRequest = await mangoClient.GetOrderBook
 
 List<OpenOrder> bids = bidsRequest.ParsedResult.GetOrders();
 List<OpenOrder> asks = asksRequest.ParsedResult.GetOrders();
+```
+{% endtab %}
+
+{% tab title="Python" %}
+This code will connect to the _devnet_ cluster, fetch the orderbook for BTC-PERP, and print out a summary of it:
+
+```python
+import mango
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    market = mango.market(context, "BTC-PERP")
+    print(market.fetch_orderbook(context))
 ```
 {% endtab %}
 {% endtabs %}
@@ -159,6 +197,26 @@ public long Price; // The price of the fill.
 public long Quantity; // The quantity that was filled.
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+This code will connect to the _devnet_ cluster and print out every fill that happens. It will exit after 60 seconds.
+
+```python
+import datetime
+import mango
+import time
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    market = mango.market(context, "BTC-PERP")
+    subscription = market.on_fill(context, lambda ob: print("\n", datetime.datetime.now(), "\n", ob))
+
+    time.sleep(60)
+
+    subscription.dispose()
+
+print("Example complete.")
+```
+{% endtab %}
 {% endtabs %}
 
 ### Get a Market fills snapshot
@@ -185,6 +243,23 @@ foreach (FillEvent fill in fills)
 {
     Console.WriteLine($"Filled {fill.Quantity} @ {fill.Price}");
 }
+```
+{% endtab %}
+
+{% tab title="Python" %}
+A 'fill' is when a maker order from the orderbook is matched with an incoming taker order. It can be useful to see these.
+
+This code will connect to the _devnet_ cluster and fetch all recent events. It will then show all the fill events.
+
+```python
+import mango
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    market = mango.market(context, "BTC-PERP")
+    event_queue = mango.PerpEventQueue.load(context, market.event_queue_address, market.lot_size_converter)
+    print(event_queue.fills)
+
+print("Example complete.")
 ```
 {% endtab %}
 {% endtabs %}
@@ -287,6 +362,54 @@ byte[] txBytes = txBuilder.Build(new List<Account>() { solanaWallet.Account });
 RequestResult<string> transaction = await mangoClient.RpcClient.SendTransactionAsync(txBytes, true, Commitment.Processed);
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+This code will load the 'example' wallet, connect to the _devnet_ cluster, place an order and wait for the order's transaction signature to be confirmed.
+
+The order is an IOC ('Immediate Or Cancel') order to buy 2 SOL-PERP at $1. This order is unlikely to be filled (SOL currently costs substantially more than $1), but that saves having to show order cancellation code here.
+
+Possible `order_type` values are:
+
+* mango.OrderType.LIMIT
+* mango.OrderType.IOC
+* mango.OrderType.POST\_ONLY
+* mango.OrderType.MARKET (it's nearly always better to use IOC and a price with acceptable slippage)
+* mango.OrderType.POST\_ONLY\_SLIDE (only available on perp markets)
+
+
+
+```python
+import decimal
+import mango
+
+from solana.publickey import PublicKey
+
+# Use our hard-coded devnet wallet for DeekipCw5jz7UgQbtUbHQckTYGKXWaPQV4xY93DaiM6h.
+# For real-world use you'd load the bytes from the environment or a file. Later we use
+# its Mango Account at HhepjyhSzvVP7kivdgJH9bj32tZFncqKUwWidS1ja4xL.
+wallet = mango.Wallet(bytes([67,218,68,118,140,171,228,222,8,29,48,61,255,114,49,226,239,89,151,110,29,136,149,118,97,189,163,8,23,88,246,35,187,241,107,226,47,155,40,162,3,222,98,203,176,230,34,49,45,8,253,77,136,241,34,4,80,227,234,174,103,11,124,146]))
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    group = mango.Group.load(context)
+    account = mango.Account.load(context, PublicKey("HhepjyhSzvVP7kivdgJH9bj32tZFncqKUwWidS1ja4xL"), group)
+    market_operations = mango.operations(context, wallet, account, "SOL-PERP", dry_run=False)
+
+    # Try to buy 2 SOL for $1.
+    order = mango.Order.from_values(side=mango.Side.BUY,
+                                    price=decimal.Decimal(1),
+                                    quantity=decimal.Decimal(2),
+                                    order_type=mango.OrderType.IOC)
+    print("Placing order:", order)
+    placed_order_signatures = market_operations.place_order(order)
+
+    print("Waiting for place order transaction to confirm...\n", placed_order_signatures)
+    mango.WebSocketTransactionMonitor.wait_for_all(
+            context.client.cluster_ws_url, placed_order_signatures, commitment="processed"
+        )
+
+print("Example complete.")
+```
+{% endtab %}
 {% endtabs %}
 
 ### Cancel an Order
@@ -345,6 +468,62 @@ byte[] txBytes = txBuilder.Build(new List<Account>() { solanaWallet.Account });
 
 //Send Transaction
 RequestResult<string> transaction = await rpcClient.SendTransactionAsync(txBytes, true, Commitment.Processed);
+```
+{% endtab %}
+
+{% tab title="Python" %}
+This code will load the 'example' wallet, connect to the _devnet_ cluster, place an order and then cancel it.
+
+This is a bit longer than the Place Order example but only because it performs most of the Place Order code as a setup to create the order so there's an order to cancel.
+
+The key point is that `cancel_order()` takes an `Order` as a parameter, and that `Order` needs either the `id` or `client_id` property to be set so the Mango program can find the equivalent order data on-chain. The sample code specified 1001 as the `client_id` when the order was instantiated so it's fine for use here.
+
+```python
+import decimal
+import mango
+
+from solana.publickey import PublicKey
+
+# Use our hard-coded devnet wallet for DeekipCw5jz7UgQbtUbHQckTYGKXWaPQV4xY93DaiM6h.
+# For real-world use you'd load the bytes from the environment or a file. Later we use
+# its Mango Account at HhepjyhSzvVP7kivdgJH9bj32tZFncqKUwWidS1ja4xL.
+wallet = mango.Wallet(bytes([67,218,68,118,140,171,228,222,8,29,48,61,255,114,49,226,239,89,151,110,29,136,149,118,97,189,163,8,23,88,246,35,187,241,107,226,47,155,40,162,3,222,98,203,176,230,34,49,45,8,253,77,136,241,34,4,80,227,234,174,103,11,124,146]))
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    group = mango.Group.load(context)
+    account = mango.Account.load(context, PublicKey("HhepjyhSzvVP7kivdgJH9bj32tZFncqKUwWidS1ja4xL"), group)
+    market_operations = mango.operations(context, wallet, account, "SOL-PERP", dry_run=False)
+
+    print("Orders (initial):")
+    print(market_operations.load_orderbook())
+
+    order = mango.Order.from_values(side=mango.Side.BUY,
+                                    price=decimal.Decimal(10),
+                                    quantity=decimal.Decimal(1),
+                                    order_type=mango.OrderType.POST_ONLY)
+    print("Placing order:", order)
+    placed_order_signatures = market_operations.place_order(order)
+
+    print("Waiting for place order transaction to confirm...\n", placed_order_signatures)
+    mango.WebSocketTransactionMonitor.wait_for_all(
+            context.client.cluster_ws_url, placed_order_signatures, commitment="processed"
+        )
+
+    print("\n\nOrders (including our new order):")
+    orderbook = market_operations.load_orderbook()
+    print(orderbook)
+
+    # Order has the client ID 1001 so we can use that Order object as a parameter here.
+    cancellaton_signatures = market_operations.cancel_order(order)
+
+    print("Waiting for cancel order transaction to confirm...\n", cancellaton_signatures)
+    mango.WebSocketTransactionMonitor.wait_for_all(
+            context.client.cluster_ws_url, cancellaton_signatures, commitment="processed"
+        )
+
+    print("\n\nOrders (without our order):")
+    print(market_operations.load_orderbook())
+print("Example complete.")
 ```
 {% endtab %}
 {% endtabs %}
@@ -541,6 +720,30 @@ I80F48 assets = mangoAccounts.ParsedResult.GetAssetsValue(mangoGroup.ParsedResul
 I80F48 equity = assets - liabilities;
 
 Console.WriteLine($"Liabilities: {liabilities}, Assets: {assets}, Available Equity: {equity}");
+```
+{% endtab %}
+
+{% tab title="Python" %}
+This code will connect to the _devnet_ cluster and show important data from a Mango Account.
+
+Data on deposits, borrows and perp positions are all available in a `pandas` `DataFrame` for you to perform your own calculations upon. The `Account` class also has some methods to take this `DataFrame` and run common calculations on it, such as calculating the total value of the `Account` (using `total_value()`), the health of the account (using `init_health()` and `maint_health()`), or the account's leverage (using `leverage()`).
+
+```python
+import mango
+
+from solana.publickey import PublicKey
+
+with mango.ContextBuilder.build(cluster_name="devnet") as context:
+    group = mango.Group.load(context)
+    cache: mango.Cache = mango.Cache.load(context, group.cache)
+
+    account = mango.Account.load(context, PublicKey("HhepjyhSzvVP7kivdgJH9bj32tZFncqKUwWidS1ja4xL"), group)
+    open_orders = account.load_all_spot_open_orders(context)
+    frame = account.to_dataframe(group, open_orders, cache)
+    print(frame["Spot"])
+    print(frame["SpotValue"])
+
+print("Example complete.")
 ```
 {% endtab %}
 {% endtabs %}
