@@ -6,7 +6,7 @@
 
 ## Tutorials
 
-* [🥭 Initial Setup](<README (1).md>)
+* [🥭 Initial Setup](tutorials/getting-started.md)
 * [📈 Trading](tutorials/trading-on-mango.md)
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
@@ -42,10 +42,11 @@
 * [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
-* [General FAQ](tutorials/faq.md)
+* [General FAQ](faqs/faq.md)
 
 ## Development Resources
 
+* [Client Libraries](development-resources/client-libraries.md)
 * [Mango Client API](development-resources/mango-client-api.md)
 * [Liquidator](development-resources/liquidator.md)
 
