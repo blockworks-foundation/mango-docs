@@ -95,15 +95,15 @@ Max Depth is the amount of liquidity on \*each\* side of the book that is reward
 
 | Perp Contract |   Max Depth  | MNGO per hour |
 | :-----------: | :----------: | :-----------: |
-|      MNGO     | 500,000 MNGO |      250      |
-|      BTC      |    8.3 BTC   |      1000     |
-|      ETH      |   62.5 ETH   |      500      |
-|      SOL      |   2,500 SOL  |      1000     |
-|      SRM      |  18,000 SRM  |      250      |
-|      RAY      |  12,500 RAY  |      250      |
-|      FTT      |   2,100 FTT  |      250      |
-|      ADA      |  125,000 ADA |      500      |
-|      BNB      |  440,140 BNB |      500      |
-|      AVAX     | 294,117 AVAX |      500      |
-|      LUNA     | 294,117 LUNA |      500      |
+|      MNGO     | 250,000 MNGO |      62.5     |
+|      BTC      |     7 BTC    |      750      |
+|      ETH      |    100 ETH   |      500      |
+|      SOL      |   6,000 SOL  |      750      |
+|      SRM      |   2,750 SRM  |      62.5     |
+|      RAY      |  25,000 RAY  |      62.5     |
+|      FTT      |   2,500 FTT  |      62.5     |
+|      ADA      |  125,000 ADA |      62.5     |
+|      BNB      |    500 BNB   |      125      |
+|      AVAX     |  3,000 AVAX  |      250      |
+|      LUNA     |  2,500 LUNA  |      250      |
 
