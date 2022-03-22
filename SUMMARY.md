@@ -46,7 +46,8 @@
 
 ## Development Resources
 
-* [Client Libraries](development-resources/client-libraries.md)
+* [Client Libraries](development-resources/client-libraries/README.md)
+  * [Fills WebSocket Feed](development-resources/client-libraries/fills-websocket-feed.md)
 * [Mango Client API](development-resources/mango-client-api.md)
 * [Liquidator](development-resources/liquidator.md)
 
