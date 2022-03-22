@@ -6,8 +6,8 @@ description: >-
 
 # 🥭 Initial Setup
 
-* Create MangoAccount
-* Deposits are cross collateralized and positions cross-margined&#x20;
+* Create Mango account
+* Deposits are cross-collateralised and positions cross-margined&#x20;
 * Health is used to determine liquidations and new position eligibility
 
 ## **Connecting your Wallet**
@@ -18,29 +18,29 @@ First, choose your wallet and then click connect.
 
 ![](<../.gitbook/assets/Connect (1) (1).png>)
 
-After connecting, under settings you can decide whether auto-approval is on or off and approve the connection
+After connecting, under settings you can decide whether auto-approval is on or off and approve the connection.
 
 ![](../.gitbook/assets/autoapprove.png)
 
-_**\*\***Selecting on will give a smoother trading experience (more like a CEX.) keeping it off you will need to approve every transaction within the platform._
+_Using Auto-approve will give a smoother trading experience (more like a centralised exchange). If you decide not to use it, you will need to approve every transaction you make within the platform._
 
-## **Creating a** MangoAccount **& depositing funds**
+## **Creating a** Mango account **& depositing funds**
 
-It's time to create and fund your first 🥭MangoAccount. Simply click on the deposit  button within the account modal to initiate the MangoAccount creation modal.
+It's time to create and fund your first 🥭Mango account. Simply click on the deposit button within the account modal.
 
 ![](<../.gitbook/assets/fund (1).png>)
 
-In the account creation modal, first, decide to name your account or not. Next, choose the asset you want to fund your MangoAccount with and enter the amount you want to deposit.&#x20;
+In the account creation modal, first, decide to name your account or not. Next, choose the asset you want to fund your Mango account with and enter the amount you want to deposit.&#x20;
 
-You’ll need **0.035 SOL** in your wallet to open a MangoAccount.&#x20;
+You’ll need **0.035 SOL** in your wallet to open a Mango account.&#x20;
 
 ![](../.gitbook/assets/fund2.png)
 
-## Understanding Collateral on 🥭
+## Understanding Collateral on Mango🥭
 
-Within mango, all your assets are considered "collateral", which means you can use any one asset to buy any of the other assets. So something like positions on Mango will naturally work a little differently between spot and perpetual markets and might feel a little different than normal exchanges that don't offer full asset cross-collateralization already within their platform.
+Within Mango, all your assets are considered "collateral", which means you can use any one asset to buy any of the other assets. So something like positions will naturally work a little differently between spot and perpetual markets and might feel a little different compared to normal exchanges that don't offer full asset cross-collateralisation within their platform.
 
-On mango collateral health is connected to your _Health Ratio,_ which is based on your collateral ratio. This essentially allows you to utilize any asset to trade or borrow against any other asset all being handled by Mango and its risk engine.
+On Mango, collateral health is connected to your _Health Ratio,_ which is based on your collateral ratio. This essentially allows you to utilise any asset to trade or borrow against any other asset all being handled by the Mango risk engine.
 
 ![](../.gitbook/assets/health1.png)
 
@@ -48,7 +48,7 @@ For example, if you have $100 of USDC within your account you can exchange that 
 
 #### Watch your Health Ratio ❤️&#x20;
 
-Once a position is opened, it must maintain a Health Ratio above 0%. If an account falls to 0% it will be liquidated and funds lost. To increase Health Ratio, reduce borrows or deposit funds into your MangoAccount to top up the health bar. \
+Once a position is opened, it must maintain a Health Ratio above 0%. If an account falls to 0% it will be liquidated and funds lost. To increase you Health Ratio, reduce your borrows or deposit funds into your Mango account to top up the health bar. \
 \
 The current Health Ratio is displayed in two places, on the trade page and under your accounts page.&#x20;
 
@@ -56,7 +56,7 @@ The current Health Ratio is displayed in two places, on the trade page and under
 
 ## Portfolio & Position Management
 
-Mango offers a really robust, simple, and intuitive interface for managing your MangoAccount and its liabilities.
+Mango offers a really robust, simple, and intuitive interface for managing your Mango account and its liabilities.
 
 **View everything:**
 
@@ -75,18 +75,12 @@ More features being added.
 
 ## **Join the community** 👾
 
-The Mango team is committed to providing a fully decentralized, open source, leveraged trading platform capable of matching a centralized-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralized form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
+The Mango team is committed to providing a fully decentralised, open source, leveraged trading platform capable of matching a centralised-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralised form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
 
 Follow Mango Markets on Twitter and join the Discord for the latest updates.
 
-twitter:[ https://twitter.com/mangomarkets](https://twitter.com/mangomarkets)
+Twitter:[ https://twitter.com/mangomarkets](https://twitter.com/mangomarkets)
 
-discord: [https://discord.gg/YpzUSTwd](https://discord.gg/P7TzZS9g)
+Discord: [https://discord.gg/YpzUSTwd](https://discord.gg/P7TzZS9g)
 
-## &#x20;    
-
-\
-\
-\
-\
-\
+##
