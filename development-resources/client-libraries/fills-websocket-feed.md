@@ -10,15 +10,9 @@ WebSocket data is streamed directly from the Mango validators, and in theory, sh
 \
 Additionally, the WebSocket stream will also revoke prior fill notifications in the event of a Solana blockchain fork.\
 \
-Use **ws://api.mngo.cloud:8080** to connect to the closest stream from anywhere.\
-\
-We currently operate these streams in 3 locations:
+This service is available at **ws://api.mngo.cloud:8080**
 
-* Amsterdam
-* Chicago
-* Tokyo
-
-When you initially connect, you will be sent an initial data dump which contains a snapshot of past fills.&#x20;
+When you initially connect, you will be sent an initial data dump which contains a snapshot of past fills.
 
 ```json
 {"market":"FTT-PERP","queue":"5pHAhyEphQRVvLqvYF7dziofR52yZWuq8DThQFJvJ7r5","events":[]}
@@ -60,6 +54,7 @@ foreach (var base64String in marketQueue.Events)
 }
 ```
 {% endtab %}
+
 {% tab title="TS" %}
 ```ts
 import { PerpEventLayout } from '@blockworks-foundation/mango-client';
@@ -74,7 +69,7 @@ const fills = perpEventSnapshot.events.map((event) => {
 {% endtab %}
 {% endtabs %}
 
-You will then receive events with a status of either "New" or "Revoke".&#x20;
+You will then receive events with a status of either "New" or "Revoke".
 
 A "New" event is a single fill event for a particular market:
 
@@ -109,6 +104,7 @@ var fillBytes = Convert.FromBase64String(marketFill.Event);
 var fill = FillEvent.Deserialize(fillBytes); // This is your Mango fill object.
 ```
 {% endtab %}
+
 {% tab title="TS" %}
 ```ts
 import { PerpEventLayout } from '@blockworks-foundation/mango-client';

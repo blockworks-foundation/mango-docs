@@ -12,7 +12,7 @@
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
 * [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
 * [🔒 Token Locking](tutorials/token-locking.md)
-* [® Vanity referral links, affiliate program and reduced trading fees](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
+* [® ® Vanity referral links, affiliate program and reduced trading fees](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
 * [🖩 How to Use the Risk Calculator](tutorials/risk-calculator.md)
 
 ## Mango
