@@ -47,6 +47,7 @@
 
 ## Development Resources
 
+* [Rate Limits](development-resources/rate-limits.md)
 * [Client Libraries](development-resources/client-libraries/README.md)
   * [Fills WebSocket Feed](development-resources/client-libraries/fills-websocket-feed.md)
 * [Mango Client API](development-resources/mango-client-api.md)
