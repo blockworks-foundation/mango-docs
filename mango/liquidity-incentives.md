@@ -1,7 +1,7 @@
 # ⛏ Liquidity Mining
 
-* Liquidity Mining rewards MNGO to limit orders on the perpetual futures orderbook within a specified depth of mark price.&#x20;
-* Orders closer to mark price are rewarded more favorably&#x20;
+* Liquidity Mining rewards MNGO to limit orders on the perpetual futures orderbook within a specified depth of mark price.
+* Orders closer to mark price are rewarded more favorably
 * Liquidity Mining is open to everyone
 
 ## Overview
@@ -14,7 +14,7 @@ Mango Perps are the first perpetual futures contracts that are traded on a fully
 
 ## Formula
 
-The liquidity mining formula rewards the top N contracts on the bids and asks weighted quadratically to favor those closer to top of book. Your depth on the book is assessed when you place an order on the book and when you get filled/cancel the order and the worse of the two is used in calculating your liquidity mining points.&#x20;
+The liquidity mining formula rewards the top N contracts on the bids and asks weighted quadratically to favor those closer to top of book. Your depth on the book is assessed when you place an order on the book and when you get filled/cancel the order and the worse of the two is used in calculating your liquidity mining points.
 
 The full source code is here: [https://github.com/blockworks-foundation/mango-v3/blob/3d59136bb025252c5b20e06064526ff115471f2d/program/src/state.rs#L1621](https://github.com/blockworks-foundation/mango-v3/blob/3d59136bb025252c5b20e06064526ff115471f2d/program/src/state.rs#L1621)
 
@@ -43,7 +43,6 @@ let points = depth_factor.pow(2) * time_factor * quantity_factor
 
 // Convert the points into MNGO; adjust the rate of disbursement
 return convert_points(points)
-
 ```
 
 ## Example
@@ -71,7 +70,6 @@ time_factor = 110 - 100 = 10
 quantity_factor = min(8000, 14000) = 8000
 
 points = 14,000 ^ 2 * 10 * 8000 = 1.568e13
-
 ```
 
 The points earned are 1.568e13 which is a totally meaningless number until it is normalized using a rate parameter and adjusted constantly such that a total of 250 MNGO per hour is distributed.
@@ -87,23 +85,22 @@ This formula comes out of the intersection of our goals and technical limitation
 * trustless and decentralized - should work even if initial devs disappear
 * open and transparent - no special market maker agreements
 * liquidity - tight spread, thick book that rivals centralized exchanges, even if volume is low
-* easy to access - deploying the mango markets reference market maker should be profitable&#x20;
+* easy to access - deploying the mango markets reference market maker should be profitable
 
 ## Liquidity Mining Specs
 
-Max Depth is the amount of liquidity on \*each\* side of the book that is rewarded.&#x20;
+Max Depth is the amount of liquidity on \*each\* side of the book that is rewarded.
 
-| Perp Contract |   Max Depth  | MNGO per hour |
-| :-----------: | :----------: | :-----------: |
-|      MNGO     | 250,000 MNGO |      62.5     |
-|      BTC      |     7 BTC    |      750      |
-|      ETH      |    100 ETH   |      500      |
-|      SOL      |   6,000 SOL  |      750      |
-|      SRM      |   2,750 SRM  |      62.5     |
-|      RAY      |  25,000 RAY  |      62.5     |
-|      FTT      |   2,500 FTT  |      62.5     |
-|      ADA      |  125,000 ADA |      62.5     |
-|      BNB      |    500 BNB   |      125      |
-|      AVAX     |  3,000 AVAX  |      250      |
-|      LUNA     |  2,500 LUNA  |      250      |
-
+| Perp Contract |  Max Depth  | MNGO per hour |
+| :-----------: | :---------: | :-----------: |
+|      MNGO     | 50,000 MNGO |     31.25     |
+|      BTC      |    7 BTC    |      62.5     |
+|      ETH      |   150 ETH   |      62.5     |
+|      SOL      |  6,000 SOL  |      125      |
+|      SRM      |  27,500 SRM |     31.25     |
+|      RAY      |  25,000 RAY |     31.25     |
+|      FTT      |  2,500 FTT  |     31.25     |
+|      ADA      | 125,000 ADA |     31.25     |
+|      BNB      |   500 BNB   |     31.25     |
+|      AVAX     |  3,000 AVAX |      62.5     |
+|      LUNA     |  2,500 LUNA |      62.5     |
