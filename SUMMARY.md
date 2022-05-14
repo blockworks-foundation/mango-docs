@@ -48,6 +48,7 @@
 ## Development Resources
 
 * [Rate Limits](development-resources/rate-limits.md)
+* [TIF Expiry](development-resources/tif-expiry.md)
 * [Client Libraries](development-resources/client-libraries.md)
   * [Fills WebSocket Feed](development-resources/client-libraries/fills-websocket-feed.md)
 * [Mango Client API](development-resources/mango-client-api.md)

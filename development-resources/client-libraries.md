@@ -14,20 +14,6 @@ In an attempt to create uniformity we have documented the major functions, which
 Add your preferred library to your project.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-Using npm:
-
-```
-npm install @blockworks-foundation/mango-client
-```
-
-Using yarn:
-
-```
-yarn add @blockworks-foundation/mango-client
-```
-{% endtab %}
-
 {% tab title="C#" %}
 Solnet.Mango can be installed via the Nuget Package Manager or by using any of the following command lines.\
 
@@ -54,78 +40,9 @@ To get the order book you need to retrieve the bids and asks independently. Each
 \
 When the 512 capacity is reached, orders that are the furthest away from the top will be removed when a new order is added and the Out Event is fired when an order is removed.\
 \
-Orders can be set to expire using the Time-In-Force
+Orders can be set to expire using the Time-In-Force&#x20;
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  BookSide,
-  BookSideLayout,
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-} from '../src';
-import { Commitment, Connection } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-
-async function subscribeToOrderbook() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  // load group & market
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  // subscribe to bids
-  connection.onAccountChange(perpMarketConfig.bidsKey, (accountInfo) => {
-    const bids = new BookSide(
-      perpMarketConfig.bidsKey,
-      perpMarket,
-      BookSideLayout.decode(accountInfo.data),
-    );
-
-    // print L2 orderbook data
-    for (const [price, size] of bids.getL2(20)) {
-      console.log(price, size);
-    }
-
-    // print L3 orderbook data
-    for (const order of bids) {
-      console.log(
-        order.owner.toBase58(),
-        order.orderId.toString('hex'),
-        order.price,
-        order.size,
-        order.side, // 'buy' or 'sell'
-      );
-    }
-  });
-}
-
-subscribeToOrderbook();
-```
-
-
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -193,67 +110,6 @@ print("Example complete.")
 You can also retrieve a snapshot of the order book.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-} from '../src';
-import { Commitment, Connection } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-
-async function snapshotOrderbook() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  // load group & market
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  // load bids
-  const bids = await perpMarket.loadBids(connection);
-
-  // print L2 orderbook data
-  for (const [price, size] of bids.getL2(20)) {
-    console.log(price, size);
-  }
-
-  // print L3 orderbook data
-  for (const order of bids) {
-    console.log(
-      order.owner.toBase58(),
-      order.orderId.toString('hex'),
-      order.price,
-      order.size,
-      order.side,
-    );
-  }
-}
-
-snapshotOrderbook();
-```
-
-
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -293,67 +149,6 @@ You can subscribe to a markets' event queue. When the event queue is updated, th
 You can filter the event queue for fills and use the sequence number to filter new fills added to the queue.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-  PerpEventQueue,
-  PerpEventQueueLayout,
-  ZERO_BN,
-} from '../src';
-import { Commitment, Connection } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-import { ParsedFillEvent } from '../src/PerpMarket';
-
-async function subscribeToOrderbook() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  // load group & market
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  // subscribe to event queue
-  const lastSeenSeqNum = ZERO_BN;
-  connection.onAccountChange(perpMarketConfig.eventsKey, (accountInfo) => {
-    const queue = new PerpEventQueue(
-      PerpEventQueueLayout.decode(accountInfo.data),
-    );
-    const fills = queue
-      .eventsSince(lastSeenSeqNum)
-      .map((e) => e.fill)
-      .filter((e) => !!e)
-      .map((e) => perpMarket.parseFillEvent(e) as ParsedFillEvent);
-
-    for (const fill of fills) {
-      console.log(`New fill for ${fill.quantity} at ${fill.price}`);
-    }
-  });
-}
-
-subscribeToOrderbook();
-```
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -429,51 +224,6 @@ print("Example complete.")
 You can also retrieve a snapshot of a markets' event queue.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-} from '../src';
-import { Commitment, Connection } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-
-async function snapshotFills() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  // load group & market
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  const fills = await perpMarket.loadFills(connection);
-  for (const fill of fills) {
-    console.log(`Filled ${fill.quantity} at ${fill.price}`);
-  }
-}
-
-snapshotFills();
-```
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 IRpcClient rpcClient = ClientFactory.GetClient(Cluster.MainNet);
@@ -523,77 +273,6 @@ There is no additional fee per instruction, your account is only charged per tra
 You can have a max of 64 open orders across all perpetual markets.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-} from '../src';
-import { Account, Commitment, Connection, PublicKey } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-import * as os from 'os';
-import * as fs from 'fs';
-
-async function postOrders() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  const payer = new Account(
-    JSON.parse(
-      fs.readFileSync(
-        os.homedir() + '/.config/solana/my-mainnet.json',
-        'utf-8',
-      ),
-    ),
-  );
-
-  // load group, cache, account, market
-  const mangoAccountPk = new PublicKey('YOUR_MANGOACCOUNT_KEY');
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const mangoAccount = await client.getMangoAccount(
-    mangoAccountPk,
-    mangoGroup.dexProgramId,
-  );
-
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  // post an ask for 1btc at 50000
-  await client.placePerpOrder2(
-    mangoGroup,
-    mangoAccount,
-    perpMarket,
-    payer,
-    'sell',
-    50000,
-    1,
-    {
-      orderType: 'postOnly',
-    },
-  );
-}
-
-postOrders();
-```
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -738,98 +417,6 @@ print("Example complete.")
 You can cancel a specific order by OrderID, Side or ClientID.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  MangoClient,
-} from '../src';
-import { Account, Commitment, Connection, PublicKey } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-import * as os from 'os';
-import * as fs from 'fs';
-import { BN } from 'bn.js';
-
-async function cancelOrder() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  const payer = new Account(
-    JSON.parse(
-      fs.readFileSync(
-        os.homedir() + '/.config/solana/my-mainnet.json',
-        'utf-8',
-      ),
-    ),
-  );
-
-  // load group, account, market
-  const mangoAccountPk = new PublicKey('YOUR_MANGOACCOUNT_KEY');
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const mangoAccount = await client.getMangoAccount(
-    mangoAccountPk,
-    mangoGroup.dexProgramId,
-  );
-
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  const clientOrderId = 123;
-  // post an ask for 1btc at 50000
-  await client.placePerpOrder2(
-    mangoGroup,
-    mangoAccount,
-    perpMarket,
-    payer,
-    'sell',
-    50000,
-    1,
-    {
-      orderType: 'postOnly',
-      clientOrderId: clientOrderId,
-    },
-  );
-
-  // load open perp orders
-  const orders = await perpMarket.loadOrdersForAccount(
-    connection,
-    mangoAccount,
-  );
-
-  // cancel by client id
-  const order = orders.find((order) => order.clientId == new BN(clientOrderId));
-  await client.cancelPerpOrder(
-    mangoGroup,
-    mangoAccount,
-    payer,
-    perpMarket,
-    order,
-  );
-}
-
-cancelOrder();
-```
-
-
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -948,65 +535,6 @@ You can cancel all of your open orders by adding the CancelAllPerpOrders instruc
 You need to manually cancel all expired orders.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import { Config, GroupConfig, MangoClient } from '../src';
-import { Account, Commitment, Connection, PublicKey } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-import * as os from 'os';
-import * as fs from 'fs';
-
-async function cancelOrders() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  const payer = new Account(
-    JSON.parse(
-      fs.readFileSync(
-        os.homedir() + '/.config/solana/my-mainnet.json',
-        'utf-8',
-      ),
-    ),
-  );
-
-  // load group, account, market
-  const mangoAccountPk = new PublicKey('YOUR_MANGOACCOUNT_KEY');
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const mangoAccount = await client.getMangoAccount(
-    mangoAccountPk,
-    mangoGroup.dexProgramId,
-  );
-
-  const perpMarkets = await Promise.all(
-    groupConfig.perpMarkets.map((perpMarket) => {
-      return mangoGroup.loadPerpMarket(
-        connection,
-        perpMarket.marketIndex,
-        perpMarket.baseDecimals,
-        perpMarket.quoteDecimals,
-      );
-    }),
-  );
-
-  // cancel all perp orders on all markets
-  await client.cancelAllPerpOrders(
-    mangoGroup,
-    perpMarkets,
-    mangoAccount,
-    payer,
-  );
-}
-
-cancelOrders();
-```
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -1103,154 +631,6 @@ print("Example complete.")
 Currently, most market makers are sending cancel all followed by a bid and an ask in the same transaction.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import {
-  Config,
-  getMarketByBaseSymbolAndKind,
-  GroupConfig,
-  I64_MAX_BN,
-  makeCancelAllPerpOrdersInstruction,
-  makePlacePerpOrder2Instruction,
-  MangoClient,
-} from '../src';
-import {
-  Account,
-  Commitment,
-  Connection,
-  PublicKey,
-  Transaction,
-} from '@solana/web3.js';
-import configFile from '../src/ids.json';
-import * as os from 'os';
-import * as fs from 'fs';
-import { BN } from 'bn.js';
-
-async function atomicCancelReplace() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  const payer = new Account(
-    JSON.parse(
-      fs.readFileSync(
-        os.homedir() + '/.config/solana/my-mainnet.json',
-        'utf-8',
-      ),
-    ),
-  );
-
-  // load group, account, market
-  const mangoAccountPk = new PublicKey('YOUR_MANGOACCOUNT_KEY');
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const mangoAccount = await client.getMangoAccount(
-    mangoAccountPk,
-    mangoGroup.dexProgramId,
-  );
-
-  const perpMarketConfig = getMarketByBaseSymbolAndKind(
-    groupConfig,
-    'BTC',
-    'perp',
-  );
-
-  const perpMarket = await mangoGroup.loadPerpMarket(
-    connection,
-    perpMarketConfig.marketIndex,
-    perpMarketConfig.baseDecimals,
-    perpMarketConfig.quoteDecimals,
-  );
-
-  const tx = new Transaction();
-
-  // add cancel all instruction
-  tx.add(
-    makeCancelAllPerpOrdersInstruction(
-      groupConfig.mangoProgramId,
-      mangoGroup.publicKey,
-      mangoAccount.publicKey,
-      payer.publicKey,
-      perpMarket.publicKey,
-      perpMarket.bids,
-      perpMarket.asks,
-      new BN(20),
-    ),
-  );
-
-  // add place bid instruction
-  // use best price
-  const bids = await perpMarket.loadBids(connection);
-  const bidPrice = bids.getBest().price;
-
-  const [nativeBidPrice, nativeBidQuantity] =
-    perpMarket.uiToNativePriceQuantity(bidPrice, 0.1);
-
-  tx.add(
-    makePlacePerpOrder2Instruction(
-      groupConfig.mangoProgramId,
-      mangoGroup.publicKey,
-      mangoAccount.publicKey,
-      payer.publicKey,
-      mangoGroup.mangoCache,
-      perpMarket.publicKey,
-      perpMarket.bids,
-      perpMarket.asks,
-      perpMarket.eventQueue,
-      mangoAccount.getOpenOrdersKeysInBasketPacked(),
-      nativeBidPrice,
-      nativeBidQuantity,
-      I64_MAX_BN,
-      new BN(0),
-      'buy',
-      new BN(20),
-      'postOnly',
-      false,
-    ),
-  );
-
-  // add place ask instruction
-  // use best price
-  const asks = await perpMarket.loadAsks(connection);
-  const askPrice = asks.getBest().price;
-
-  const [nativeAskPrice, nativeAskQuantity] =
-    perpMarket.uiToNativePriceQuantity(askPrice, 0.1);
-
-  tx.add(
-    makePlacePerpOrder2Instruction(
-      groupConfig.mangoProgramId,
-      mangoGroup.publicKey,
-      mangoAccount.publicKey,
-      payer.publicKey,
-      mangoGroup.mangoCache,
-      perpMarket.publicKey,
-      perpMarket.bids,
-      perpMarket.asks,
-      perpMarket.eventQueue,
-      mangoAccount.getOpenOrdersKeysInBasketPacked(),
-      nativeAskPrice,
-      nativeAskQuantity,
-      I64_MAX_BN,
-      new BN(0),
-      'sell',
-      new BN(20),
-      'postOnly',
-      false,
-    ),
-  );
-
-  await client.sendTransaction(tx, payer, []);
-}
-
-atomicCancelReplace();
-```
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
@@ -1438,41 +818,6 @@ print("Example complete.")
 You can query your Mango account assets and available equity.
 
 {% tabs %}
-{% tab title="TypeScript" %}
-```typescript
-import { Config, GroupConfig, MangoClient } from '../src';
-import { Commitment, Connection, PublicKey } from '@solana/web3.js';
-import configFile from '../src/ids.json';
-
-async function getAccountBalance() {
-  // setup client
-  const config = new Config(configFile);
-  const groupConfig = config.getGroupWithName('mainnet.1') as GroupConfig;
-  const connection = new Connection(
-    config.cluster_urls[groupConfig.cluster],
-    'processed' as Commitment,
-  );
-  const client = new MangoClient(connection, groupConfig.mangoProgramId);
-
-  // load group, cache, account
-  const mangoAccountPk = new PublicKey('YOUR_MANGOACCOUNT_KEY');
-  const mangoGroup = await client.getMangoGroup(groupConfig.publicKey);
-  const cache = await mangoGroup.loadCache(connection);
-  const mangoAccount = await client.getMangoAccount(
-    mangoAccountPk,
-    mangoGroup.dexProgramId,
-  );
-
-  // print account balances
-  console.log(mangoAccount.toPrettyString(groupConfig, mangoGroup, cache));
-}
-
-getAccountBalance();
-```
-
-
-{% endtab %}
-
 {% tab title="C#" %}
 ```csharp
 //Mango Client
