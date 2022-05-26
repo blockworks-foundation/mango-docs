@@ -1,6 +1,6 @@
 # Mango Program API
 
-This is a complete reference of all instructions processed by the Mango on-chain program. You might want to use the [Mango Client API ](../development-resources/mango-client-api.md)as a reference on how to call these instructions. You can find the typescript code creating the instructions on [github](https://github.com/blockworks-foundation/mango-client-ts/blob/main/src/client.ts).
+This is a complete reference of all instructions processed by the Mango on-chain program. You might want to use the [Mango Client API ](../tutorials/trading-on-mango/client-libraries/mango-client-api.md)as a reference on how to call these instructions. You can find the typescript code creating the instructions on [github](https://github.com/blockworks-foundation/mango-client-ts/blob/main/src/client.ts).
 
 ```rust
 #[repr(C)]
@@ -344,5 +344,4 @@ pub enum MangoInstruction {
         max_deposit: u64
     }
 }
-
 ```

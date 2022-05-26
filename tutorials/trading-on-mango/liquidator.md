@@ -4,7 +4,7 @@ description: >-
   reference liquidator
 ---
 
-# Liquidator
+# Liquidation
 
 ## Liquidation
 
@@ -12,7 +12,7 @@ description: >-
 
 Liquidation is how Mango Markets protects against socialised losses from overextended accounts.
 
-![](<../.gitbook/assets/4whyhx (1).jpg>)
+![](<../../.gitbook/assets/4whyhx (1).jpg>)
 
 Mango Markets margin accounts must hold more assets than liabilities. If margin accounts were allowed to hold more liabilities than assets, those excess liabilities would need to be paid for by all Mango Markets users – losses would be spread out - ‘socialised’ - across all users.
 
@@ -87,7 +87,7 @@ Given the length and complexity of the docker command, it can be useful to creat
 
 Here’s an example command to create such an alias:
 
-`alias mango-explorer="docker run --rm -it --name=mango-explorer  -v /var/mango-explorer/id.json:/home/jovyan/work/id.json  opinionatedgeek/mango-explorer:latest"`
+`alias mango-explorer="docker run --rm -it --name=mango-explorer -v /var/mango-explorer/id.json:/home/jovyan/work/id.json opinionatedgeek/mango-explorer:latest"`
 
 That will create an alias called ‘mango-explorer’, meaning the above docker command with targets could then be run using:
 
@@ -119,8 +119,7 @@ You can target a fixed or percentage balance for each token in the group, allowi
   \
   `--target "BTC:33%"` (Note that it’s best to put quote marks around targets since the ‘%’ is a wildcard/substitution character in some shells.)\
   \
-  That says that rebalances should target the value of BTC in the wallet to be 33% of the total wallet value. This can cause unexpected decreases in other balances if the value of BTC rises, requiring additional funds from other tokens to maintain the 33% target.\
-
+  That says that rebalances should target the value of BTC in the wallet to be 33% of the total wallet value. This can cause unexpected decreases in other balances if the value of BTC rises, requiring additional funds from other tokens to maintain the 33% target.\\
 * A fixed target is specified by using the token name and the target, like:\
   \
   `--target "BTC:0.1"`\
