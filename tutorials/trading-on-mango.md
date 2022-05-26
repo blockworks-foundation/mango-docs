@@ -12,36 +12,36 @@ description: Permissionless trading, powered by Mango.
 
 Use the Mango interface to interact with the protocol to margin trade on the Serum DEX markets as well as trade leveraged perpetual futures, all within one unified interface.
 
-Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 20x leverage. Long and short everything, with limit or market orders, many [advanced orders](../../faqs/trade-order-types.md).
+Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 20x leverage. Long and short everything, with limit or market orders, many [advanced orders](../faqs/trade-order-types.md).
 
 **Check out the** [**trade page.** ](https://trade.mango.markets)\*\*\*\*
 
-![](../../.gitbook/assets/tradeee.png)
+![](../.gitbook/assets/tradeee.png)
 
-_Mango users save substantially on Serum DEX trading fees_; [Serum](https://projectserum.com) powers mangos spot margined markets. SRM deposits are pooled together to give every Mango user the ability to save substantially on taker fees. There is more info below under [Fee Discounts](../getting-started.md#how-to-view-fee-discounts-contribute-srm).
+_Mango users save substantially on Serum DEX trading fees_; [Serum](https://projectserum.com) powers mangos spot margined markets. SRM deposits are pooled together to give every Mango user the ability to save substantially on taker fees. There is more info below under [Fee Discounts](getting-started.md#how-to-view-fee-discounts-contribute-srm).
 
 ## **Navigating the Markets**
 
 To get to the markets, click "Trade" in the main navigation. You should see all the _Markets Menu_ right above the exchange tooling (trading view, order-books, etc.).
 
-![](../../.gitbook/assets/markets.png)
+![](../.gitbook/assets/markets.png)
 
 Mango also gives you the ability to customise your experience and decide which markets you want to see.
 
-![](../../.gitbook/assets/markets2.png)
+![](../.gitbook/assets/markets2.png)
 
 ## Asset Details
 
 Assets have different maximum and maintenance leverage specifications. For the specifics by asset please see:\
 \
-[Spot Assets](../../mango/token-specs.md)\
-[Perpetual Futures](../../mango/perp-contract-specs.md)
+[Spot Assets](../mango/token-specs.md)\
+[Perpetual Futures](../mango/perp-contract-specs.md)
 
 ## More Customisation
 
 Mango offers you the ability to customise your trading experience. Create multiple accounts, choose theme styling, adjust window size & placement, switch order book type, and utilise the trading view to its full extent.
 
-![](../../.gitbook/assets/customize.png)
+![](../.gitbook/assets/customize.png)
 
 ## Placing a Trade on Mango 🥭
 
@@ -53,39 +53,39 @@ Note when placing limit orders, the options of POST and IOC.
 * When POST is selected, limit orders are added to the order book and earn maker fees if filled.
 * POST orders will always be the 'maker' and will automatically cancel if not.
 
-![](../../.gitbook/assets/trademodal.png)
+![](../.gitbook/assets/trademodal.png)
 
 Limit orders open an order at a set price. If the price action of an asset in the order book reaches that price (or better), the order will be filled.
 
-![](../../.gitbook/assets/market.png)
+![](../.gitbook/assets/market.png)
 
 Market orders hit the book immediately on the bid or ask side depending on if you bought or sold, the position then fills at an average price of the orders taken.
 
-![](../../.gitbook/assets/limit.png)
+![](../.gitbook/assets/limit.png)
 
 Spot margined positions can be viewed under your accounts tab within your portfolio view under "Balances", Perpetual positions can be viewed.
 
-![](../../.gitbook/assets/positions.png)
+![](../.gitbook/assets/positions.png)
 
 **For Spot margined markets** to make a leveraged trade, place an order with a size greater than your deposit value; funds are automatically borrowed or utilise the leverage slider to decide your risk or don't worry about margin or leverage at all and treat it as a spot market; Simply exchange for the even value of another asset.
 
-![](../../.gitbook/assets/sporttop.png)
+![](../.gitbook/assets/sporttop.png)
 
 **For perpetual futures markets**, to make a leveraged trade is very similar, except you are not buying the asset in question, you are simply buying exposure to that asset and its price movements. Positions can be viewed under the perp positions tab below or under the accounts tab.
 
-![](../../.gitbook/assets/perpep.png)
+![](../.gitbook/assets/perpep.png)
 
 ## Spot Margined Markets
 
 Mango and its spot margined markets are built on top of the Serum DEX ecosystem. Mango's risk engine allows users to trade Serem DEX's orderbooks with up to 5x leverage.
 
-![](../../.gitbook/assets/sport.png)
+![](../.gitbook/assets/sport.png)
 
 ## Perpetual Futures Markets
 
 Mango also offers perpetual futures built on the Mango protocol with its own order book. Trade with up to 10x leverage and enjoy permissionless price exposure to any of the assets in the Mango group.
 
-![](../../.gitbook/assets/perp.png)
+![](../.gitbook/assets/perp.png)
 
 ## Mango 🥭 **pays the Lowest Fees**
 
@@ -101,7 +101,7 @@ This swap checks prices and routes across all Solana dApps so you know you're ge
 \
 Select the asset you'd like to swap away in the 'You Pay' box and the desired asset received in 'You Receive'. Enter the size of the swap in either assets native currency.
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-28 at 2.33.30 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2021-12-28 at 2.33.30 PM.png>)
 
 The most efficient route will be highlighted. Click 'Swap' and confirm the transaction in wallet. The assets will appear in your connected wallet balances.
 

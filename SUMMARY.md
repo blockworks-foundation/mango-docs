@@ -7,13 +7,12 @@
 ## Tutorials
 
 * [🥭 Initial Setup](tutorials/getting-started.md)
-* [📈 Trading](tutorials/trading-on-mango/README.md)
-  * [Client Libraries](tutorials/trading-on-mango/client-libraries/README.md)
-    * [Fills WebSocket Feed](tutorials/trading-on-mango/client-libraries/fills-websocket-feed.md)
-    * [Mango Client API](tutorials/trading-on-mango/client-libraries/mango-client-api.md)
-  * [Rate Limits](tutorials/trading-on-mango/rate-limits.md)
-  * [TIF Expiry](tutorials/trading-on-mango/tif-expiry.md)
-  * [Liquidation](tutorials/trading-on-mango/liquidator.md)
+* [📈 Trading](tutorials/trading-on-mango.md)
+  * [Client Libraries](development-resources/client-libraries.md)
+    * [Fills WebSocket Feed](development-resources/client-libraries/fills-websocket-feed.md)
+    * [Mango Client API](development-resources/mango-client-api.md)
+  * [Rate Limits](development-resources/rate-limits.md)
+  * [Liquidation](development-resources/liquidator.md)
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 Creating & Funding a Wallet](tutorials/creating-a-wallet.md)
 * [⚖ How to Vote in Governance](tutorials/how-to-vote-in-governance.md)
@@ -40,16 +39,17 @@
 
 ## FAQ's
 
+* [General FAQ](faqs/faq.md)
 * [Lending](faqs/lending.md)
 * [Health](faqs/health.md)
 * [Spot](faqs/spot.md)
 * [PERP](faqs/perp-faq.md)
+* [TIF (Time in Force) Expiry](faqs/tif-time-in-force-expiry.md)
 * [Borrows](faqs/borrows.md)
 * [Trade Order Types](faqs/trade-order-types.md)
 * [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
-* [General FAQ](faqs/faq.md)
 
 ## Mango V2 (DEPRECATED) <a href="#mango-v2" id="mango-v2"></a>
 

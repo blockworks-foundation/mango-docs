@@ -1,4 +1,4 @@
-# TIF Expiry
+# TIF (Time in Force) Expiry
 
 The time on the validator is used to determine if a TIF order has expired.
 
