@@ -1,9 +1,9 @@
 # 🔍 Overview
 
-Mango provides a single venue to lend, borrow, swap, and leverage trade cryptoassets through a powerful risk engine
+Mango Markets provides a single venue to lend, borrow, swap, and leverage-trade crypto assets through a powerful risk engine.
 
-* Earn interest on deposits&#x20;
-* Cross-Margin  / Cross-Collateralized
-* Decentralized
+* Earn interest on deposits
+* Cross-Margin / Cross-Collateralised
+* Decentralised
 
-Mango is built on Solana blockchain and utilizes Serum DEX for spot margin trading while perpetual futures are traded on Mango's own orderbook. Mango is governed by MNGO holders via the Mango DAO.
+Mango Markets is built on the Solana blockchain and utilises Serum DEX for spot margin trading while perpetual futures are traded on Mango Markets' own order book. Mango Markets is governed by MNGO holders via the Mango DAO.

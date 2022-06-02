@@ -35,5 +35,3 @@ Suppose the BTC-PERP mark price moves to $9400, then:
 Since the maint\_health is now below zero, this account can be liquidated until init health is above zero.
 
 A short position would have negative contract sizes and use `maint_liab_weight` instead of `maint_asset_weight.`
-
-\`\`

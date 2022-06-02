@@ -20,22 +20,22 @@
 * [💸 Referral links, affiliate program and reduced trading fees](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
 * [🔢 How to Use the Risk Calculator](tutorials/risk-calculator.md)
 
-## Mango
+## Mango Markets
 
-* [❤ Health Overview](mango/health-overview.md)
-* [💀 Liquidations](mango/liquidations.md)
-* [💰 Insurance Fund](mango/insurance-fund.md)
-* [👪 Socialized Losses](mango/socialized-losses.md)
-* [🤝 Settle Pnl](mango/settle-pnl.md)
-* [💸 Funding](mango/funding.md)
-* [⛏ Liquidity Mining](mango/liquidity-incentives.md)
-* [☑ Asset Specs](mango/token-specs.md)
-* [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
-* [🫂 Account Delegation](mango/account-delegation.md)
-* [⏱ TIF(Time In Force) orders](mango/tif-time-in-force-orders.md)
-* [🦋 Bug Bounty](mango/bug-bounty.md)
-* [🤖 Market Making Bot (python)](mango/market-making-bot-python.md)
-* [⚙ Mango Client API (javascript)](mango/mango-client-api-javascript.md)
+* [❤ Health Overview](mango-markets/health-overview.md)
+* [💀 Liquidations](mango-markets/liquidations.md)
+* [💰 Insurance Fund](mango-markets/insurance-fund.md)
+* [👪 Socialised Losses](mango-markets/socialized-losses.md)
+* [🤝 Settle Pnl](mango-markets/settle-pnl.md)
+* [💸 Funding](mango-markets/funding.md)
+* [⛏ Liquidity Mining](mango-markets/liquidity-incentives.md)
+* [☑ Asset Specs](mango-markets/token-specs.md)
+* [🔮 Perp Contract Specs](mango-markets/perp-contract-specs.md)
+* [🫂 Account Delegation](mango-markets/account-delegation.md)
+* [⏱ TIF (Time In Force) orders](mango-markets/tif-time-in-force-orders.md)
+* [🦋 Bug Bounty](mango-markets/bug-bounty.md)
+* [🤖 Market Making Bot (python)](mango-markets/market-making-bot-python.md)
+* [⚙ Mango Client API (javascript)](mango-markets/mango-client-api-javascript.md)
 
 ## FAQ's
 

@@ -1,20 +1,20 @@
 # ⛏ Liquidity Mining
 
-* Liquidity Mining rewards MNGO to limit orders on the perpetual futures orderbook within a specified depth of mark price.
-* Orders closer to mark price are rewarded more favorably
-* Liquidity Mining is open to everyone
+* Liquidity Mining rewards MNGO tokens to limit orders on the perpetual futures order book within a specified depth of mark price.
+* Orders closer to mark price are rewarded more favourably.
+* Liquidity Mining is open to everyone.
 
 ## Overview
 
-Mango Perps are the first perpetual futures contracts that are traded on a fully on chain order book. Providing liquidity on an order book is more of a skilled activity than providing on an AMM contract. In order to bootstrap the liquidity on Mango Perps, the Mango Protocol will disburse MNGO automatically to market makers according to an on-chain algorithm. This document describes the mechanism. But broadly:
+Mango Markets Perpetual Futures are the first perpetual futures contracts that are traded on a fully on-chain order book. Providing liquidity on an order book is more of a skilled activity than providing on an AMM contract. In order to bootstrap the liquidity on Mango Markets Perpetual Futures, the Mango Protocol will distribute MNGO tokens automatically to market makers according to an on-chain algorithm. This document describes the mechanism. But broadly:
 
-* Quoting closer to the top of book is rewarded much more generously
-* You do not have to be filled to get the rewards (you get points every time you cancel OR get filled)
-* There are open source market making bots developed by and used by Mango devs
+* Quoting closer to the top of book is rewarded much more generously.
+* You do not have to be filled to get the rewards (you get points every time you cancel OR get filled).
+* There are open source market making bots developed by and used by Mango Markets devs.
 
 ## Formula
 
-The liquidity mining formula rewards the top N contracts on the bids and asks weighted quadratically to favor those closer to top of book. Your depth on the book is assessed when you place an order on the book and when you get filled/cancel the order and the worse of the two is used in calculating your liquidity mining points.
+The liquidity mining formula rewards the top N contracts on the bids and asks weighted quadratically to favour those closer to top of book. Your depth on the book is assessed when you place an order on the book and when you get filled/cancel the order and the worse of the two is used in calculating your liquidity mining points.
 
 The full source code is here: [https://github.com/blockworks-foundation/mango-v3/blob/3d59136bb025252c5b20e06064526ff115471f2d/program/src/state.rs#L1621](https://github.com/blockworks-foundation/mango-v3/blob/3d59136bb025252c5b20e06064526ff115471f2d/program/src/state.rs#L1621)
 
@@ -82,10 +82,10 @@ This mechanism was inspired by the Bitcoin block rewards and difficulty mining a
 
 This formula comes out of the intersection of our goals and technical limitations. Here are the goals:
 
-* trustless and decentralized - should work even if initial devs disappear
-* open and transparent - no special market maker agreements
-* liquidity - tight spread, thick book that rivals centralized exchanges, even if volume is low
-* easy to access - deploying the mango markets reference market maker should be profitable
+* Trustless and decentralized - should work even if initial devs disappear.
+* Open and transparent - no special market maker agreements.
+* Liquidity - tight spread, thick book that rivals centralized exchanges, even if volume is low.
+* Easy to access - deploying the Mango Markets reference market maker should be profitable.
 
 ## Liquidity Mining Specs
 
@@ -93,14 +93,13 @@ Max Depth is the amount of liquidity on \*each\* side of the book that is reward
 
 | Perp Contract |  Max Depth  | MNGO per hour |
 | :-----------: | :---------: | :-----------: |
-|      MNGO     | 50,000 MNGO |     31.25     |
-|      BTC      |    7 BTC    |      62.5     |
-|      ETH      |   150 ETH   |      62.5     |
-|      SOL      |  6,000 SOL  |      125      |
-|      SRM      |  27,500 SRM |     31.25     |
-|      RAY      |  25,000 RAY |     31.25     |
-|      FTT      |  2,500 FTT  |     31.25     |
-|      ADA      | 125,000 ADA |     31.25     |
-|      BNB      |   500 BNB   |     31.25     |
-|      AVAX     |  3,000 AVAX |      62.5     |
-|      LUNA     |  2,500 LUNA |      62.5     |
+|      MNGO     | 50,000 MNGO |       5       |
+|      BTC      |    5 BTC    |       20      |
+|      ETH      |    50 ETH   |       15      |
+|      SOL      |  3,000 SOL  |       50      |
+|      SRM      |  20,000 SRM |       5       |
+|      RAY      |  12,000 RAY |       5       |
+|      FTT      |  1,000 FTT  |       5       |
+|      ADA      |  50,000 ADA |       5       |
+|      BNB      |   100 BNB   |       5       |
+|      AVAX     |  1,500 AVAX |       10      |

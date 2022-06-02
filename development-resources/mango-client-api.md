@@ -2,13 +2,13 @@
 
 [API Reference](https://blockworks-foundation.github.io/mango-client-v3/)
 
-The source code for the v3 Mango Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-v3).
+The source code for the v3 Mango Markets Client API is hosted on [github](https://github.com/blockworks-foundation/mango-client-v3).
 
-To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/Connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the \`mainnet\` version of the Mango Program. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/ids.json)`IDS`.
+To access the API you will first need to setup a [Connection](https://solana-labs.github.io/solana-web3.js/classes/Connection.html) using the `@solana/web3` sdk. The easiest way for now is to connect to the "mainnet" version of the Mango Markets Programme. You can easily access the relevant connection details exported as [a json constant ](https://github.com/blockworks-foundation/mango-client-v3/blob/main/src/ids.json)`IDS`.
 
 ## Mango Groups
 
-A mango group is a basket of cross-margined tokens. Each version of Mango Markets uses a different Mango Group containing different tokens. The current v3 group is \`mainnet.1\`.
+A Mango Group is a basket of cross-margined tokens. Each version of Mango Markets uses a different Mango Group containing different tokens. The current v3 group is "mainnet.1."
 
 ```typescript
 // get v3 Mango Group
@@ -38,7 +38,7 @@ const mangoGroup = await client.getMangoGroup(mangoGroupKey);
 
 ### Oracles
 
-Each group uses a set of oracles that provide up to date price feeds for it's tokens. For the `mainnet.1` group Pyth and Switchboard oracles are used.
+Each group uses a set of oracles that provides up-to-date price feeds for it's tokens. For the `mainnet.1` group Pyth and Switchboard oracles are used.
 
 ```typescript
 // fetch current oracle price of a single token

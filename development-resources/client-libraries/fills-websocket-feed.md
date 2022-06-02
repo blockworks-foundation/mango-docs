@@ -6,7 +6,7 @@ description: We are currently testing a WebSocket fills feed for all perpetual m
 
 This service is still being developed and may change.\
 \
-WebSocket data is streamed directly from the Mango validators, and in theory, should reduce the latency at which you receive fill event notifications.\
+WebSocket data is streamed directly from the Mango Markets validators, and in theory, should reduce the latency at which you receive fill event notifications.\
 \
 Additionally, the WebSocket stream will also revoke prior fill notifications in the event of a Solana blockchain fork.\
 \
@@ -69,7 +69,7 @@ const fills = perpEventSnapshot.events.map((event) => {
 {% endtab %}
 {% endtabs %}
 
-You will then receive events with a status of either "New" or "Revoke".
+You will then receive events with a status of either "New" or "Revoke."
 
 A "New" event is a single fill event for a particular market:
 

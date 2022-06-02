@@ -54,7 +54,7 @@ To get the order book you need to retrieve the bids and asks independently. Each
 \
 When the 512 capacity is reached, orders that are the furthest away from the top will be removed when a new order is added and the Out Event is fired when an order is removed.\
 \
-Orders can be set to expire using the Time-In-Force
+Orders can be set to expire using the Time-In-Force.
 
 {% tabs %}
 {% tab title="TypeScript" %}
@@ -288,7 +288,7 @@ with mango.ContextBuilder.build(cluster_name="devnet") as context:
 
 ### Subscribe to Market Fills
 
-You can subscribe to a markets' event queue. When the event queue is updated, the entire queue is received.\
+You can subscribe to a market's event queue. When the event queue is updated, the entire queue is received.\
 \
 You can filter the event queue for fills and use the sequence number to filter new fills added to the queue.
 
@@ -426,7 +426,7 @@ print("Example complete.")
 
 ### Get a Market fills snapshot
 
-You can also retrieve a snapshot of a markets' event queue.
+You can also retrieve a snapshot of a market's event queue.
 
 {% tabs %}
 {% tab title="TypeScript" %}
@@ -1098,9 +1098,9 @@ print("Example complete.")
 {% endtab %}
 {% endtabs %}
 
-### Refresh Order / Atomic Transaction for Market Makers
+### Refresh Order/Atomic Transaction for Market Makers
 
-Currently, most market makers are sending cancel all followed by a bid and an ask in the same transaction.
+Currently, most market makers are sending a "cancel all" transaction followed by a bid and an ask in the same transaction.
 
 {% tabs %}
 {% tab title="TypeScript" %}
@@ -1435,7 +1435,7 @@ print("Example complete.")
 
 ### Get Account Balance
 
-You can query your Mango account assets and available equity.
+You can query your Mango Markets Account assets and available equity.
 
 {% tabs %}
 {% tab title="TypeScript" %}

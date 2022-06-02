@@ -1,7 +1,7 @@
 ---
 description: >-
-  This is a work in progress. More to be added as information about tokens is
-  added
+  This is a work-in-progress. More to be added as information about tokens is
+  added.
 ---
 
 # ☑ Asset Specs
@@ -35,7 +35,7 @@ maint_liab_weight = 1 + 1 / maint_leverage
 
 ### Asset Weights
 
-The init asset weight (aka haircut) is the discount applied to the value of the collateral when initializing a new position. For example, for BTC, $100 in BTC is treated as 80 USDC when initializing a new position. The maint asset weight is the discount applied when calculating the value of the collateral for purposes of liquidation. The maint asset weight is higher to give you more of a buffer before liquidation.
+The init asset weight (aka haircut) is the discount applied to the value of the collateral when initialising a new position. For example, for BTC, $100 in BTC is treated as 80 USDC when initialising a new position. The maint asset weight is the discount applied when calculating the value of the collateral for purposes of liquidation. The maint asset weight is higher to give you more of a buffer before liquidation.
 
 | Token | Init Asset Weight | Maint Asset Weight |
 | ----- | ----------------- | ------------------ |
@@ -56,7 +56,7 @@ The init asset weight (aka haircut) is the discount applied to the value of the 
 
 ### Asset Interest Rates
 
-The lending pools work similar to the lending pools on Aave. With the big difference that users will earn interest on both their deposits as well as their positions (so you may be earning net interest on your margin position!). The interest rate is a function of the utilization ratio: total borrowed by all users divided by total deposits of all users. The interest rate will increase slowly approaching the utilization ratio but will increase rapidly above that to encourage the market to deposit more funds.
+The lending pools work similar to the lending pools on Aave. With the big difference that users will earn interest on both their deposits as well as their positions (so you may be earning net interest on your margin position). The interest rate is a function of the utilisation ratio: total borrowed by all users divided by total deposits of all users. The interest rate will increase slowly approaching the utilisation ratio but will increase rapidly above that to encourage the market to deposit more funds.
 
 | Asset | Optimal Rate | Max Rate | Optimal Utilization |
 | ----- | ------------ | -------- | ------------------- |

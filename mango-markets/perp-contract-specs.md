@@ -1,10 +1,12 @@
 ---
-description: This is a work in progress. More information will be added as they come.
+description: >-
+  This is a work-in-progress. More information will be added as it becomes
+  available.
 ---
 
 # 🔮 Perp Contract Specs
 
-Contracts are all denominated in the underlying.&#x20;
+Contracts are all denominated in the underlying.
 
 Tick size is denominated in quote currency (USDC).
 
@@ -21,4 +23,3 @@ Tick size is denominated in quote currency (USDC).
 | BNB        | 10             | 20              | 2.5                 | 0.001         | 0.1       |
 | AVAX       | 10             | 20              | 2.5                 | 0.01          | 0.01      |
 | LUNA       | 10             | 20              | 2.5                 | 0.01          | 0.01      |
-

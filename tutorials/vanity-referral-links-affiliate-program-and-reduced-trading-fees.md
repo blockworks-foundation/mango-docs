@@ -16,20 +16,20 @@ To create a referral link once you have 10,000 MNGO, navigate to the following U
 
 **Important notes:**
 
-* Your referral code is automatically applied when a user creates a Mango Account using your link.
-* When any of your referrals trade Mango Perps, you earn 16% of their trade fees. (0.8bps on taker fees)
-* Plus, for using your link they get a 4% discount off their Mango Perp fees. (0.2bps on taker fees)
-* If your referee owns 10,000 MNGO, they will act as a self-referral and no longer contribute to your affiliate earnings. Instead, they will pay 4bps taker fee instead of 4.8bps
+* Your referral code is automatically applied when a user creates a Mango Markets Account using your link.
+* When any of your referrals trade Mango Markets Perpetual Futures, you earn 16% of their trade fees. (0.8bps on taker fees).
+* Plus, for using your link they get a 4% discount off their Mango Markets Perpetual Futures fees. (0.2bps on taker fees).
+* If your referee owns 10,000 MNGO, they will act as a self-referral and no longer contribute to your affiliate earnings. Instead, they will pay 4bps taker fee instead of 4.8bps.
 
-#### Example of referral link / self referral usage
+#### Example of referral link/self referral usage
 
 Payoffs/scenarios are as follows:
 
 Max refers Klossie, who takes from Daffy:\
-Klossie pays 4.8bps taker fee, Daffy gets 3bps maker rebate, Max gets 0.8bps, DAO gets 1bp of revenue
+Klossie pays 4.8bps taker fee, Daffy gets 3bps maker rebate, Max gets 0.8bps, DAO gets 1bp of revenue.
 
 Klossie now has 10k MNGO (LP mining / buys), takes again from Daffy:\
-Klossie pays 4bps taker, Daffy gets 3bps maker rebate, DAO gets 1bp of revenue
+Klossie pays 4bps taker, Daffy gets 3bps maker rebate, DAO gets 1bp of revenue.
 
 Crusher has no MNGO, not referred, takes from Daffy:\
-Crusher pays 5bps taker fee, Daffy gets 3bps maker rebate, DAO gets 2bps of revenue
+Crusher pays 5bps taker fee, Daffy gets 3bps maker rebate, DAO gets 2bps of revenue.
