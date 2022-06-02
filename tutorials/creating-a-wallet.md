@@ -1,10 +1,10 @@
 ---
 description: >-
-  Permissionless trading requires self-custodied solution. Wallets are like your
-  personal bank accounts that only you control.
+  Creating & Funding a Wallet. Permissionless trading requires self-custodied
+  solution. Wallets are like your personal bank accounts that only you control.
 ---
 
-# 👛 Creating & Funding a Wallet
+# 👛 DeFi Trading Wallet
 
 Mango Markets is built on the Solana blockchain. To interact with the ecosystem, you will need a Solana-compatible wallet. Mango Markets offers compatibility with 2 different wallets. A popular wallet and our favorite for first-time user experience, [Phantom](https://phantom.app); and also [Sollet.io](https://www.sollet.io), a more dev/power user-focused wallet.
 

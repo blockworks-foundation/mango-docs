@@ -1,8 +1,10 @@
 ---
-description: How to reduce your taker fees on Mango Markets or earn from other traders
+description: >-
+  Referral links, affiliate program and reduced trading fees. How to reduce your
+  taker fees on Mango Markets or earn from other traders
 ---
 
-# 💸 Referral links, affiliate program and reduced trading fees
+# 💸 Referrals & Affiliate Program
 
 Mango Markets allows for traders to create a unique referral link to share with their friends or to use for "self-referral" based on MNGO holdings.
 

@@ -24,4 +24,4 @@ As long as the margin box is unselected in the trade form, no funds will be borr
 \*\*\*\*If a limit order is filled, funds are placed in your unsettled balances. To settle, click "Settle All" in the Balances tab on the trading page.\
 \
 **What orders types are available?**\
-\*\*\*\*See [Order Types](trade-order-types.md)\
+\*\*\*\*See [Order Types](../tutorials/trade-order-types.md)\

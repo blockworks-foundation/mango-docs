@@ -4,7 +4,7 @@ description: >-
   Python code shown here is available in the Mango Explorer V3 branch.
 ---
 
-# 🤖 Market Making Bot (python)
+# 🤖 Market Making Bot
 
 ## 🏛️ Market Making
 

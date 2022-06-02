@@ -18,7 +18,7 @@ The collateral ratio is the value of the user's deposits and positions divided b
 
 #### Liquidation Process
 
-Accounts must maintain a minimum 110% collateral ratio. If an account falls below the 110% threshold, a liquidator absorbs your position and becomes the new account owner. Anyone can run a liquidator with the opportunity to make a profit; we will open source our liquidator bot soon, but we encourage others to build their own versions. You can find more details [here](../development-resources/liquidator.md).
+Accounts must maintain a minimum 110% collateral ratio. If an account falls below the 110% threshold, a liquidator absorbs your position and becomes the new account owner. Anyone can run a liquidator with the opportunity to make a profit; we will open source our liquidator bot soon, but we encourage others to build their own versions. You can find more details [here](liquidator.md).
 
 #### Lenders, Borrowers and Liquidators (oh my!)
 

@@ -1,4 +1,8 @@
-# ⚖ How to Vote in Governance
+---
+description: How to Vote in Governance
+---
+
+# ⚖ Governance Voting
 
 * Deposit MNGO to on DAO governance site
 * View and vote on proposals

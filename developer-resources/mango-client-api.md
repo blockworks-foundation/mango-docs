@@ -1,4 +1,4 @@
-# Mango Client API
+# 📔 Mango TypeScript Client
 
 [API Reference](https://blockworks-foundation.github.io/mango-client-v3/)
 

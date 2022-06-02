@@ -1,4 +1,4 @@
-# Trade Order Types
+# 🍰 Order Types
 
 There are several different order types available to Mango Markets traders; this section will cover their behaviours.
 

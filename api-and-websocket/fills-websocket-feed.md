@@ -2,7 +2,7 @@
 description: We are currently testing a WebSocket fills feed for all perpetual markets.
 ---
 
-# Fills WebSocket Feed
+# 🌊 WebSocket Fills Feed
 
 This service is still being developed and may change.\
 \

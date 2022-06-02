@@ -12,7 +12,7 @@ description: Permissionless trading, powered by Mango Markets.
 
 Use the Mango Markets interface to interact with the protocol to margin trade on the Serum DEX markets as well as trade leveraged perpetual futures, all within one unified interface.
 
-Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 20x leverage. Long and short everything, with limit or market orders, many [advanced orders](../faqs/trade-order-types.md).
+Trade spot margined markets with up to 5x leverage and perpetual futures markets with up to 20x leverage. Long and short everything, with limit or market orders, many [advanced orders](trade-order-types.md).
 
 **Check out the** [**trade page.** ](https://trade.mango.markets)\*\*\*\*
 
@@ -34,8 +34,8 @@ Mango Markets also gives you the ability to customise your experience and decide
 
 Assets have different maximum and maintenance leverage specifications. For the specifics by asset please see:\
 \
-[Spot Assets](../mango-markets/token-specs.md)\
-[Perpetual Futures](../mango-markets/perp-contract-specs.md)
+[Spot Assets](../mango/token-specs.md)\
+[Perpetual Futures](../mango/perp-contract-specs.md)
 
 ## More Customisation
 

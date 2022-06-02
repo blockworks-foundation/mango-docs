@@ -1,4 +1,8 @@
-# 🔢 How to Use the Risk Calculator
+---
+description: How to use the Risk Calculator
+---
+
+# 🔢 Risk Calculator
 
 With the Risk Calculator you can estimate your Health Ratio by simulating changes to an account's token deposits, borrows, perp positions and pricing. It can be useful to help traders develop strategies based on their project of market movements which may be simple, such as changing the price of a token, or more complex, such as developing a delta-neutral strategy.
 

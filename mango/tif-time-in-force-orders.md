@@ -4,4 +4,4 @@ Time In Force orders expire after a set amount of seconds. This provides securit
 \
 "placePerpOrder2" accepts an "expiryTimestamp" input which cancels an order after "n" seconds if it has not been executed.\
 \
-TIF orders are available in client, Mango Bowl, Python Explorer, and REST/websocket APIs. More information on these services in [Developer Resources](../developer-resources.md).
+TIF orders are available in client, Mango Bowl, Python Explorer, and REST/websocket APIs. More information on these services in Developer Resources.
