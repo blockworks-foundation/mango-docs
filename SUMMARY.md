@@ -11,7 +11,7 @@
 
 ## API & WebSocket
 
-* [🖥 API Endpoints](https://mango-transaction-log.herokuapp.com/redoc)
+* [🖥 API Endpoints](api-and-websocket/api-endpoints.md)
 * [🌊 WebSocket Fills Feed](api-and-websocket/fills-websocket-feed.md)
 * [🛑 Rate Limits](api-and-websocket/rate-limits.md)
 
