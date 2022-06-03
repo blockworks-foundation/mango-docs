@@ -103,3 +103,4 @@ Max Depth is the amount of liquidity on \*each\* side of the book that is reward
 |      ADA      |  50,000 ADA |       5       |
 |      BNB      |   100 BNB   |       5       |
 |      AVAX     |  1,500 AVAX |       10      |
+|      GMT      |  50,000 GMT |       50      |
