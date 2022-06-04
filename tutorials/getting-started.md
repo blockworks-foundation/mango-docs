@@ -72,15 +72,3 @@ Mango Markets offers a robust, simple and intuitive interface for managing your 
 **Manage your portfolio and all positions right on the** [**account page.** ](https://trade.mango.markets/account)\*\*\*\*
 
 ![](../.gitbook/assets/account.png)
-
-## **Join the community** 👾
-
-The Mango Markets team is committed to providing a fully decentralised, open source, leveraged trading platform capable of matching a centralised-exchange feel with all the unique benefits of DeFi. We are excited to launch Mango Markets and continue bringing new leveraged trading products to life in decentralised form. Visit us at [mango.markets](https://mango.markets) to trade and lend.
-
-Follow Mango Markets on Twitter and join the Discord for the latest updates.
-
-Twitter:[ https://twitter.com/mangomarkets](https://twitter.com/mangomarkets)
-
-Discord: [https://discord.gg/YpzUSTwd](https://discord.gg/P7TzZS9g)
-
-##

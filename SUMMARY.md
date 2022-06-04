@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🔍 Overview](README.md)
-* [🥭 Discord](discord.md)
+* [🥭 Discord & Community](discord-and-community.md)
 
 ## Developer Resources
 

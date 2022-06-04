@@ -6,7 +6,7 @@ The best way to connect programmatically is to use one of the [community-maintai
 
 Listed below are some third-party, community-maintained public-facing services that we are aware of.&#x20;
 
-If you have created something cool and would like us to add it to the list below please let us know by joining our [Discord](../discord.md) server.
+If you have created something cool and would like us to add it to the list below please let us know by joining our [Discord](../discord-and-community.md) server.
 
 Transaction logs and PNL - [https://mango-transaction-log.herokuapp.com/redoc](https://mango-transaction-log.herokuapp.com/redoc)
 
@@ -26,4 +26,4 @@ Mangolorians - [https://mangolorians.com/](https://mangolorians.com)
 * Historical trades: [https://mangolorians.com/historical\_data/trades.csv?instrument=](https://mangolorians.com/historical\_data/trades.csv?instrument=SOL-PERP)_\_\_contract\_symbol\_name\_\__
 * Historical liquidations: [https://mangolorians.com/historical\_data/liquidations.csv?instrument=](https://mangolorians.com/historical\_data/liquidations.csv?instrument=SOL-PERP)_\_\_contract\_symbol\_name\_\__
 
-For other specific data or endpoints, please contact us on [Discord](../discord.md).
+For other specific data or endpoints, please contact us on [Discord](../discord-and-community.md).
