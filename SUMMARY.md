@@ -40,7 +40,7 @@
 * [☑ Asset Specs](mango/token-specs.md)
 * [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
 * [🫂 Account Delegation](mango/account-delegation.md)
-* [⏱ TIF (Time In Force) orders](mango/tif-time-in-force-orders.md)
+* [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 
 ## FAQ's
@@ -50,7 +50,6 @@
 * [Health](faqs/health.md)
 * [Spot](faqs/spot.md)
 * [Perpetual Contract Trading](faqs/perp-faq.md)
-* [TIF (Time in Force) Expiry](faqs/tif-time-in-force-expiry.md)
 * [Borrows](faqs/borrows.md)
 * [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
