@@ -15,6 +15,10 @@
 * [🌊 WebSocket Fills Feed](api-and-websocket/fills-websocket-feed.md)
 * [🛑 Rate Limits](api-and-websocket/rate-limits.md)
 
+## Friendly Projects
+
+* [⛵ Drifting Mango](friendly-projects/drifting-mango.md)
+
 ## Tutorials
 
 * [🥭 Initial Setup](tutorials/getting-started.md)
