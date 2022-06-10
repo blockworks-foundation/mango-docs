@@ -18,4 +18,4 @@ To see past funding earned, visit the Account page in the UI.
 
 Every 24 hours, the amount paid or received is the difference between the trading market and the oracle. Taking our previous example, if the difference averaged $0.50 over an entire day, holders who are long will pay shorts $0.50 per contract they hold. Expressed as a 1-hour rate, this would show as ($0.50/$100=$0.005/24=0.0002), “%0.02 per hour.”
 
-For an example of how to calculate the funding rate programmatically, have a look here.
+For an example of how to calculate the funding rate programmatically, [have a look here](https://docs.mango.markets/developer-resources/code-examples#calculating-the-funding-rate).
