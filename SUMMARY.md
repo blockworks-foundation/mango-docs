@@ -25,10 +25,11 @@
 * [📈 Trading](tutorials/trading-on-mango.md)
 * [🍰 Order Types](tutorials/trade-order-types.md)
 * [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
-* [👛 DeFi Trading Wallet](tutorials/creating-a-wallet.md)
+* [👛 DeFi Wallet](tutorials/creating-a-wallet.md)
+* [💸 Funding](tutorials/funding.md)
 * [⚖ Governance Voting](tutorials/how-to-vote-in-governance.md)
 * [🔒 Token Locking](tutorials/token-locking.md)
-* [💸 Referrals & Affiliate Program](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
+* [🤑 Referrals & Affiliate Program](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
 * [🔢 Risk Calculator](tutorials/risk-calculator.md)
 
 ## Mango Markets
@@ -39,7 +40,6 @@
 * [💰 Insurance Fund](mango/insurance-fund.md)
 * [👪 Socialised Losses](mango/socialized-losses.md)
 * [🤝 Settle Pnl](mango/settle-pnl.md)
-* [💸 Funding](mango/funding.md)
 * [⛏ Liquidity Mining](mango/liquidity-incentives.md)
 * [☑ Asset Specs](mango/token-specs.md)
 * [🔮 Perp Contract Specs](mango/perp-contract-specs.md)

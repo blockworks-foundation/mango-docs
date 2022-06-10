@@ -1,4 +1,4 @@
-# PERP
+# Perpetual Contract Trading
 
 ### **How much leverage can I take?**
 
@@ -7,14 +7,6 @@ Perpetuals allow initial leverage of up to 10x, and maintenance leverage of 20x.
 ### What fees will I pay?
 
 Mango Markets currently chargers "takers" on the platform a 5bps fee. There is no fee for providing a limit order into the book that is later executed as a "maker." \*\*\*\* Mango Markets does not take a fee for borrowing or lending.
-
-### What is funding, and how does it work?
-
-In a perpetual future, funding is the mechanism that ensures the future stays in line with current spot prices. The midpoint of the bids & offers are compared to the oracle price to determine the funding rate. When the future market is trading above the oracle price, longs will have to pay shorts. When below the oracle price, shorts will pay longs. This rate is continually calculated and paid, and is shown above the market as an hourly rate.
-
-For example, assume SOL-PERP’s current market is trading 100.45x100.55, also assume that the oracle says SOL’s ‘true price’ is $100.00. Because the current perp market is trading above oracle, holders who are long will pay holders who are short. This provides an incentive for market makers to sell the perpetual future, and for holders that are long to close their position and bring the market back into line with the oracle.
-
-How much do you pay? A simple rule of thumb is that each 24 hours, the amount paid is the difference between the trading market and the oracle. Taking our previous example, if the difference averaged $0.50 over an entire day, holders who are long will pay shorts $0.50 per contract they held. Expressed as a 1 hour rate, this would show as ($0.50/$100=$0.005/24=0.00020) “%0.020 per hour.”
 
 ### What is the PnL on my position?
 
