@@ -1519,3 +1519,70 @@ print("Example complete.")
 ```
 {% endtab %}
 {% endtabs %}
+
+### Calculating the Funding Rate
+
+Funding is computed continuously as the daily difference in the index price and the current book price (current mid price). Funding is paid out roughly every 5 seconds. The calculation is as follows:
+
+```
+book_price = (bid + ask) / 2
+diff = clamp(book_price / index_price - 1, -0.05, 0.05)
+time_factor = (now - last_updated) / FUNDING_PERIOD
+funding = diff * time_factor * contract_size * index_price
+```
+
+The following code demonstrates how to retrieve the funding payment in % for the last hour.
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+function calculateFundingRate(
+  oldestLongFunding,
+  oldestShortFunding,
+  latestLongFunding,
+  latestShortFunding,
+  perpMarket: PerpMarket,
+  oraclePrice
+) {
+  if (!perpMarket || !oraclePrice) return 0.0
+
+  // Averaging long and short funding excludes socialized loss
+  const startFunding =
+    (parseFloat(oldestLongFunding) + parseFloat(oldestShortFunding)) / 2
+  const endFunding =
+    (parseFloat(latestLongFunding) + parseFloat(latestShortFunding)) / 2
+  const fundingDifference = endFunding - startFunding
+
+  const fundingInQuoteDecimals =
+    fundingDifference / Math.pow(10, perpMarket.quoteDecimals)
+
+  const basePriceInBaseLots =
+    oraclePrice * perpMarket.baseLotsToNumber(new BN(1))
+  return (fundingInQuoteDecimals / basePriceInBaseLots) * 100
+}
+```
+{% endtab %}
+
+{% tab title="C#" %}
+```csharp
+public static decimal CalculateFundingRate(IList<FundingRateStats> fundingRates, PerpMarket perpMarket, byte baseDecimals, byte quoteDecimals)
+{
+    var oldestStat = fundingRates[^1];
+    var latestStat = fundingRates[0];
+
+    if (perpMarket == null) return 0m;
+
+    var startFunding = (oldestStat.LongFunding + oldestStat.ShortFunding) / 2; 
+    var endFunding = (latestStat.LongFunding + latestStat.ShortFunding) / 2;
+    var fundingDiff = endFunding - startFunding;
+
+    var avgPrice = (latestStat.BaseOraclePrice + oldestStat.BaseOraclePrice) / 2;
+
+    var fundingInQuoteDecimals = fundingDiff / (decimal) Math.Pow(10, quoteDecimals);
+    var basePriceInBaseLots = avgPrice * perpMarket.NativeQuantityToUi(1m, baseDecimals);
+
+    return (fundingInQuoteDecimals / basePriceInBaseLots) * 100;
+}
+```
+{% endtab %}
+{% endtabs %}
