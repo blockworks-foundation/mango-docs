@@ -170,7 +170,7 @@ All proposals are subject to a 3 day voting period, and any Mango Token staker c
 
 * Fully cross-margined perpetual swaps and margin trading
 * Largely increases the number of spot markets that can be traded
-* Perpetual swaps will feature lower trading fees then spot markets
+* Perpetual swaps will feature lower trading fees than spot markets
 
 ****
 
