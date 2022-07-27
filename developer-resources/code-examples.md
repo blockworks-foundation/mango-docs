@@ -3,7 +3,7 @@
 The following client libraries are currently independently maintained by the community:
 
 * TypeScript [https://github.com/blockworks-foundation/mango-client-v3](https://github.com/blockworks-foundation/mango-client-v3)
-* Python [https://github.com/blockworks-foundation/mango-explorer](https://github.com/blockworks-foundation/mango-explorer)
+* Python (Deprecated) [https://github.com/blockworks-foundation/mango-explorer](https://github.com/blockworks-foundation/mango-explorer)
 * C# [https://github.com/bmresearch/Solnet.Mango/](https://github.com/bmresearch/Solnet.Mango/)
 * C++ [https://github.com/mschneider/solcpp](https://github.com/mschneider/solcpp)
 
