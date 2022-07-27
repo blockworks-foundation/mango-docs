@@ -14,7 +14,7 @@ MNGO Deposited is the amount of unlocked MNGO in the governance. MNGO Locked rep
 
 Next, click "Manage" to bring up the Your Tokens Overview page. Select "Lock Tokens" button to begin the lockup process.
 
-![](<../.gitbook/assets/Screen Shot 2022-03-02 at 4.53.17 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-03-02 at 4.53.17 PM (2).png>)
 
 You are then presented with the Lockup Type Options of: Cliff, Constant, and Vested. The differences between these types are below.\
 \

@@ -6,7 +6,6 @@
 ## Developer Resources
 
 * [🧪 Code Examples](developer-resources/code-examples.md)
-* [🤖 Market Making Bot](developer-resources/market-making-bot-python.md)
 * [📔 Mango TypeScript Client](developer-resources/mango-client-api.md)
 
 ## API & WebSocket
@@ -14,10 +13,6 @@
 * [🖥 API Endpoints](api-and-websocket/api-endpoints.md)
 * [🌊 WebSocket Fills Feed](api-and-websocket/fills-websocket-feed.md)
 * [🛑 Rate Limits](api-and-websocket/rate-limits.md)
-
-## Friendly Projects
-
-* [⛵ Drifting Mango](friendly-projects/drifting-mango.md)
 
 ## Tutorials
 
@@ -58,6 +53,11 @@
 * [Swap](faqs/swap.md)
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
+
+## Archived V3
+
+* [⛵ Drifting Mango](archived-v3/drifting-mango.md)
+* [🤖 Market Making Bot](archived-v3/market-making-bot-python.md)
 
 ## Mango V2 (DEPRECATED) <a href="#mango-v2" id="mango-v2"></a>
 
