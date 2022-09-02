@@ -1,6 +1,7 @@
 # Table of contents
 
 * [🔍 Overview](README.md)
+* [🔏 Audit](audit.md)
 * [🥭 Discord & Community](discord-and-community.md)
 
 ## Developer Resources
@@ -41,7 +42,6 @@
 * [🫂 Account Delegation](mango/account-delegation.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
-* [🔏 Audit](mango-markets/audit.md)
 
 ## FAQ's
 
