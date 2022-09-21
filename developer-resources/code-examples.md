@@ -1586,3 +1586,11 @@ public static decimal CalculateFundingRate(IList<FundingRateStats> fundingRates,
 ```
 {% endtab %}
 {% endtabs %}
+
+### Collect funds of different users inside a mango account
+
+Different funds / protocols have raised funds for their strategies on-chain. The following examples show how the pro-rata distribution of profits can be implemented.
+
+Pure sealevel / rust: [https://github.com/Investin-pro/MANGO-MM-FUNDS](https://github.com/Investin-pro/MANGO-MM-FUNDS)
+
+Anchor / rust: [https://github.com/microwavedcola1/dasheri](https://github.com/microwavedcola1/dasheri)
