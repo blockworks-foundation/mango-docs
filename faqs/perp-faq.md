@@ -6,7 +6,15 @@ Perpetuals allow initial leverage of up to 10x, and maintenance leverage of 20x.
 
 ### What fees will I pay?
 
-Mango Markets currently chargers "takers" on the platform a 5bps fee. There is no fee for providing a limit order into the book that is later executed as a "maker." \*\*\*\* Mango Markets does not take a fee for borrowing or lending.
+Mango Markets has a tiered taker fee scheme, which goes as follows:
+
+| Tier      | Fee      | MNGO requirements |
+| --------- | -------- | ----------------- |
+| Base tier | 3.25 bps | 0                 |
+| Tier 1    | 3.1 bps  | 10,000            |
+| Tier 2    | 2.25 bps | 250,000           |
+
+There is a 1.25 bps rebate for maker orders. Mango Markets does not charge fees for borrowing or lending.
 
 ### What is the PnL on my position?
 
