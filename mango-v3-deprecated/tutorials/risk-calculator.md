@@ -8,7 +8,7 @@ With the Risk Calculator you can estimate your Health Ratio by simulating change
 
 You must keep your Maitenance Health Ratio above 0% in order to avoid liquidation and the Risk Calculator is designed to assist traders in understanding the potential impact of their trades.
 
-You can read more about the health calculation on the [**Health Overview**](../faqs/health.md) page.
+You can read more about the health calculation on the [**Health Overview**](../../faqs/health.md) page.
 
 ## Anatomy of the Risk Calculator
 
@@ -18,7 +18,7 @@ The risk calculator consists of 3 main parts:
 * Scenario Input Table: Simulate deposits, withdrawals, and perp positions at different price points.
 * Scenario Details: Summarises the estimated health based on the above inputs.
 
-![Quick Tools (Top Left), Scenario Input (Bottom Left), and Scenario Details (Right).](../.gitbook/assets/risk-calculator-blank-slate.jpg)
+![Quick Tools (Top Left), Scenario Input (Bottom Left), and Scenario Details (Right).](../../.gitbook/assets/risk-calculator-blank-slate.jpg)
 
 Let's dive into these a little deeper:
 
@@ -26,7 +26,7 @@ Let's dive into these a little deeper:
 
 The quick tools are intended to help traders estimate average market movements for all tokens, as well as reduce the amount of information in the window.
 
-![Quick tool settings available](../.gitbook/assets/risk-calculator-quick-tools.jpg)
+![Quick tool settings available](../../.gitbook/assets/risk-calculator-quick-tools.jpg)
 
 The options available using the quick tools are:
 
@@ -44,7 +44,7 @@ When an account is connected, the input rows will self-populate with the trader'
 
 The blank slate might be particularly useful for traders new to Mango Markets as they can get a feel for the Health Ratio calculations. There is a row for each token that is trading on Mango Markets where users can input spot and perpetual positions as well as adjust the price. Each column of the table has its own "reset" button that will reset the column leaving the other columns as they are. For a full reset, press the "Reset" button at the top right of the calculator. Where a market does not exist, the cell in that column will be disabled, preventing input.
 
-![An example of a scenario input](../.gitbook/assets/risk-calculator-scenario-input.jpg)
+![An example of a scenario input](../../.gitbook/assets/risk-calculator-scenario-input.jpg)
 
 There are four primary columns that take input and their function are as follows:
 
@@ -59,11 +59,11 @@ The two additional columns calculate the simulated value of your positions, and 
 
 The "Scenario Details" displays a summary of the various health stats based on your input in the Quick Tools and Scenario Input Table.
 
-![The Scenario Details displaying the estimated health statistics of the scenario.](../.gitbook/assets/risk-calculator-scenario-details.jpg)
+![The Scenario Details displaying the estimated health statistics of the scenario.](../../.gitbook/assets/risk-calculator-scenario-details.jpg)
 
 The key field being the Maintenance Health, which determines if a position is eligible for liquidation. Maintenance Health must be kept above zero to avoid liquidation. Another important stat is the Initial Health which determines if new positions can be opened based on the current scenario. When the Initial Health falls below zero, no new positions can be opened, and the "New Positions Can Be Opened" field will display "No."
 
-The various fields showing dollar values, summarise the scenario's inputs and asset weightings. Read the [**Health Overview** ](../faqs/health.md)for more details page.
+The various fields showing dollar values, summarise the scenario's inputs and asset weightings. Read the [**Health Overview** ](../../faqs/health.md)for more details page.
 
 The final two fields of the summary display displays the simulated account leverage, as well as the Percent Move To Liquidation, which estimates the percent move in the market as a whole that would be required to liquidate the scenario. This field will display "N/A" if it is unlikely that the market moving in unison would result in liquidation. You can test this feature using the Price Slider.
 
@@ -77,14 +77,14 @@ You have 25 SOL deposited on Mango Markets and wish to open a 10,000 MNGO long p
 
 Firstly, connected your account and open the Risk Calculator. Your Health should be at 100% because you assets deposited, but no liabilities.
 
-![Account Health with 25 SOL deposited](../.gitbook/assets/risk-calculator-example-1a.jpg)
+![Account Health with 25 SOL deposited](../../.gitbook/assets/risk-calculator-example-1a.jpg)
 
 Then, in the MNGO row, enter 10,000 into the Perp column. Your account health should now show a different health percentage as the MNGO counts as both a asset and a liability.
 
-![Account Health with 25 SOL deposited and a 10,000 MNGO Long position](../.gitbook/assets/risk-calculator-example-1b.jpg)
+![Account Health with 25 SOL deposited and a 10,000 MNGO Long position](../../.gitbook/assets/risk-calculator-example-1b.jpg)
 
 Finally, in the SRM row, enter 1,000 into the Spot column and because you are borrowing against your collateral, you will also need to subtract the dollar value from your USDC holdings. For this example, SRM is $1.85, so you will need to subtract $1,850 from your USDC balance.
 
-![Account Health with 25 SOL, 10,000 MNGO Long position, and a 1000 SRM borrow](../.gitbook/assets/risk-calculator-example-1c.jpg)
+![Account Health with 25 SOL, 10,000 MNGO Long position, and a 1000 SRM borrow](../../.gitbook/assets/risk-calculator-example-1c.jpg)
 
 The resultant health for this example is \~43%, which indicates you can establish these positions at the set prices with your current collateral.

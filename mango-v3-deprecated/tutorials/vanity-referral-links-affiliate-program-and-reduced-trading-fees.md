@@ -14,7 +14,7 @@ To create a referral link once you have 10,000 MNGO, navigate to the following U
 
 ``[`https://trade.mango.markets/referral`](https://trade.mango.markets/referral)``
 
-![Feel free to create your own vanity link for sharing, duplicates are not possible](<../.gitbook/assets/Screenshot 2022-02-20 01.50.45.png>)
+![Feel free to create your own vanity link for sharing, duplicates are not possible](<../../.gitbook/assets/Screenshot 2022-02-20 01.50.45.png>)
 
 **Important notes:**
 

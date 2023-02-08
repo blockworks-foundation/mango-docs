@@ -1,32 +1,13 @@
 # Table of contents
 
 * [🔍 Overview](README.md)
-* [🔏 Audit](audit.md)
 * [🥭 Discord & Community](discord-and-community.md)
-
-## Developer Resources
-
-* [🧪 Code Examples](developer-resources/code-examples.md)
-* [📔 Mango TypeScript Client](developer-resources/mango-client-api.md)
-
-## API & WebSocket
-
-* [🖥 API Endpoints](api-and-websocket/api-endpoints.md)
-* [🌊 WebSocket Fills Feed](api-and-websocket/fills-websocket-feed.md)
-* [🛑 Rate Limits](api-and-websocket/rate-limits.md)
 
 ## Tutorials
 
-* [🥭 Initial Setup](tutorials/getting-started.md)
-* [📈 Trading](tutorials/trading-on-mango.md)
-* [🍰 Order Types](tutorials/trade-order-types.md)
-* [💵 Borrowing & Lending](tutorials/borrowing-and-lending.md)
 * [👛 DeFi Wallet](tutorials/creating-a-wallet.md)
-* [💸 Funding](tutorials/funding.md)
 * [⚖ Governance Voting](tutorials/how-to-vote-in-governance.md)
 * [🔒 Token Locking](tutorials/token-locking.md)
-* [🤑 Referrals & Affiliate Program](tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
-* [🔢 Risk Calculator](tutorials/risk-calculator.md)
 
 ## Mango Markets
 
@@ -42,6 +23,7 @@
 * [🫂 Account Delegation](mango/account-delegation.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
+* [💸 Funding](mango-markets/funding.md)
 
 ## FAQ's
 
@@ -55,10 +37,26 @@
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
 
-## Archived V3
+## Mango V3 (deprecated)
 
-* [⛵ Drifting Mango](archived-v3/drifting-mango.md)
-* [🤖 Market Making Bot](archived-v3/market-making-bot-python.md)
+* [🔏 Audit](mango-v3-deprecated/audit.md)
+* [Tutorials](mango-v3-deprecated/tutorials/README.md)
+  * [🥭 Initial Setup](mango-v3-deprecated/tutorials/getting-started.md)
+  * [🍰 Order Types](mango-v3-deprecated/tutorials/trade-order-types.md)
+  * [📈 Trading](mango-v3-deprecated/tutorials/trading-on-mango.md)
+  * [💵 Borrowing & Lending](mango-v3-deprecated/tutorials/borrowing-and-lending.md)
+  * [🤑 Referrals & Affiliate Program](mango-v3-deprecated/tutorials/vanity-referral-links-affiliate-program-and-reduced-trading-fees.md)
+  * [🔢 Risk Calculator](mango-v3-deprecated/tutorials/risk-calculator.md)
+* [Developer Resources](mango-v3-deprecated/developer-resources/README.md)
+  * [🧪 Code Examples](mango-v3-deprecated/developer-resources/code-examples.md)
+  * [📔 Mango TypeScript Client](mango-v3-deprecated/developer-resources/mango-client-api.md)
+* [Archived](mango-v3-deprecated/archived/README.md)
+  * [⛵ Drifting Mango](mango-v3-deprecated/archived/drifting-mango.md)
+  * [🤖 Market Making Bot](mango-v3-deprecated/archived/market-making-bot-python.md)
+* [API & WebSocket](mango-v3-deprecated/api-and-websocket/README.md)
+  * [🖥 API Endpoints](mango-v3-deprecated/api-and-websocket/api-endpoints.md)
+  * [🌊 WebSocket Fills Feed](mango-v3-deprecated/api-and-websocket/fills-websocket-feed.md)
+  * [🛑 Rate Limits](mango-v3-deprecated/api-and-websocket/rate-limits.md)
 
 ## Mango V2 (DEPRECATED) <a href="#mango-v2" id="mango-v2"></a>
 

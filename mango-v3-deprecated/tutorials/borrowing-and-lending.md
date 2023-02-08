@@ -14,27 +14,27 @@ Mango Markets offers an approachable and powerful platform. Under the hood, the 
 
 **Check out the** [**Account page.** ](https://trade.mango.markets/account)\*\*\*\*
 
-![](../.gitbook/assets/bororor.png)
+![](../../.gitbook/assets/bororor.png)
 
 ## **Borrowing on Mango Markets** 🥭
 
 First, ensure assets are [deposited into your margin account](https://docs.mango.markets/tutorials/getting-started#creating-a-margin-account-and-depositing-funds) for use as collateral. Then, simply click "Withdraw" under the _Accounts_ tab or "Borrow" under the _Borrow_ tab.
 
-![Under your account tab, scroll to balances.](../.gitbook/assets/wijegh1.png)
+![Under your account tab, scroll to balances.](../../.gitbook/assets/wijegh1.png)
 
-![Under your borrow tab, find all assets.](../.gitbook/assets/wijegh2.png)
+![Under your borrow tab, find all assets.](../../.gitbook/assets/wijegh2.png)
 
 The UI will prompt you to select the asset that you wish to withdraw and borrow, and toggle "Borrow Funds" on.
 
-![](../.gitbook/assets/borororor.png)
+![](../../.gitbook/assets/borororor.png)
 
 Next, determine the amount you would like to withdraw. Remember, borrowing funds affects your [collateral ratio](https://app.gitbook.com/@blockworksfoundation/s/mango/\~/drafts/-MZPLylXCNfAFWlrfxMI/tutorials/trade-on-mango.markets#how-to-trade-with-leverage) and leverage calculation. If you would like to withdraw the maximum amount with collateral ratio above maintenance margin threshold, click "Max with borrow." An estimated leverage post-withdraw is displayed.
 
-![](../.gitbook/assets/borororor2.png)
+![](../../.gitbook/assets/borororor2.png)
 
 Click "Withdraw" and approve the transaction from your wallet to complete the process.
 
-![](../.gitbook/assets/borororor5.png)
+![](../../.gitbook/assets/borororor5.png)
 
 Interest is paid on your borrows continuously from your deposits. Please monitor interest rates as they recalculate based on pool utilisation.
 
