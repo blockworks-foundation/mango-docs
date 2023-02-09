@@ -24,6 +24,7 @@
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
+* [New token listing](mango-markets/new-token-listing.md)
 
 ## FAQ's
 
