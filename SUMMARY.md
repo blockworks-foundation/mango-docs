@@ -25,6 +25,7 @@
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
 * [New token listing](mango-markets/new-token-listing.md)
+* [⚖ Stable Price](mango-markets/stable-price.md)
 
 ## FAQ's
 
