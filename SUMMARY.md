@@ -17,7 +17,6 @@
 * [💰 Insurance Fund](mango/insurance-fund.md)
 * [👪 Socialised Losses](mango/socialized-losses.md)
 * [🤝 Settle Pnl](mango/settle-pnl.md)
-* [⛏ Liquidity Mining](mango/liquidity-incentives.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
@@ -40,6 +39,7 @@
 
 ## Mango V3 (deprecated)
 
+* [⛏ Liquidity Mining](mango-v3-deprecated/liquidity-incentives.md)
 * [🔏 Audit](mango-v3-deprecated/audit.md)
 * [Tutorials](mango-v3-deprecated/tutorials/README.md)
   * [🥭 Initial Setup](mango-v3-deprecated/tutorials/getting-started.md)
