@@ -26,8 +26,8 @@ The stable price is updated in a way that makes it attempt to track the oracle p
 For the full detail, check `stable_price.rs` in the source code. The size of the update is roughly
 
 ```
-stable_price * stable_growth_limit * dt / abs(stable_price - delay_price)^2
+stable_price * stable_growth_limit * dt * (delay_price / stable_price)^2
 ```
 
-into the direction of the oracle price.
+into the direction of the oracle price (if stable\_price > delay\_price, otherwise the quotient is inverted).
 
