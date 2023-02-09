@@ -35,7 +35,7 @@ Mango Markets also gives you the ability to customise your experience and decide
 Assets have different maximum and maintenance leverage specifications. For the specifics by asset please see:\
 \
 [Spot Assets](../token-specs.md)\
-[Perpetual Futures](../../mango/perp-contract-specs.md)
+[Perpetual Futures](../perp-contract-specs.md)
 
 ## More Customisation
 
