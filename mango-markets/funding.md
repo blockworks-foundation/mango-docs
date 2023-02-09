@@ -2,7 +2,7 @@
 
 Funding is the mechanism used to ensure that the price of a futures contract stays in line with the current spot price.&#x20;
 
-The midprice of the bids and asks is compared to the oracle price to determine the funding rate.&#x20;
+The mid-price of the bids and asks is compared to the oracle price to determine the funding rate.&#x20;
 
 When the contract is trading above the oracle price, longs will have to pay shorts and when below the oracle price, shorts will pay longs.&#x20;
 
@@ -17,5 +17,3 @@ To see past funding earned, visit the Account page in the UI.
 ### How to calculate the funding rate
 
 Every 24 hours, the amount paid or received is the difference between the trading market and the oracle. Taking our previous example, if the difference averaged $0.50 over an entire day, holders who are long will pay shorts $0.50 per contract they hold. Expressed as a 1-hour rate, this would show as ($0.50/$100=$0.005/24=0.0002), “%0.02 per hour.”
-
-For an example of how to calculate the funding rate programmatically, [have a look here](https://docs.mango.markets/developer-resources/code-examples#calculating-the-funding-rate).
