@@ -18,9 +18,7 @@
 * [👪 Socialised Losses](mango/socialized-losses.md)
 * [🤝 Settle Pnl](mango/settle-pnl.md)
 * [⛏ Liquidity Mining](mango/liquidity-incentives.md)
-* [☑ Asset Specs](mango/token-specs.md)
 * [🔮 Perp Contract Specs](mango/perp-contract-specs.md)
-* [🫂 Account Delegation](mango/account-delegation.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
@@ -60,6 +58,8 @@
   * [🖥 API Endpoints](mango-v3-deprecated/api-and-websocket/api-endpoints.md)
   * [🌊 WebSocket Fills Feed](mango-v3-deprecated/api-and-websocket/fills-websocket-feed.md)
   * [🛑 Rate Limits](mango-v3-deprecated/api-and-websocket/rate-limits.md)
+* [☑ Asset Specs](mango-v3-deprecated/token-specs.md)
+* [🫂 Account Delegation](mango-v3-deprecated/account-delegation.md)
 
 ## Mango V2 (DEPRECATED) <a href="#mango-v2" id="mango-v2"></a>
 
