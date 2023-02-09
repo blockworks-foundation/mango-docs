@@ -1,7 +1,7 @@
 ---
 description: >-
   Intent of this page is to serve as a helpful guide to create proposals to list
-  new tokens on mango V4.
+  new tokens or edit parameters of existing tokens on mango V4.
 ---
 
 # New token listing
