@@ -18,14 +18,14 @@
 * [👪 Socialised Losses](mango/socialized-losses.md)
 * [🤝 Settle Pnl](mango/settle-pnl.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
-* [Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
+* [⏲ Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
-* [Token & Market Specs](mango-markets/token-and-market-specs.md)
-* [New token listing](mango-markets/new-token-listing.md)
-* [New perp market listing](mango-markets/new-perp-market-listing.md)
+* [💱 Token & Market Specs](mango-markets/token-and-market-specs.md)
+* [💱 New token listing](mango-markets/new-token-listing.md)
+* [💱 New perp market listing](mango-markets/new-perp-market-listing.md)
 * [⚖ Stable Price](mango-markets/stable-price.md)
-* [Flash Loans](mango-markets/flash-loans.md)
+* [⚡ Flash Loans](mango-markets/flash-loans.md)
 
 ## FAQ's
 
