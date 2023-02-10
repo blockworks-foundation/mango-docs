@@ -1,20 +1,30 @@
 # 💀 Liquidations
 
-* Liquidations occur when account Maintenance Health is below 0.
+* Liquidation starts when account maintenance health falls below 0 and end when liquidation end health increases above 0. See [health-overview.md](../mango-markets/health-overview.md "mention").
 * Partial Liquidations are possible.
 * Liquidations are permissionless and open to anyone for a liquidation fee reward.
 * Oracle price is used to determine value of assets and liabilities.
 
 ## Liquidations
 
-Every `MangoAccount` must have a `maint_health` above zero. If it slips below zero, liquidators can start liquidating the account until the `init_health` is above zero. The liquidator will forcibly cancel all open orders, before paying off any liabilities in the account and withdrawing the assets (defined as positive perp balances or token deposits). The liquidator earns the `liquidation_fee` which differs for each [spot asset](token-specs.md) and [perp contract](perp-contract-specs.md).
+Every `MangoAccount` must have a `maint_health` above zero. If it slips below zero, liquidators can start liquidating the account until the `liquidation_end_health` is above zero.&#x20;
 
-If at the end of a Liquidate instruction the account has no more assets but still has liabilities, then the account is placed under bankruptcy. During bankruptcy the liquidator continues offsetting liabilities, but receives USDC from the insurance fund. Finally, if there is no more USDC in the insurance fund, there will be a [socialised loss event](socialized-losses.md). There are seven liquidation-related instructions that can be called on Mango Markets V3:
+The first liquidation step is to cancel all open orders. This can increase the liqee's health without costing them anything.
 
-* ForceCancelSpotOrders
-* ForceCancelPerpOrders
-* LiquidateTokenAndToken
-* LiquidateTokenAndPerp
-* LiquidatePerpMarket
-* ResolveTokenBankruptcy
-* ResolvePerpBankruptcy
+The second step is to pay liquidators to close the liqee's liabilities. For example the liqee would give some of its token assets to the a liqor in exchange for receiving tokens that reduce a borrow. Another example would be a liqor taking over the liqee's perp base position in exchange for quote tokens.
+
+These liquidation trades happen around the oracle price, adjusted by the liquidation fee, which differs for each [spot asset](token-specs.md) and [perp contract](perp-contract-specs.md). That is what makes the exchange favorable to the liqor.
+
+The third step is bankruptcy. The liqee has no more assets to give away, so either Mango's insurance fund pays the liqor to reduce the liqee's liabilities or - if no insurance is available for the liability - the [loss will be socialized](socialized-losses.md).
+
+The following liquidation-related instructions that can be called on Mango Markets V4:
+
+* Phase 1
+  * Serum3LiqForceCancelOrders
+  * PerpLiqForceCancelOrders
+* Phase 2
+  * PerpLiqBaseOrPositivePnl
+  * TokenLiqWithToken
+* Phase 3
+  * PerpLiqNegativePnlOrBankruptcy
+  * TokenLiqBankruptcy

@@ -5,9 +5,9 @@
 * Health is used to determine liquidations and new position eligibility
 * Oracle price and stable price are used to determine the value of assets and liabilities
 
-The health of an account is used to determine if one can open a new position or if one can be liquidated. There are two types of health **initial health** used for opening new positions and **maintenance health** used for liquidations.
+The health of an account is used to determine if it can open a new position or if it can be liquidated. There are three types of health: **initial health** is used to check if opening new positions may be openend, **maintenance health** controls when liquidations start and **liquidation end health** determines when they end.
 
-They are both calculated as a weighted sum of the assets minus the liabilities but the init health uses more pessimistic weights and prices. Zero is used as the bright line for both, i.e. if your init health falls below zero, you cannot open new positions and if your maint. health falls below zero you will be liquidated.
+All three variants are calculated as a weighted sum of the assets minus the liabilities, but the weights and prices used differ. Zero is used as the bright line for all three, i.e. if your init health falls below zero, you cannot open new positions, if your maint. health falls below zero you will be liquidated and once your liq. end health increases above zero, liquidations will stop.
 
 They are calculated as follows:
 
@@ -31,7 +31,7 @@ Of course there are other scenarios that would cause liquidation too: The prices
 
 #### Prices
 
-The prices used for initial health and maintenance health differ. Maintenance health uses the oracle price directly and initial health uses a more conservative `min(oracle_price, stable_price)` for valuing assets and `max(oracle_price, stable_price)` for valuing liabilities.
+The prices used for initial health and maintenance health differ. Maintenance and liquidation end health use the oracle price directly and initial health uses a more conservative `min(oracle_price, stable_price)` for valuing assets and `max(oracle_price, stable_price)` for valuing liabilities.
 
 For example, imagine the SOL oracle reports $50 and the stable price is at $40. The account liquidation check (maint. health) would then use $50 as the value of SOL assets and liabilities. But for checking if new positions may be openened (init. health), SOL assets would be valued at $40 and SOL liabilities at $50.
 
@@ -49,7 +49,7 @@ That means that placing a limit order that would create a new liability once exe
 
 #### Liquidation End
 
-Account liquidation starts when the maintenance health becomes negative. Once started, it does not stop until an account's _initial_ health is positive again.
+Account liquidation starts when the maintenance health becomes negative. Once started, it does not stop until an account's liquidation end health is positive again.
 
 This overshooting helps prevent accounts from alternating between liquidatable and healthy too rapidly.
 
