@@ -9,11 +9,11 @@ Accounts that interact with perp markets normally have a certain amount of _unse
 * you buy 1 BTC-PERP at $20k: initially there's zero unsettled pnl
 * the BTC price increases to $30k: now there is $10k of unsettled pnl (which is also _unrealized_, because the position isn't closed)
 * you sell 1 BTC-PERP at $28k, price is still at $30k: you still have $10k of unsettled pnl (but now it's $8k realized and $2k unrealized)
-* you settle $6k of the pnl: now you have $4k of unsettled pnl left (and your USDC token balances has increased by $6k)
+* you settle $6k of the pnl: now you have $4k of unsettled pnl left (and your USDC token balance has increased by $6k)
 
-The unsettled pnl represents a valuation change in the perp position that hasn't yet been settled into a token position yet.
+Unsettled pnl represents a valuation change in the perp position that hasn't been settled into a token position yet.
 
-The act of pnl settlement takes two perp market participants with unsettled pnl of opposite sign and reduces that equally on both sides by transfering a token balance between the accounts.
+The act of pnl settlement takes two perp market participants with unsettled pnl of opposite sign and reduces it equally on both sides by transfering a tokens between the accounts.
 
 Example: Account A has +$10k unsettled pnl and account B has -$4k unsettled pnl. Settling between the two would transfer $4k token from B to A and leave the unsettled pnl at A: $6k and B: $0.
 

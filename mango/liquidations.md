@@ -20,11 +20,11 @@ The third step is bankruptcy. The liqee has no more assets to give away, so eith
 The following liquidation-related instructions that can be called on Mango Markets V4:
 
 * Phase 1
-  * `Serum3LiqForceCancelOrders`
-  * `PerpLiqForceCancelOrders`
+  * Serum3LiqForceCancelOrders
+  * PerpLiqForceCancelOrders
 * Phase 2
-  * `PerpLiqBaseOrPositivePnl`
-  * `TokenLiqWithToken`
+  * PerpLiqBaseOrPositivePnl
+  * TokenLiqWithToken
 * Phase 3
-  * `PerpLiqNegativePnlOrBankruptcy`
-  * `TokenLiqBankruptcy`
+  * PerpLiqNegativePnlOrBankruptcy
+  * TokenLiqBankruptcy
