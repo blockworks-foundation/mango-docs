@@ -26,6 +26,7 @@
 * [💱 New perp market listing](mango-markets/new-perp-market-listing.md)
 * [⚖ Stable Price](mango-markets/stable-price.md)
 * [⚡ Flash Loans](mango-markets/flash-loans.md)
+* [⚙ Mango Markets Operations](mango-markets/mango-markets-operations.md)
 
 ## FAQ's
 
