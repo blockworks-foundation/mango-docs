@@ -4,7 +4,7 @@ description: >-
   new tokens or edit parameters of existing tokens on mango V4.
 ---
 
-# New token listing
+# 💱 New token listing
 
 Fields, notes, and some examples
 
@@ -38,3 +38,14 @@ Fields, notes, and some examples
 | borrow\_weight\_scale\_start\_quote    | we currently set this and deposit\_weight\_scale\_start\_quote to the same value, the value is set to something what a liquidator can reasonably offload on chain immediately while staying within slippage lower than the liquidation fee | 1M \* 10^6, i.e. 1M$                                                                                                                            |
 | deposit\_weight\_scale\_start\_quote   |                                                                                                                                                                                                                                            | 1M \* 10^6, i.e. 1M$                                                                                                                            |
 
+
+
+In addition what is always useful is to know whether
+
+* the token has a mint and/or freeze authority, this can be checked on the mint's explorer page e.g. [USDC](https://explorer.solana.com/address/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v), if either is set, this should negatively affect the collateral contribution of the token
+* what does the distribution look like, solana offers an [api](https://docs.solana.com/api/http#gettokenlargestaccounts) for this, also, solscan shows the distribution e.g. [MNGO](https://solscan.io/token/MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac#holders), when the distribution is uneven, this should negatively affect the collateral contribution of the token
+* how does the price impact look like for swapping in and out of the token, e.g. [SOL-USDC](https://jup.ag/swap/SOL-USDC), jupiter swap gives a decent indication of slippage incurred at a specific size
+* how much volume is generally traded for this token, solscan, openserum, jupiter, birdeye, all provide various levels of information on the traded volume
+* quality of the oracle e.g. [pyth-SOL](https://pyth.network/price-feeds/crypto-sol-usd), [switchboard-SOL](https://switchboard.xyz/explorer/3/GvDMxPzN1sCj7L26YDK2HnMRXEQmQ2aemov8YBtPS7vR), things to look out for are&#x20;
+  * quality and quantity of publishers
+  * feed staleness
