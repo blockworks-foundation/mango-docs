@@ -139,11 +139,7 @@ To the fullest extent permitted under applicable law, you agree to indemnify, de
 
 These Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the laws of Panama. For litigation arising from these Terms of Use, the parties submit to the exclusive jurisdiction of Panama. Furthermore, if any arbitration is necessary to enforce the terms of these Terms of Use, the prevailing party will be entitled to reasonable attorneys' fees and costs.
 
-
-
 TO THE FULLEST PERMITTED UNDER APPLICABLE LAW, YOU AGREE THAT ANY CLAIM YOU MAY HAVE AGAINST US SHALL BE BROUGHT INDIVIDUALLY AND YOU SHALL NOT JOIN SUCH CLAIM WITH CLAIMS OF ANY OTHER PERSON OR ENTITY OR BRING, JOIN, OR PARTICIPATE IN A CLASS ACTION (LITIGATION OR ARBITRATION) AGAINST US. YOU FURTHER AGREE TO EXPRESSLY WAIVE YOUR RIGHT TO A TRIAL BY JURY.
-
-
 
 ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF USE OR THE WEBSITE MUST BE COMMENCED WITHIN ONE YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED.
 
