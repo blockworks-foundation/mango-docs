@@ -40,6 +40,10 @@
 * [MNGO](faqs/mngo.md)
 * [Dev](faqs/dev.md)
 
+## Legal
+
+* [Terms of Use](legal/terms-of-use.md)
+
 ## Mango V3 (deprecated)
 
 * [⛏ Liquidity Mining](mango-v3-deprecated/liquidity-incentives.md)
