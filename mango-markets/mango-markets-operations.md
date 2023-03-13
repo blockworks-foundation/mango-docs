@@ -18,7 +18,7 @@ The group admin can assign a security admin. The security admin has the followin
 
 The security admin is supposed to use its limited powers to quickly restrict group operation in emergencies, where waiting for a full DAO vote would take too long. Examples are an exploitable bug being found in the program, or exceptional situations relating to specific tokens or markets.
 
-The DAO decides what address shall hold the security admin authority and can revise that decision via vote at any time. Currently, [the DAO assigned](https://dao.mango.markets/dao/MNGO/proposal/tK49KBmG6NJLRF7Tef7mvsuXQQFALamgirmHSEGUMCw) the security admin role to [the security council](https://dao.mango.markets/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2), a realms 4 of 10 multisig.
+The DAO decides what address shall hold the security admin authority and can revise that decision via vote at any time. Currently, [the DAO assigned](https://dao.mango.markets/dao/MNGO/proposal/tK49KBmG6NJLRF7Tef7mvsuXQQFALamgirmHSEGUMCw) the security admin role to [the security council](https://dao.mango.markets/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2), a realms 3 of 10 multisig.
 
 #### Past Actions of the Security Council
 
