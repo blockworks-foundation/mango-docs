@@ -16,7 +16,7 @@
 * [💀 Liquidations](mango/liquidations.md)
 * [💰 Insurance Fund](mango/insurance-fund.md)
 * [👪 Socialised Losses](mango/socialized-losses.md)
-* [🤝 Settle Pnl](mango/settle-pnl.md)
+* [🤝 PnL Settlement](mango/settle-pnl.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [⏲ Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
