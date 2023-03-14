@@ -12,11 +12,13 @@ To earn interest, simply deposit into your Mango Markets Account; all assets aut
 
 ### **What are the different versions of Mango?**
 
-V3 (trade.mango.markets) is the newest version of Mango Markets.
+**V4 (app.mango.markets) is the only currently supported version of Mango Markets.**
 
-V2 (mango.markets) supports SOL, SRM, BTC, ETH, and USDC trading, lending, and borrowing.
+V3 (v3.mango.markets) is an inactive version of Mango Markets.
 
-V1 (usdt.mango.markets) supports BTC, ETH, and USDT trading, borrowing, and lending. SRM deposits do not count as collateral or earn interest.
+V2 (mango.markets) supports SOL, SRM, BTC, ETH, and USDC trading. Borrows are disabled and it is not recommended to use this version.
+
+V1 (usdt.mango.markets) supports BTC, ETH, and USDT trading, borrowing, and lending. SRM deposits do not count as collateral or earn interest.&#x20;
 
 ### **What prevents someone from borrowing funds, withdrawing, and running away with it?**
 

@@ -17,7 +17,7 @@ Always do your research when voting. There is a #governance channel in Mango Mar
 ### How to vote:
 
 Go to the Realm page:\
-[https://dao-beta.mango.markets/dao/MNGO](https://dao-beta.mango.markets/dao/MNGO)
+[https://dao.mango.markets/dao/MNGO](https://dao.mango.markets/dao/MNGO)
 
 Connect your wallet.
 
@@ -35,7 +35,7 @@ A list of proposals with current status is visible. Click on a proposal to view 
 
 ![](<../.gitbook/assets/Screen Shot 2021-12-28 at 12.45.40 PM.png>)
 
-_Max voting time: 3 days; Yes vote threshold: 2% of total supply (100m MNGO Votes currently ; Min instruction hold up time: 0 days; Min tokens to create proposal: 500,000 (0.01%)._
+_Max voting time: 3 days; Yes vote threshold: 2% of total supply (100m MNGO Votes currently ; Min instruction hold up time: 1 days; Min tokens to create proposal: 100,000._
 
 Select the proposal you wish to vote on or view. A "Cast your vote" box is on the bottom right. Click "Approve" or "Deny" to vote on the proposal. Next, you will be asked to confirm and have the option to add a message to your vote. Be sure to approve the transaction from your wallet.
 

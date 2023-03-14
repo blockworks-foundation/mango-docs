@@ -30,7 +30,6 @@
 
 ## FAQ's
 
-* [General FAQ](faqs/faq.md)
 * [Lending](faqs/lending.md)
 * [Health](faqs/health.md)
 * [Spot](faqs/spot.md)
@@ -46,6 +45,7 @@
 
 ## Mango V3 (deprecated)
 
+* [General FAQ](mango-v3-deprecated/faq.md)
 * [⛏ Liquidity Mining](mango-v3-deprecated/liquidity-incentives.md)
 * [🔏 Audit](mango-v3-deprecated/audit.md)
 * [Tutorials](mango-v3-deprecated/tutorials/README.md)

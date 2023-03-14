@@ -4,7 +4,7 @@ MNGO tokens can be locked for up to 5 years and receive increased voting weight 
 \
 \*If you have tokens deposited into old governance, you will need to withdraw and redeposit to vote.\
 \
-First, navigate to the MangoDAO: [https://dao-beta.mango.markets/dao/MNGO](https://dao-beta.mango.markets/dao/MNGO), connect your wallet, and deposit MNGO.
+First, navigate to the MangoDAO: [https://dao.mango.markets/dao/MNGO](https://dao.mango.markets/dao/MNGO), connect your wallet, and deposit MNGO.
 
 The "Your Tokens" panel will populate with your deposited MNGO amount.
 
