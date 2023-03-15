@@ -14,8 +14,8 @@ Example:
 
 * you buy 2 BTC-PERP at $20k: initially there's zero unsettled pnl
 * the BTC price increases to $25k: now there is $10k of unsettled pnl (which is also _unrealized_, because the position isn't closed)
-* you sell 1 BTC-PERP at $24k, price is still at $25k: you still have $10k of unsettled pnl (but now it's $4k realized and $6k unrealized)
-* you settle $7k of the pnl: now you have $3k of unsettled pnl left (and your USDC token balance has increased by $7k)
+* you sell 1 BTC-PERP at $24k, price is still at $25k: you now have $9k of unsettled pnl ($4k realized from the sale and $5k unrealized from the remaining position)
+* you settle $7k of the pnl: now you have $2k of unsettled pnl left (and your USDC token balance has increased by $7k)
 
 #### PnL Settlement Action
 
