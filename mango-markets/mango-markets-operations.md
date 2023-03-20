@@ -22,4 +22,5 @@ The DAO decides what address shall hold the security admin authority and can rev
 
 #### Past Actions of the Security Council
 
+* 2023-3-18: As a response to preliminary findings of the ongoing security audit by OtterSec, the [security council disabled the HealthRegionBegin instruction](https://app.realms.today/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2/proposal/8wzYcKGcSrx2V5WJUMGB3982uTfhMxVXMxyq6qthWfWz). It was an optional instruction for reducing compute requirements, used by some bots and market makers. Disabling it had no impact on users of the Mango Markets UI.
 * 2023-3-11: The [security council agreed](https://dao.mango.markets/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2/proposal/BtjbTJnxdpz113Gaz66yZsWXMWgLQ1khzjnGoZuHjwP) to set the USDC init asset weight to zero because its price dropped significantly below $1. Mango was using a fixed 1 USDC = $1 valuation, meaning that further drops in USDC price could have allowed attackers to profit by borrowing other tokens against incorrectly valued USDC deposits.
