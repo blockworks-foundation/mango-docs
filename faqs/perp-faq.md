@@ -6,15 +6,17 @@ Perpetuals allow initial leverage of up to 10x, and maintenance leverage of 20x.
 
 ### What fees will I pay?
 
-Mango Markets has a tiered taker fee scheme, which goes as follows:
+Mango Markets charges fees to takers and offers rebates to makers on perp market trades:
 
-| Tier      | Fee      | MNGO requirements |
-| --------- | -------- | ----------------- |
-| Base tier | 3.25 bps | 0                 |
-| Tier 1    | 3.1 bps  | 10,000            |
-| Tier 2    | 2.25 bps | 250,000           |
+| Taker Fee | Maker Fee |
+| --------- | --------- |
+| 6 bps     | -3 bps    |
 
-There is a 1.25 bps rebate for maker orders. No fees are charged for borrowing or lending.
+Fees related to borrows are:
+
+| Loan Origination Fee | Loan Upkeep Interest |
+| -------------------- | -------------------- |
+| 5 bps                | 50 bps per year      |
 
 ### What is the PnL on my position?
 
