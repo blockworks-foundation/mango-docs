@@ -85,6 +85,6 @@ Suppose the BTC-PERP mark price moves to $9400, then:
 
 `maint_health = 10 * 9400 * maint_asset_weight - 90000 = -700`
 
-Since the maint\_health is now below zero, this account can be liquidated until init health is above zero.
+Since the maint\_health is now below zero, this account can be liquidated until the liquidation end health is above zero.
 
 A short position would have negative contract sizes and use `maint_liab_weight` instead of `maint_asset_weight.`

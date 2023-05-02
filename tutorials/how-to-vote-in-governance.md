@@ -29,7 +29,7 @@ This will bring up a wallet approval step, for the entirety of your MNGO tokens 
 \
 Your Deposited Tokens will appear in the Governance Tokens Panel. Your tokens are now on the governance contract and removed from your connected wallet.&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2021-12-28 at 12.42.38 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2021-12-28 at 12.42.38 PM (1).png>)
 
 A list of proposals with current status is visible. Click on a proposal to view details and vote.
 
