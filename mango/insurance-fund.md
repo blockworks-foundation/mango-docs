@@ -1,3 +1,5 @@
 # 💰 Insurance Fund
 
-The Mango Markets programme has a $23m DAO controlled treasury as of 8th February. The DAO has still to decide how much insurance would be set aside for the program deposits. When there are bankrupt accounts, the insurance fund will pay off losses incurred by token lenders or perps contract participants.
+The insurance fund is for automatic coverage of bankruptcies that would otherwise result in socialized loss. It can be tapped without any attacks being involved, like when liquidators are slow or there's some other unusual event. Note: only specific tokens and markets are covered by the insurance fund.
+
+May 4, 2023 - The Mango Markets [group](https://explorer.solana.com/address/78b8f4cGCwmZ9ysPFMWLaLTkkaYnUjwMJYStWe5RTSSX?cluster=mainnet-beta) [insurance vault](https://explorer.solana.com/address/F1vqFqkZHh5jd5rf8BcEzT8kqfd1snB1adRkayJ9KPNY?cluster=mainnet-beta) now has a 100k$ insurance fund [voted](https://dao.mango.markets/dao/MNGO/proposal/FgiTAY62fgHLrYJi8gmNYZqvpZSUsiz25f18r9Lub9g3) in by the dao.
