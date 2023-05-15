@@ -14,6 +14,7 @@
 * [🙋 Beginner Tips](mango-markets/beginner-tips.md)
 * [❤ Health Overview](mango-markets/health-overview.md)
 * [💀 Liquidations](mango/liquidations.md)
+* [Audits](mango-markets/audits.md)
 * [💰 Insurance Fund](mango/insurance-fund.md)
 * [👪 Socialised Losses](mango/socialized-losses.md)
 * [🤝 PnL Settlement](mango/settle-pnl.md)
