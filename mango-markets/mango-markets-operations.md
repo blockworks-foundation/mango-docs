@@ -25,3 +25,23 @@ The DAO decides what address shall hold the security admin authority and can rev
 * 2023-4-14: After receiving a report of a potentially exploitable bug in flash loans, [the security council voted to disable the FlashLoan instructions](https://app.realms.today/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2/proposal/AUJM8v3an9zAuYHNmBQYH3UWzSGVkFUd7ErDdQK3ER3n). More thorough investigation made clear that the issue had not been exploitable. The action caused the swap ui to be disabled until [the DAO vote to reenable flash loans passed](https://dao.mango.markets/dao/MNGO/proposal/BcRNiqEBZE195jVrtgr7r2iBjFhvLhXHuYaq1Vbc8JxD) on 2023-4-18.
 * 2023-3-18: As a response to preliminary findings of the ongoing security audit by OtterSec, the [security council disabled the HealthRegionBegin instruction](https://app.realms.today/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2/proposal/8wzYcKGcSrx2V5WJUMGB3982uTfhMxVXMxyq6qthWfWz). It was an optional instruction for reducing compute requirements, used by some bots and market makers. Disabling it had no impact on users of the Mango Markets UI.
 * 2023-3-11: The [security council agreed](https://dao.mango.markets/dao/AQbsV8b3Yv3UHUmd62hw9vFmNTHgBTdiLfaWzwmVfXB2/proposal/BtjbTJnxdpz113Gaz66yZsWXMWgLQ1khzjnGoZuHjwP) to set the USDC init asset weight to zero because its price dropped significantly below $1. Mango was using a fixed 1 USDC = $1 valuation, meaning that further drops in USDC price could have allowed attackers to profit by borrowing other tokens against incorrectly valued USDC deposits.
+
+
+
+### **Delisting Process**
+
+Force closing a token
+
+* Move token to reduce only and make make init asset weight 0 via a dao proposal (security admins can also bring tokens to reduce only), Note: use value of 2 and not 1, so that borrows are prevented but deposits are valid, this is required for liquidators who are forced to have token deposits before they can liquidate liabilities in same token.
+* After some buffer period, make maint asset weight 0 via a dao proposal. This should force users to deposit alternative collateral if needed.
+* Move token to force close via a dao proposal.
+* Liquidation fee can be optionally considered for change via a dao proposal.
+* Anybody can then run the dedicated script [`force-close-token-borrows.ts`](https://github.com/blockworks-foundation/mango-v4/blob/main/ts/client/scripts/force-close-token-borrows.ts) to force close any borrows and earn liquidation fee.
+
+Force closing a market
+
+* Move token to reduce only and make make init asset weight 0 via a dao proposal (security admins can also bring tokens to reduce only).
+* After some buffer period, make both init and maint assets weights 0 via a dao proposal. This should force users to deposit alternative collateral if needed.
+* Move market to force close via a dao proposal.
+* Liquidation fee can be optionally considered for change via. dao proposal.
+* Anybody can then run the dedicated scripts [`force-close-serum3-market.ts`](https://github.com/blockworks-foundation/mango-v4/blob/main/ts/client/scripts/force-close-serum3-market.ts) or [`force-close-perp-positions.ts`](https://github.com/blockworks-foundation/mango-v4/blob/main/ts/client/scripts/force-close-perp-positions.ts) to cancel all existing spot and/or perp orders and liquidate open perp positions.
