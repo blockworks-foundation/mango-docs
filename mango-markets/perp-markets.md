@@ -12,7 +12,7 @@ Users can enter perp positions by placing bids and asks on the perp order books.
 
 If they had existing contracts, then LONG and SHORT contracts cancel each other out: Buying 3 LONG when the account had 5 SHORT will leave it with 2 SHORT.
 
-Holding a LONG contract means that the user is obligated to receive 1 USDC (settle token) from a SHORT contract holder when the index price increases by $1. If the index price decreases by $1, the LONG will have to pay 1 USDC to a SHORT holder. This process of paying USDC for changes in index price is called **settlement**.
+Holding a LONG contract means that the user will eventually receive 1 USDC (settle token) from a SHORT contract holder when the index price increases by $1. If the index price decreases by $1, the LONG will have to pay 1 USDC to a SHORT holder. The process of paying USDC for changes in index price is called **settlement**.
 
 To ensure the perp contracts are traded close to the index price, contract holders also pay or receive **funding payments** depending on how far the orderbook midpoint is from the index price (see below for details).
 
