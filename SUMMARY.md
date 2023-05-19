@@ -17,6 +17,7 @@
 * [🐞 Audits](mango-markets/audits.md)
 * [💰 Insurance Fund](mango/insurance-fund.md)
 * [👪 Socialised Losses](mango/socialized-losses.md)
+* [〽 Perp Markets](mango-markets/perp-markets.md)
 * [🤝 PnL Settlement](mango/settle-pnl.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
 * [⏲ Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
