@@ -53,38 +53,66 @@ Account liquidation starts when the maintenance health becomes negative. Once st
 
 This overshooting helps prevent accounts from alternating between liquidatable and healthy too rapidly.
 
+### Perp Markets
+
+Each perp market is configured to use a specific settle token and affects health by changing the settle token's balance. At the time of writing all perp markets use USDC as the settle token.
+
+Perp positions track the user's _base position_ and _quote position_. With these, one can define the _unsettled pnl (upnl)_
+
+```
+upnl = base_position * base_price + quote_position
+```
+
+which defines how much the account can settle against other accounts (see [settle-pnl.md](../mango/settle-pnl.md "mention")). One can also define the _health unsettled pnl (hupnl)_:
+
+```
+hupnl = overall_weighted(base_weigthed(base_position * base_price) + quote_position)
+where
+base_weighted(v) = base_asset_weight * v, if v >= 0
+                 = base_liab_weight * v, if v < 0
+and
+overall_weighted(v) = overall_asset_weight * v, if v >= 0
+                    = v, if v < 0
+```
+
+Where _base\_weighted()_ applies a risk scaling for holding a perp position and _overall\_weighted()_ applies a risk scaling for unsettled positive pnl. At the time of writing, all perp markets have overall\_asset\_weight = 0, meaning that positive unsettled pnl does not produce health. This helps with perp market isolation.
+
+The effective token balance used in health computations is the sum of the spot balance and the hupnl of all perp markets that use the token as settle token.
+
 #### Example - BTC-PERP
 
 As an example, one asset might be BTC-PERP with
 
 ```
-init_asset_weight = 0.9
-init_liab_weight = 1.1
-maint_asset_weight = 0.95
-maint_liab_weight = 1.05
+init_base_asset_weight = 0.9
+init_base_liab_weight = 1.1
+maint_base_asset_weight = 0.95
+maint_base_liab_weight = 1.05
+overall_asset_weight = 0
 ```
 
-These correspond to a 10x initial leverage and 20x maintenance leverage.
+These correspond to a 10x initial leverage and 20x maintenance leverage. Let's say the perp market uses USDC as settle token which has all weights set to 1.
 
-Suppose a user deposits 10k USDC and goes long 10 BTC-PERP at 10k each. Then the user has 10 BTC-PERP in assets, and a net 90k in USD liabilities. The health would be:&#x20;
+Suppose a user deposits 10k USDC and goes long 10 BTC-PERP at 10k each. Then the user has a perp base position of 10 and a perp quote position of -100k. The health would be:&#x20;
 
 ```
-init_health =
-    10000 * 1.0 * 1.0      (asset value of 10k USDC spot deposit)
-    + 10.0 * 10000 * 0.9   (asset value of 10 BTC-PERP long)
-    - 100000 * 1.0 * 1.0   (liability value of 100k USD for BTC-PERP purchase)
+init_health
+  = USDC_weight * USDC_price * (spot_balance + hupnl)
+  = 1.0 * 1.0 * (10000 + (0.9 * 10000 * 10 - 100000))
   = 0
 maint_health =
-    10000 * 1.0 * 1.0      (asset value of 10k USDC spot deposit)
-    + 10.0 * 10000 * 0.95  (asset value of 10 BTC-PERP long)
-    - 100000 * 1.0 * 1.0   (liability value of 100k USD for BTC-PERP purchase)
+  = 1.0 * 1.0 * (10000 + (0.95 * 10000 * 10 - 100000))
   = 5000
 ```
 
 Suppose the BTC-PERP mark price moves to $9400, then:
 
-`maint_health = 10 * 9400 * maint_asset_weight - 90000 = -700`
+`maint_health = 10000 + 0.95 * 9400 * 10 - 100000 = -700`
 
 Since the maint\_health is now below zero, this account can be liquidated until the liquidation end health is above zero.
 
-A short position would have negative contract sizes and use `maint_liab_weight` instead of `maint_asset_weight.`
+Suppose the mark price moves to $12000, then
+
+`init_health = 10000 + 0 * (0.9 * 12000 * 10 - 100000) = 10000`
+
+Because the overall weight doesn't allow the positive unsettled pnl to contribute to health. The account could settle the perp gains into an actual token position to increase their health.
