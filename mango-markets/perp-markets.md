@@ -10,7 +10,7 @@ Mango offers perp markets, which are markets for perpetual futures contracts tha
 
 Users can enter perp positions by placing bids and asks on the perp order books. When the orderbook matches a buyer and seller, two opposite-sign positions are created: the buyer receives an amount of LONG contracts and the seller receives the same amount of SHORT contracts and their entry price is recorded. There is no payment in either direction at this point.&#x20;
 
-If they had existing contracts, then LONG and SHORT contracts cancel each other out.
+If they had existing contracts, then LONG and SHORT contracts cancel each other out: Buying 3 LONG when the account had 5 SHORT will leave it with 2 SHORT.
 
 Holding a LONG contract means that the user is obligated to receive 1 USDC (settle token) from a SHORT contract holder when the index price increases by $1. If the index price decreases by $1, the LONG will have to pay 1 USDC to a SHORT holder. This process of paying USDC for changes in index price is called **settlement**.
 
