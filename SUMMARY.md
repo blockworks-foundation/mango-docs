@@ -23,6 +23,7 @@
 * [⏲ Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
+* [🤖 Bots](mango-markets/bots.md)
 * [💱 Token & Market Specs](mango-markets/token-and-market-specs.md)
 * [💱 New token listing](mango-markets/new-token-listing.md)
 * [💱 New perp market listing](mango-markets/new-perp-market-listing.md)
