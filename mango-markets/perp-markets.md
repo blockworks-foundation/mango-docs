@@ -26,7 +26,7 @@ Settlement is the only mechanism to convert perp market pnl into USDC token pnl.
 
 ### Funding
 
-Funding is the mechanism that keeps a perp market trading close to its index price. It does this by comparing the orderbook state to the index price and setting a funding rate based on the difference. If the funding rate is positive LONG contract holders will pay SHORTs and if it's negative SHOTs pay LONGs.
+Funding is the mechanism that keeps a perp market trading close to its index price. It does this by comparing the orderbook state to the index price and setting a funding rate based on the difference. If the funding rate is positive LONG contract holders will pay SHORTs and if it's negative SHORTs pay LONGs.
 
 Funding payments change the unsettled pnl on accounts with perp positions.
 
