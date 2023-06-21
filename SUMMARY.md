@@ -30,6 +30,7 @@
 * [⚖ Stable Price](mango-markets/stable-price.md)
 * [⚡ Flash Loans](mango-markets/flash-loans.md)
 * [⚙ Mango Markets Operations](mango-markets/mango-markets-operations.md)
+* [\* Risks](mango-markets/risks.md)
 
 ## FAQ's
 
