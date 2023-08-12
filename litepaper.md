@@ -26,7 +26,7 @@ Low transaction costs are arguably the raison d'etre of finance. We believe a fi
 
 Trying to achieve competitive latency and cost by centralizing key components (e.g. the orderbook) will fail in the long run. Centralizing any component is a security risk and severely harms composability. Ultimately, the centralizer decides how other apps may interact with the centralized component and the centralizer neither has the incentive nor the bandwidth to allow all interested parties to participate in the improvements. As a result, centralizing key components gives up the immense upsides of permissionless innovation. Mango Markets will retain the upside.
 
-#### **No Presales, Decentralized Governance**&#x20;
+#### **No Presales, Decentralized Governance**
 
 The Mango Token will govern the protocol. The vast majority of MANGO will be locked in the DAO treasury to be distributed according to token holder wishes. That being said, our vision is that governance ought to reward the people who provide protocol services (e.g. liquidity providers, oracles) and the people who build new protocol services (e.g. developers, or other contributors). The commitment to distribute the largest portion of the DAO’s power and wealth to future contributors will encourage the most skilled and ambitious builders to join us. Finally, in accordance with the crypto ethos of transparency and equal access there will be no presale of tokens.
 
@@ -76,29 +76,27 @@ The code has been looked over by volunteers, but there has not been a formal aud
 
 ### **Token Distribution**
 
-After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for Mango Token to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.\
-
+After the initial distribution of tokens, only the DAO may distribute more tokens via governance proposals. The intent is for Mango Token to be distributed liberally to protocol builders, liquidity providers and project contributors in a fully transparent way.\\
 
 **Max Supply: 10,000,000,000**
 
-**Initial Circulating Supply: 1,000,000,000**\
-****
+**Initial Circulating Supply: 1,000,000,000**\\
+
+
 
 **Creators - 5%**
 
-For the work of creating Mango Markets.\
-
+For the work of creating Mango Markets.\\
 
 **Insurance Fund Sale - 5%**
 
-There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.\
-
+There will be a sale of Mango Token that goes directly into the DAO treasury for use as the insurance fund. The insurance fund will pay Mango Perps smart contract in the event extreme volatility causes bankrupt accounts and excess losses in the system. The sale mechanism is described in detail below.\\
 
 **DAO - 90%**
 
-These tokens can only be unlocked via token holder governance. We propose that tokens are distributed roughly on a logarithmic supply model similar to Bitcoin but with a halving every two years i.e. 50% of the tokens distributed in the first two years, 75% in the first four years, 87.5% in the first 6 years and so on. The DAO is not bound to follow this proposal.&#x20;
+These tokens can only be unlocked via token holder governance. We propose that tokens are distributed roughly on a logarithmic supply model similar to Bitcoin but with a halving every two years i.e. 50% of the tokens distributed in the first two years, 75% in the first four years, 87.5% in the first 6 years and so on. The DAO is not bound to follow this proposal.
 
-### Token Sale&#x20;
+### Token Sale
 
 #### Mechanism
 
@@ -111,13 +109,13 @@ The Mango Sale will happen over two days. The Sale contract will have two vaults
 
 #### Explanation
 
-Buyers get a pro-rata price at the end and every participant gets the same price for Mango Tokens.&#x20;
+Buyers get a pro-rata price at the end and every participant gets the same price for Mango Tokens.
 
 The sale price per token can be calculated with:
 
 `(total USDC in vault) / (500,000,000 Mango Token)`
 
-This price will fluctuate during the entire 48 hour period as USDC is deposited and withdrawn. However, during the last 24 hours, buyers may only withdraw USDC and so the Sale price can only decrease during that period. The Withdraw Only Period was added so that if a buyer deposits a large amount of USDC at the last second of the Unrestricted Period and raises the price significantly, other buyers still have an opportunity to get out of the sale. &#x20;
+This price will fluctuate during the entire 48 hour period as USDC is deposited and withdrawn. However, during the last 24 hours, buyers may only withdraw USDC and so the Sale price can only decrease during that period. The Withdraw Only Period was added so that if a buyer deposits a large amount of USDC at the last second of the Unrestricted Period and raises the price significantly, other buyers still have an opportunity to get out of the sale.
 
 We take the view that token sales should be simple, fully transparent and minimize randomness and luck in the distribution. Simple mechanisms are easier to build, explain, understand and are harder to exploit. A transparent mechanism increases participation because buyers are more confident there are no hidden tricks that could harm them. Elements of luck engineered into the mechanism distribute value randomly or to those who are most willing to do the arbitrary, worthless tasks to get the free value. We believe all "excess" value should be captured by token holders in the DAO. Removing the casino aspects of token sales selectively encourages participants who are focused on contributing and governing in the long term.
 
@@ -131,7 +129,7 @@ Mango developers, including those from the community, will build the smart contr
 
 The Mango Token is a governance token, first and foremost. Collectively, the token holders have the power to upgrade the protocol as they see fit, only constrained by the checks-and-balances of the DAO. This allows token holders to create incentives to reward participation and drive usage of the protocol.
 
-We consider the COMP governance model to be a gold-standard in the industry and followed it to build out the Mango Token governance model. We mainly reworked the initial token distribution, to facilitate a DAO inception that is truly open and adapted it’s mechanics to fit the solana programming model.&#x20;
+We consider the COMP governance model to be a gold-standard in the industry and followed it to build out the Mango Token governance model. We mainly reworked the initial token distribution, to facilitate a DAO inception that is truly open and adapted it’s mechanics to fit the solana programming model.
 
 Anybody with 0.1% of Mango Token staked can propose a governance action; these are simple or complex sets of actions, such as adding support for a new asset, changing an asset’s collateral factor, changing a market’s interest rate model, or changing any other parameter or variable of the protocol that the current administrator can modify.
 
@@ -172,11 +170,9 @@ All proposals are subject to a 3 day voting period, and any Mango Token staker c
 * Largely increases the number of spot markets that can be traded
 * Perpetual swaps will feature lower trading fees than spot markets
 
-****
+
 
 ## Edits
-
-
 
 **July 30th, 2021**
 

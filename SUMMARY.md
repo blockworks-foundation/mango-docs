@@ -34,22 +34,21 @@
 
 ## FAQ's
 
-* [Lending](faqs/lending.md)
-* [Health](faqs/health.md)
-* [Spot](faqs/spot.md)
-* [Perpetual Contract Trading](faqs/perp-faq.md)
-* [Borrows](faqs/borrows.md)
-* [Swap](faqs/swap.md)
-* [MNGO](faqs/mngo.md)
-* [Dev](faqs/dev.md)
-
 ## Legal
 
 * [Terms of Use](legal/terms-of-use.md)
 
 ## Mango V3 (deprecated)
 
+* [Lending](mango-v3-deprecated/lending.md)
+* [Dev](mango-v3-deprecated/dev.md)
+* [MNGO](mango-v3-deprecated/mngo.md)
+* [Swap](mango-v3-deprecated/swap.md)
+* [Borrows](mango-v3-deprecated/borrows.md)
+* [Spot](mango-v3-deprecated/spot.md)
+* [Perpetual Contract Trading](mango-v3-deprecated/perp-faq.md)
 * [General FAQ](mango-v3-deprecated/faq.md)
+* [Health](mango-v3-deprecated/health.md)
 * [⛏ Liquidity Mining](mango-v3-deprecated/liquidity-incentives.md)
 * [🔏 Audit](mango-v3-deprecated/audit.md)
 * [Tutorials](mango-v3-deprecated/tutorials/README.md)

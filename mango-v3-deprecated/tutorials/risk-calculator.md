@@ -8,7 +8,7 @@ With the Risk Calculator you can estimate your Health Ratio by simulating change
 
 You must keep your Maitenance Health Ratio above 0% in order to avoid liquidation and the Risk Calculator is designed to assist traders in understanding the potential impact of their trades.
 
-You can read more about the health calculation on the [**Health Overview**](../../faqs/health.md) page.
+You can read more about the health calculation on the [**Health Overview**](../health.md) page.
 
 ## Anatomy of the Risk Calculator
 
@@ -63,7 +63,7 @@ The "Scenario Details" displays a summary of the various health stats based on y
 
 The key field being the Maintenance Health, which determines if a position is eligible for liquidation. Maintenance Health must be kept above zero to avoid liquidation. Another important stat is the Initial Health which determines if new positions can be opened based on the current scenario. When the Initial Health falls below zero, no new positions can be opened, and the "New Positions Can Be Opened" field will display "No."
 
-The various fields showing dollar values, summarise the scenario's inputs and asset weightings. Read the [**Health Overview** ](../../faqs/health.md)for more details page.
+The various fields showing dollar values, summarise the scenario's inputs and asset weightings. Read the [**Health Overview** ](../health.md)for more details page.
 
 The final two fields of the summary display displays the simulated account leverage, as well as the Percent Move To Liquidation, which estimates the percent move in the market as a whole that would be required to liquidate the scenario. This field will display "N/A" if it is unlikely that the market moving in unison would result in liquidation. You can test this feature using the Price Slider.
 
