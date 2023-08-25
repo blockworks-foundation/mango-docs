@@ -5,7 +5,7 @@
 
 ## Tutorials
 
-* [👛 DeFi Wallet](tutorials/creating-a-wallet.md)
+* [👛 DeFi Wallets](tutorials/creating-a-wallet.md)
 * [⚖ Governance Voting](tutorials/how-to-vote-in-governance.md)
 * [🔒 Token Locking](tutorials/token-locking.md)
 
