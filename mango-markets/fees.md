@@ -21,11 +21,11 @@ Each asset has:
 
     Where:
 
-    - $$l_i$$ = quantity of liability \(i\)
-    - $$p_i$$ = price of \(i\)
-    - $$w^l_i$$ = maintenance liability weight of asset \(i\)
-    - $$a_i$$ = quantity of asset \(i\)
-    - $$w^a_i$$ = maintenance asset weight of asset \(i\)
+    - $$l_i$$ = quantity of liability $$i$$
+    - $$p_i$$ = price of $$i$$
+    - $$w^l_i$$ = maintenance liability weight of asset $$i$$
+    - $$a_i$$ = quantity of asset $$i$$
+    - $$w^a_i$$ = maintenance asset weight of asset $$i$$
     - $$const\_collateral\_fees\_APR_{j}$$ = constant collateral Annual Percentage Rate on asset j determined by the DAO,
 
     This formula calculates the ratio of the total weighted liabilities to the total weighted assets, then applies the collateral APR to determine the ongoing collateral fees. Collateral fees are levied on a daily basis and are applicable to only a specific subset of tokens. The gathered fees are meant to either reimburse depositors or finance proactive risk management endeavors by the DAO (although the DAO retains the discretion to allocate the fees to wherever it sees fit).
