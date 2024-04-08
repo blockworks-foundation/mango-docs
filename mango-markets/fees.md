@@ -13,7 +13,7 @@ Each asset has:
   - A **loan origination fee**, which is a one-time fee paid when the loan is initiated. 
   - **continuous interest payments** to the lender on the loan, which are ongoing payments made over the life of the loan based on the agreed-upon interest rate.
   - **continuous upkeep fees** paid to the DAO, contributing to the governance and operational expenses of the platform. 
-  - **continuous collateral fees**, on select tokens, paid to the DAO are calculated based on the user's weighted liabilities in relation to their weighted assets, then multiplied by a constant collateral Annual Percentage Rate (APR). This fee is designed to reflect the cost of maintaining collateralized positions over time. The calculation formula for asset $j$ is as follows:
+  - **continuous collateral fees**, on select tokens, paid to the DAO are calculated based on the user's weighted liabilities in relation to their weighted assets, then multiplied by a constant collateral Annual Percentage Rate (APR). This fee is designed to reflect the cost of maintaining collateralized positions over time. The calculation formula for asset $$j$$ is as follows:
 
     $$
     collateral\_fees\_APR_{j} = \left( \frac{\sum\limits_{i} l_i \cdot p_i \cdot w^l_i}{\sum\limits_{i} a_i \cdot p_i \cdot w^a_i} \right) \cdot const\_collateral\_fees\_APR_{j}
