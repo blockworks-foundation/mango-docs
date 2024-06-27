@@ -20,6 +20,7 @@
 * [〽 Perp Markets](mango-markets/perp-markets.md)
 * [🤝 PnL Settlement](mango/settle-pnl.md)
 * [⏱ Time In Force (TIF)](mango/tif-time-in-force-orders.md)
+* [🔮 Oracles](mango-markets/oracles.md)
 * [⏲ Oracle Peg Orders](mango-markets/oracle-peg-orders.md)
 * [🦋 Bug Bounty](mango/bug-bounty.md)
 * [💸 Funding](mango-markets/funding.md)
