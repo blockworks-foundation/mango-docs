@@ -16,7 +16,7 @@ Note that these are simply guidelines for the severity of the bugs. Each bug bou
 
 #### Submission <a href="#iq-submission" id="iq-submission"></a>
 
-Please email [hello@blockworks.foundation](mailto:hello@blockworks.foundation) with a detailed description of the attack vector. For critical and moderate bugs, we require a proof of concept done on a privately deployed mainnet contract. We will reach out in 1 business day with additional questions or next steps on the bug bounty.
+Please email [security@mango.markets](mailto:security@mango.markets) with a detailed description of the attack vector. For critical and moderate bugs, we require a proof of concept done on a privately deployed mainnet contract. We will reach out in 1 business day with additional questions or next steps on the bug bounty.
 
 #### Bug Bounty Payment <a href="#zj-bug-bounty-payment" id="zj-bug-bounty-payment"></a>
 
